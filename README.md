@@ -14,4 +14,4 @@
 API documentation: [https://docs.adxe.org/](https://docs.adxe.org)
 
 ## Wiki
-- https://adxeproject.github.io/adxe-wiki/
+Wiki page: https://adxeproject.github.io/adxe-wiki/
