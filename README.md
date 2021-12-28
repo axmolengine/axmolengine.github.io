@@ -1,5 +1,5 @@
 # The adxeproject
-[![dev](https://img.shields.io/badge/v1.0.0-beta3-yellow.svg)](https://github.com/adxeproject/adxe/releases)
+[![dev](https://img.shields.io/badge/v1.0.0-beta4-yellow.svg)](https://github.com/adxeproject/adxe/releases)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/adxeproject/adxe/blob/master/LICENSE)
   
 [![Android Build Status](https://github.com/adxeproject/adxe/workflows/android/badge.svg)](https://github.com/adxeproject/adxe/actions?query=workflow%3Aandroid)
@@ -11,7 +11,7 @@
 **This is another more radical fork of *Cocos2d-x-4.0*, use OpenAL for all platforms, single texture multi GPU texture handler, C++ 14/17 and some more (see 'Highlight Features' for more info).**
 
 ## Documentation
-API documentation: [https://docs.adxe.org/](https://docs.adxe.org)
+API documentation: [https://adxeproject.github.io/adxe](https://adxeproject.github.io/adxe)
 
 ## Wiki
 [https://adxeproject.github.io/adxe-wiki/](https://adxeproject.github.io/adxe-wiki/)
