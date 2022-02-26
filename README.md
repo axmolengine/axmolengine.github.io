@@ -1,5 +1,5 @@
 # The adxeproject
-[![dev](https://img.shields.io/badge/v1.0.0-beta4-yellow.svg)](https://github.com/adxeproject/adxe/releases)
+[![dev](https://img.shields.io/badge/v1.0.0-beta6-yellow.svg)](https://github.com/adxeproject/adxe/releases)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/adxeproject/adxe/blob/master/LICENSE)
   
 [![Android Build Status](https://github.com/adxeproject/adxe/workflows/android/badge.svg)](https://github.com/adxeproject/adxe/actions?query=workflow%3Aandroid)
@@ -12,6 +12,3 @@
 
 ## Documentation
 API documentation: [https://adxeproject.github.io/adxe](https://adxeproject.github.io/adxe)
-
-## Wiki
-[https://adxeproject.github.io/adxe-wiki/](https://adxeproject.github.io/adxe-wiki/)
