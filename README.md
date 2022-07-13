@@ -1,4 +1,4 @@
-# The adxeproject
+# The axis-project
 [![dev](https://img.shields.io/badge/v1.0.0b9-yellow.svg)](https://github.com/axis-project/axis/releases)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/axis-project/axis/blob/master/LICENSE)
   
