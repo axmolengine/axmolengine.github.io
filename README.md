@@ -11,4 +11,4 @@
 **This is another more radical fork of *Cocos2d-x-4.0*, use OpenAL for all platforms, single texture multi GPU texture handler, C++ 14/17 and some more (see 'Highlight Features' for more info).**
 
 ## Documentation
-API documentation: [https://axys1.github.io/axys](https://axys1.github.io/axys)
+API documentation: [https://axmolengine.github.io/axmol](https://axmolengine.github.io/axmol)
