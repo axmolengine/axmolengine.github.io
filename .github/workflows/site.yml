@@ -23,7 +23,6 @@ jobs:
     - name: Build HTML site
       shell: pwsh
       run: |
-        $env:AX_DOCS_TOKEN = '${{ secrets.AX_BOT_TOKEN }}'
         git clone https://github.com/axmolengine/axmol.git
         ./axmol/tools/ci/build-site.ps1
     
