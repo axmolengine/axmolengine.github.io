@@ -9,7 +9,7 @@ on:
     paths:
       - .github/workflows/site.yml
   repository_dispatch:
-    types: [axmol-push]
+    types: [forward-push]
   workflow_dispatch:
     
 jobs:
