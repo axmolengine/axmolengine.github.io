@@ -23,7 +23,8 @@ jobs:
     - name: Build HTML site
       shell: pwsh
       run: |
-        git clone https://github.com/axmolengine/axmol.git
+        git clone https://github.com/simdsoft/axmol.git
+        git -C axmol checkout isolated-site
         ./axmol/tools/ci/build-site.ps1
     
     # Deploy HTML site to GitHub Pages
