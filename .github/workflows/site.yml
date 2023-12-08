@@ -8,6 +8,8 @@ on:
       - master
     paths:
       - .github/workflows/site.yml
+  repository_dispatch:
+    types: [axmol-push]
   workflow_dispatch:
     
 jobs:
