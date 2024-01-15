@@ -37,6 +37,7 @@ jobs:
         allow_empty_commit: false
         force_orphan: true
         publish_branch: gh-pages
+        cname: axmol.org
     # Deploy HTML site to netlify Pages
     - name: Netlify Pages Deployment
       uses: peaceiris/actions-gh-pages@v3
