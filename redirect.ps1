@@ -21,4 +21,9 @@ $redirect_content = @'
 </html>
 '@ -f $url
 
+$out_dir = Split-Path $out -Parent
+if (!(Test-Path $out_dir -PathType Container)) {
+    New-Item $out_dir -ItemType Directory 1>$null 2>$null
+}
+
 [System.IO.File]::WriteAllText($out, $redirect_content)

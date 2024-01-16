@@ -26,7 +26,6 @@ jobs:
         git clone https://github.com/axmolengine/axmol.git
         git -C axmol checkout dev
         ./axmol/tools/ci/build-site.ps1
-        mkdir ./axmol/docs/dist/axmol
         ./redirect.ps1 'https://axmol.org/' ./axmol/docs/dist/axmol/index.html
     
     # Deploy HTML site to GitHub Pages
