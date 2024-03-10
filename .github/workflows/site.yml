@@ -26,7 +26,7 @@ jobs:
         git clone https://github.com/axmolengine/axmol.git
         git -C axmol checkout dev
         ./axmol/tools/ci/build-site.ps1
-        ./redirect.ps1 'https://axmol.org/' ./axmol/docs/dist/axmol/index.html
+        ./redirect.ps1 'https://axmol.dev/' ./axmol/docs/dist/axmol/index.html
     
     # Deploy HTML site to GitHub Pages
     - name: GH Pages Deployment
@@ -38,7 +38,7 @@ jobs:
         allow_empty_commit: false
         force_orphan: true
         publish_branch: gh-pages
-        cname: axmol.org
+        cname: axmol.dev
     # Deploy HTML site to netlify Pages
     - name: Netlify Pages Deployment
       uses: peaceiris/actions-gh-pages@v3
