@@ -30,17 +30,16 @@ jobs:
         workflow_conclusion: success
         branch: dev
         name: wasm
-        path: wasm
+        path: tmp/wasm
         repo: axmolengine/axmol
     
     - name: Build HTML site
       shell: pwsh
       run: |
-        ls -r wasm
-        exit 1
+        ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git
         git -C axmol checkout dev
-        ./axmol/tools/ci/build-site.ps1 wasm
+        ./axmol/tools/ci/build-site.ps1 'tmp/wasm'
         ./redirect.ps1 'https://axmol.dev/' ./axmol/docs/dist/axmol/index.html
     
     # Deploy HTML site to GitHub Pages
