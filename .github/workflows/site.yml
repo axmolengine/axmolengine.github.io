@@ -30,6 +30,7 @@ jobs:
         workflow_conclusion: success
         branch: dev
         name: wasm
+        path: wasm
         repo: axmolengine/axmol
     
     - name: Build HTML site
