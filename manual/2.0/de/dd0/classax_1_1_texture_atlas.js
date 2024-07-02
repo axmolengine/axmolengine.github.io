@@ -1,0 +1,28 @@
+var classax_1_1_texture_atlas =
+[
+    [ "TextureAtlas", "de/dd0/classax_1_1_texture_atlas.html#a200db7ac91cea63c9f454a01780b68df", null ],
+    [ "~TextureAtlas", "de/dd0/classax_1_1_texture_atlas.html#afbe64b4dba4bd5146f62bde82d09ca54", null ],
+    [ "initWithFile", "de/dd0/classax_1_1_texture_atlas.html#ae5d491e03d165454dc0066d804504a9f", null ],
+    [ "initWithTexture", "de/dd0/classax_1_1_texture_atlas.html#acd07ea3bedf3896406454074f82f705d", null ],
+    [ "updateQuad", "de/dd0/classax_1_1_texture_atlas.html#a0d015280e1bcd50cfc0e07921c092341", null ],
+    [ "insertQuad", "de/dd0/classax_1_1_texture_atlas.html#ae4d2bd2c7268fb1ea0130929c8d61105", null ],
+    [ "insertQuads", "de/dd0/classax_1_1_texture_atlas.html#a41ea5194e2fa7d27bfdcf2fcefb0a59c", null ],
+    [ "insertQuadFromIndex", "de/dd0/classax_1_1_texture_atlas.html#ad1695c3857a41bcd0bd5f8c00f5cfe9c", null ],
+    [ "removeQuadAtIndex", "de/dd0/classax_1_1_texture_atlas.html#a2f3841a69664770f8122736db47a39ed", null ],
+    [ "removeQuadsAtIndex", "de/dd0/classax_1_1_texture_atlas.html#abaf3b70ea32b521a79e8ea7978d6578e", null ],
+    [ "removeAllQuads", "de/dd0/classax_1_1_texture_atlas.html#aca09c64b5dd4570519777715a5eea24e", null ],
+    [ "resizeCapacity", "de/dd0/classax_1_1_texture_atlas.html#a9a07cc75fc391bd6e98cda92815c8505", null ],
+    [ "increaseTotalQuadsWith", "de/dd0/classax_1_1_texture_atlas.html#a5d29335ac47eda1b7cf39785bab595c9", null ],
+    [ "moveQuadsFromIndex", "de/dd0/classax_1_1_texture_atlas.html#a6f03183e2355ce803c8ca75abf8797a1", null ],
+    [ "moveQuadsFromIndex", "de/dd0/classax_1_1_texture_atlas.html#a8ccbbf1f76ded419119ab955a40f1c77", null ],
+    [ "fillWithEmptyQuadsFromIndex", "de/dd0/classax_1_1_texture_atlas.html#aca6b65a73036b4cea989e21cee15920b", null ],
+    [ "isDirty", "de/dd0/classax_1_1_texture_atlas.html#afc891d3aea2a4eb5b44bd544d9699ace", null ],
+    [ "setDirty", "de/dd0/classax_1_1_texture_atlas.html#a8aaab0d0dbb58f4e724b3b4f3aebe1f8", null ],
+    [ "getDescription", "de/dd0/classax_1_1_texture_atlas.html#a9025df426d11cbe30c5500d3ffb5d33c", null ],
+    [ "getTotalQuads", "de/dd0/classax_1_1_texture_atlas.html#abeadbd416238e29ed328547c095df6b4", null ],
+    [ "getCapacity", "de/dd0/classax_1_1_texture_atlas.html#a460345da5a7a583fb83d5903a2aac7de", null ],
+    [ "getTexture", "de/dd0/classax_1_1_texture_atlas.html#a70bd97843ee5bdce25289119663eba49", null ],
+    [ "setTexture", "de/dd0/classax_1_1_texture_atlas.html#a106ef2807290d603633a3e70f1970f55", null ],
+    [ "getQuads", "de/dd0/classax_1_1_texture_atlas.html#ab768333be6b90431130cae1e32c926c7", null ],
+    [ "setQuads", "de/dd0/classax_1_1_texture_atlas.html#ae9f20ee890c8869851a7d784424aeb81", null ]
+];
