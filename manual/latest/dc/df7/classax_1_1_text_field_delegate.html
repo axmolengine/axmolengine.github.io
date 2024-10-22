@@ -1,0 +1,299 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: TextFieldDelegate Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;2.2.1-044cc87</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dc/df7/classax_1_1_text_field_delegate.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d1/d21/classax_1_1_text_field_delegate-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TextFieldDelegate Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A input protocol for TextField.  
+ <a href="../../dc/df7/classax_1_1_text_field_delegate.html#details">More...</a></p>
+
+<p><code>#include &lt;TextFieldTTF.h&gt;</code></p>
+
+<p>Inherited by <a class="el" href="../../de/dfd/classax_1_1ui_1_1_u_i_c_c_text_field.html">UICCTextField</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a65a553fd910a488d6aab9f41a5f3ca7e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/classax_1_1_text_field_delegate.html#a65a553fd910a488d6aab9f41a5f3ca7e">~TextFieldDelegate</a> ()</td></tr>
+<tr class="memdesc:a65a553fd910a488d6aab9f41a5f3ca7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="../../dc/df7/classax_1_1_text_field_delegate.html" title="A input protocol for TextField.">TextFieldDelegate</a>.  <br /></td></tr>
+<tr class="separator:a65a553fd910a488d6aab9f41a5f3ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6bae781d98ac28c167c1babd40f51b"><td class="memItemLeft" align="right" valign="top"><a id="aaf6bae781d98ac28c167c1babd40f51b" name="aaf6bae781d98ac28c167c1babd40f51b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onTextFieldAttachWithIME</b> (<a class="el" href="../../da/da4/classax_1_1_text_field_t_t_f.html">TextFieldTTF</a> *sender)</td></tr>
+<tr class="memdesc:aaf6bae781d98ac28c167c1babd40f51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the sender doesn't want to attach to the IME, return true. <br /></td></tr>
+<tr class="separator:aaf6bae781d98ac28c167c1babd40f51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7cf3899691a89750d1dcb2c73c74ff"><td class="memItemLeft" align="right" valign="top"><a id="a8a7cf3899691a89750d1dcb2c73c74ff" name="a8a7cf3899691a89750d1dcb2c73c74ff"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onTextFieldDetachWithIME</b> (<a class="el" href="../../da/da4/classax_1_1_text_field_t_t_f.html">TextFieldTTF</a> *sender)</td></tr>
+<tr class="memdesc:a8a7cf3899691a89750d1dcb2c73c74ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the sender doesn't want to detach from the IME, return true. <br /></td></tr>
+<tr class="separator:a8a7cf3899691a89750d1dcb2c73c74ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b91cb1ea656fc533733727eed294d72"><td class="memItemLeft" align="right" valign="top"><a id="a0b91cb1ea656fc533733727eed294d72" name="a0b91cb1ea656fc533733727eed294d72"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onTextFieldInsertText</b> (<a class="el" href="../../da/da4/classax_1_1_text_field_t_t_f.html">TextFieldTTF</a> *sender, const char *text, size_t nLen)</td></tr>
+<tr class="memdesc:a0b91cb1ea656fc533733727eed294d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the sender doesn't want to insert the text, return true. <br /></td></tr>
+<tr class="separator:a0b91cb1ea656fc533733727eed294d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4988cd6514d1b1a66bde4c855c9ff16f"><td class="memItemLeft" align="right" valign="top"><a id="a4988cd6514d1b1a66bde4c855c9ff16f" name="a4988cd6514d1b1a66bde4c855c9ff16f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onTextFieldDeleteBackward</b> (<a class="el" href="../../da/da4/classax_1_1_text_field_t_t_f.html">TextFieldTTF</a> *sender, const char *delText, size_t nLen)</td></tr>
+<tr class="memdesc:a4988cd6514d1b1a66bde4c855c9ff16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the sender doesn't want to delete the delText, return true. <br /></td></tr>
+<tr class="separator:a4988cd6514d1b1a66bde4c855c9ff16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fea37e3c06e2e70ce5f7100380f901"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/classax_1_1_text_field_delegate.html#a08fea37e3c06e2e70ce5f7100380f901">onVisit</a> (<a class="el" href="../../da/da4/classax_1_1_text_field_t_t_f.html">TextFieldTTF</a> *sender, Renderer *renderer, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;transform, uint32_t flags)</td></tr>
+<tr class="memdesc:a08fea37e3c06e2e70ce5f7100380f901"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the sender doesn't want to draw, return true.  <br /></td></tr>
+<tr class="separator:a08fea37e3c06e2e70ce5f7100380f901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A input protocol for TextField. </p>
+<p>!!!DEPRECATED since axmol-2.1.3 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a65a553fd910a488d6aab9f41a5f3ca7e" name="a65a553fd910a488d6aab9f41a5f3ca7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a553fd910a488d6aab9f41a5f3ca7e">&#9670;&#160;</a></span>~TextFieldDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../dc/df7/classax_1_1_text_field_delegate.html">TextFieldDelegate</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor for <a class="el" href="../../dc/df7/classax_1_1_text_field_delegate.html" title="A input protocol for TextField.">TextFieldDelegate</a>. </p>
+<p>@js NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a08fea37e3c06e2e70ce5f7100380f901" name="a08fea37e3c06e2e70ce5f7100380f901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08fea37e3c06e2e70ce5f7100380f901">&#9670;&#160;</a></span>onVisit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool onVisit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/da4/classax_1_1_text_field_t_t_f.html">TextFieldTTF</a> *&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the sender doesn't want to draw, return true. </p>
+<p>@js NA </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>TextFieldTTF.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../dc/df7/classax_1_1_text_field_delegate.html">TextFieldDelegate</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:47 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

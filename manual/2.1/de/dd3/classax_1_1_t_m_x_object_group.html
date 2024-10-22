@@ -1,0 +1,560 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: TMXObjectGroup Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.1.5</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('de/dd3/classax_1_1_t_m_x_object_group.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../da/d49/classax_1_1_t_m_x_object_group-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TMXObjectGroup Class Reference<div class="ingroups"><a class="el" href="../../d0/dc7/group____2d.html">2D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html" title="TMXObjectGroup represents the TMX object group.">TMXObjectGroup</a> represents the TMX object group.  
+ <a href="../../de/dd3/classax_1_1_t_m_x_object_group.html#details">More...</a></p>
+
+<p><code>#include &lt;TMXObjectGroup.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af1286e285562e9f8431e84b20ba5be0d"><td class="memItemLeft" align="right" valign="top"><a id="af1286e285562e9f8431e84b20ba5be0d" name="af1286e285562e9f8431e84b20ba5be0d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TMXObjectGroup</b> ()</td></tr>
+<tr class="memdesc:af1286e285562e9f8431e84b20ba5be0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">@js ctor <br /></td></tr>
+<tr class="separator:af1286e285562e9f8431e84b20ba5be0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23614d16d99659b701ad83589625a0e5"><td class="memItemLeft" align="right" valign="top"><a id="a23614d16d99659b701ad83589625a0e5" name="a23614d16d99659b701ad83589625a0e5"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~TMXObjectGroup</b> ()</td></tr>
+<tr class="memdesc:a23614d16d99659b701ad83589625a0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">@js NA @lua NA <br /></td></tr>
+<tr class="separator:a23614d16d99659b701ad83589625a0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759c8adccdf8dda6b5311525606af919"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#a759c8adccdf8dda6b5311525606af919">getGroupName</a> () const</td></tr>
+<tr class="memdesc:a759c8adccdf8dda6b5311525606af919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the group name.  <br /></td></tr>
+<tr class="separator:a759c8adccdf8dda6b5311525606af919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a0ea5daf96632c79ecd98985ed5c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#af8a0ea5daf96632c79ecd98985ed5c88">setGroupName</a> (std::string_view groupName)</td></tr>
+<tr class="memdesc:af8a0ea5daf96632c79ecd98985ed5c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the group name.  <br /></td></tr>
+<tr class="separator:af8a0ea5daf96632c79ecd98985ed5c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865013aed6b22d678c90e6499efd3730"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#a865013aed6b22d678c90e6499efd3730">getProperty</a> (std::string_view propertyName) const</td></tr>
+<tr class="memdesc:a865013aed6b22d678c90e6499efd3730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value for the specific property name.  <br /></td></tr>
+<tr class="separator:a865013aed6b22d678c90e6499efd3730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8cfcf0e576e9afbc2de8124b937030"><td class="memItemLeft" align="right" valign="top">ValueMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#abd8cfcf0e576e9afbc2de8124b937030">getObject</a> (std::string_view objectName) const</td></tr>
+<tr class="memdesc:abd8cfcf0e576e9afbc2de8124b937030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the dictionary for the specific object name.  <br /></td></tr>
+<tr class="separator:abd8cfcf0e576e9afbc2de8124b937030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1dc005dad65bb9a037757742e1123d7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#ac1dc005dad65bb9a037757742e1123d7">getPositionOffset</a> () const</td></tr>
+<tr class="memdesc:ac1dc005dad65bb9a037757742e1123d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the offset position of child objects.  <br /></td></tr>
+<tr class="separator:ac1dc005dad65bb9a037757742e1123d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bab0989c4c68fed831a0dbd4ca80e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#ad9bab0989c4c68fed831a0dbd4ca80e2">setPositionOffset</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offset)</td></tr>
+<tr class="memdesc:ad9bab0989c4c68fed831a0dbd4ca80e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the offset position of child objects.  <br /></td></tr>
+<tr class="separator:ad9bab0989c4c68fed831a0dbd4ca80e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8966debd0c53597b3298dc4b8b86f926"><td class="memItemLeft" align="right" valign="top">const ValueMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#a8966debd0c53597b3298dc4b8b86f926">getProperties</a> () const</td></tr>
+<tr class="memdesc:a8966debd0c53597b3298dc4b8b86f926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of properties stored in a dictionary.  <br /></td></tr>
+<tr class="separator:a8966debd0c53597b3298dc4b8b86f926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59338858883217a7724f79950d261f11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#a59338858883217a7724f79950d261f11">setProperties</a> (const ValueMap &amp;properties)</td></tr>
+<tr class="memdesc:a59338858883217a7724f79950d261f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the list of properties.  <br /></td></tr>
+<tr class="separator:a59338858883217a7724f79950d261f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea490cfb7c04346a735810cdfbb5e311"><td class="memItemLeft" align="right" valign="top">const ValueVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#aea490cfb7c04346a735810cdfbb5e311">getObjects</a> () const</td></tr>
+<tr class="memdesc:aea490cfb7c04346a735810cdfbb5e311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the array of the objects.  <br /></td></tr>
+<tr class="separator:aea490cfb7c04346a735810cdfbb5e311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0435b662eadb2b31a747323f2c641f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html#a4d0435b662eadb2b31a747323f2c641f">setObjects</a> (const ValueVector &amp;objects)</td></tr>
+<tr class="memdesc:a4d0435b662eadb2b31a747323f2c641f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the array of the objects.  <br /></td></tr>
+<tr class="separator:a4d0435b662eadb2b31a747323f2c641f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html" title="TMXObjectGroup represents the TMX object group.">TMXObjectGroup</a> represents the TMX object group. </p>
+<dl class="section since"><dt>Since</dt><dd>v0.99.0 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a759c8adccdf8dda6b5311525606af919" name="a759c8adccdf8dda6b5311525606af919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759c8adccdf8dda6b5311525606af919">&#9670;&#160;</a></span>getGroupName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view getGroupName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the group name. </p>
+<dl class="section return"><dt>Returns</dt><dd>The group name. </dd></dl>
+
+</div>
+</div>
+<a id="af8a0ea5daf96632c79ecd98985ed5c88" name="af8a0ea5daf96632c79ecd98985ed5c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a0ea5daf96632c79ecd98985ed5c88">&#9670;&#160;</a></span>setGroupName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setGroupName </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>groupName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the group name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">groupName</td><td>A string,it is used to set the group name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a865013aed6b22d678c90e6499efd3730" name="a865013aed6b22d678c90e6499efd3730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865013aed6b22d678c90e6499efd3730">&#9670;&#160;</a></span>getProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Value getProperty </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>propertyName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the value for the specific property name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">propertyName</td><td>The specific property name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the value for the specific property name. @js NA </dd></dl>
+
+</div>
+</div>
+<a id="abd8cfcf0e576e9afbc2de8124b937030" name="abd8cfcf0e576e9afbc2de8124b937030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8cfcf0e576e9afbc2de8124b937030">&#9670;&#160;</a></span>getObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ValueMap getObject </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>objectName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the dictionary for the specific object name. </p>
+<p>It will return the 1st object found on the array for the given name.</p>
+<dl class="section return"><dt>Returns</dt><dd>Return the dictionary for the specific object name. </dd></dl>
+
+</div>
+</div>
+<a id="ac1dc005dad65bb9a037757742e1123d7" name="ac1dc005dad65bb9a037757742e1123d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1dc005dad65bb9a037757742e1123d7">&#9670;&#160;</a></span>getPositionOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp; getPositionOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the offset position of child objects. </p>
+<dl class="section return"><dt>Returns</dt><dd>The offset position of child objects. </dd></dl>
+
+</div>
+</div>
+<a id="ad9bab0989c4c68fed831a0dbd4ca80e2" name="ad9bab0989c4c68fed831a0dbd4ca80e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9bab0989c4c68fed831a0dbd4ca80e2">&#9670;&#160;</a></span>setPositionOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPositionOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the offset position of child objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>The offset position of child objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8966debd0c53597b3298dc4b8b86f926" name="a8966debd0c53597b3298dc4b8b86f926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8966debd0c53597b3298dc4b8b86f926">&#9670;&#160;</a></span>getProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ValueMap &amp; getProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the list of properties stored in a dictionary. </p>
+<dl class="section return"><dt>Returns</dt><dd>The list of properties stored in a dictionary. </dd></dl>
+
+</div>
+</div>
+<a id="a59338858883217a7724f79950d261f11" name="a59338858883217a7724f79950d261f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59338858883217a7724f79950d261f11">&#9670;&#160;</a></span>setProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setProperties </td>
+          <td>(</td>
+          <td class="paramtype">const ValueMap &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the list of properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">properties</td><td>The list of properties. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea490cfb7c04346a735810cdfbb5e311" name="aea490cfb7c04346a735810cdfbb5e311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea490cfb7c04346a735810cdfbb5e311">&#9670;&#160;</a></span>getObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ValueVector &amp; getObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the array of the objects. </p>
+<dl class="section return"><dt>Returns</dt><dd>The array of the objects. </dd></dl>
+
+</div>
+</div>
+<a id="a4d0435b662eadb2b31a747323f2c641f" name="a4d0435b662eadb2b31a747323f2c641f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d0435b662eadb2b31a747323f2c641f">&#9670;&#160;</a></span>setObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setObjects </td>
+          <td>(</td>
+          <td class="paramtype">const ValueVector &amp;&#160;</td>
+          <td class="paramname"><em>objects</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the array of the objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objects</td><td>The array of the objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>TMXObjectGroup.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../de/dd3/classax_1_1_t_m_x_object_group.html">TMXObjectGroup</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:43 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

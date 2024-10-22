@@ -1,0 +1,283 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Program Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d6/da1/classax_1_1backend_1_1_program.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d0/d35/classax_1_1backend_1_1_program-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Program Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../dc/d73/group____backend.html">_backend</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A program.  
+ <a href="../../d6/da1/classax_1_1backend_1_1_program.html#details">More...</a></p>
+
+<p><code>#include &lt;Program.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a>.</p>
+
+<p>Inherited by <a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html">ProgramGL</a>, and <a class="el" href="../../d0/dae/classax_1_1backend_1_1_program_m_t_l.html">ProgramMTL</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:gaecabb9ebd8546a3dcb2e30c740f30477"><td class="memItemLeft" align="right" valign="top">virtual UniformLocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#gaecabb9ebd8546a3dcb2e30c740f30477">getUniformLocation</a> (std::string_view uniform) const =0</td></tr>
+<tr class="memdesc:gaecabb9ebd8546a3dcb2e30c740f30477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform location by name.  <br /></td></tr>
+<tr class="separator:gaecabb9ebd8546a3dcb2e30c740f30477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86633c3dd4b3ea52dfa98d9bada88912"><td class="memItemLeft" align="right" valign="top">virtual UniformLocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga86633c3dd4b3ea52dfa98d9bada88912">getUniformLocation</a> (backend::Uniform name) const =0</td></tr>
+<tr class="memdesc:ga86633c3dd4b3ea52dfa98d9bada88912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform location by engine built-in uniform enum name.  <br /></td></tr>
+<tr class="separator:ga86633c3dd4b3ea52dfa98d9bada88912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga477b3695c0b33029b5c2e5dd595ddc0f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga477b3695c0b33029b5c2e5dd595ddc0f">getAttributeLocation</a> (std::string_view name) const =0</td></tr>
+<tr class="memdesc:ga477b3695c0b33029b5c2e5dd595ddc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute location by attribute name.  <br /></td></tr>
+<tr class="separator:ga477b3695c0b33029b5c2e5dd595ddc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69cc1a68248badb8d6775ad6dd80acce"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga69cc1a68248badb8d6775ad6dd80acce">getAttributeLocation</a> (backend::Attribute name) const =0</td></tr>
+<tr class="memdesc:ga69cc1a68248badb8d6775ad6dd80acce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute location by engine built-in attribute enum name.  <br /></td></tr>
+<tr class="separator:ga69cc1a68248badb8d6775ad6dd80acce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga897b8067206ba27198e1116fe235ad90"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga897b8067206ba27198e1116fe235ad90">getMaxVertexLocation</a> () const =0</td></tr>
+<tr class="memdesc:ga897b8067206ba27198e1116fe235ad90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum vertex location.  <br /></td></tr>
+<tr class="separator:ga897b8067206ba27198e1116fe235ad90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga879d111796ebbfc964bb37caf0d1c0e1"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga879d111796ebbfc964bb37caf0d1c0e1">getMaxFragmentLocation</a> () const =0</td></tr>
+<tr class="memdesc:ga879d111796ebbfc964bb37caf0d1c0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum fragment location.  <br /></td></tr>
+<tr class="separator:ga879d111796ebbfc964bb37caf0d1c0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga395c833c35f38534e05fe5582c900a41"><td class="memItemLeft" align="right" valign="top">virtual const hlookup::string_map&lt; AttributeBindInfo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga395c833c35f38534e05fe5582c900a41">getActiveAttributes</a> () const =0</td></tr>
+<tr class="memdesc:ga395c833c35f38534e05fe5582c900a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active vertex attributes.  <br /></td></tr>
+<tr class="separator:ga395c833c35f38534e05fe5582c900a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e0ce6144761b69c7d9636ad2cd03af1"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga3e0ce6144761b69c7d9636ad2cd03af1">getVertexShader</a> () const</td></tr>
+<tr class="memdesc:ga3e0ce6144761b69c7d9636ad2cd03af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vertex shader.  <br /></td></tr>
+<tr class="separator:ga3e0ce6144761b69c7d9636ad2cd03af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b634b1abdd8180a17ebc2eb1781c09d"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga9b634b1abdd8180a17ebc2eb1781c09d">getFragmentShader</a> () const</td></tr>
+<tr class="memdesc:ga9b634b1abdd8180a17ebc2eb1781c09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fragment shader.  <br /></td></tr>
+<tr class="separator:ga9b634b1abdd8180a17ebc2eb1781c09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga187a76cf567c800275317fd91e9889e1"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupVertexLayout</b> (VertexLayoutType vlt)</td></tr>
+<tr class="memdesc:ga187a76cf567c800275317fd91e9889e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the program shared vertex layout type, see: VertexLayoutType. <br /></td></tr>
+<tr class="separator:ga187a76cf567c800275317fd91e9889e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga659f09615bce57f4735f696e817d6207"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga659f09615bce57f4735f696e817d6207">getProgramType</a> () const</td></tr>
+<tr class="memdesc:ga659f09615bce57f4735f696e817d6207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get engine built-in program type.  <br /></td></tr>
+<tr class="separator:ga659f09615bce57f4735f696e817d6207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63dd9bac225b4106ead60b0e0fc71d31"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga63dd9bac225b4106ead60b0e0fc71d31">getProgramId</a> () const</td></tr>
+<tr class="memdesc:ga63dd9bac225b4106ead60b0e0fc71d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get program id.  <br /></td></tr>
+<tr class="separator:ga63dd9bac225b4106ead60b0e0fc71d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d84d25efb732df3647e0e1a28aeaedc"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga0d84d25efb732df3647e0e1a28aeaedc">getUniformBufferSize</a> (ShaderStage stage) const =0</td></tr>
+<tr class="memdesc:ga0d84d25efb732df3647e0e1a28aeaedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform buffer size in bytes that can hold all the uniforms.  <br /></td></tr>
+<tr class="separator:ga0d84d25efb732df3647e0e1a28aeaedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1267095ede8ceb43d49086929e3ca58"><td class="memItemLeft" align="right" valign="top">virtual const hlookup::string_map&lt; UniformInfo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#gab1267095ede8ceb43d49086929e3ca58">getAllActiveUniformInfo</a> (ShaderStage stage) const =0</td></tr>
+<tr class="memdesc:gab1267095ede8ceb43d49086929e3ca58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all uniformInfos.  <br /></td></tr>
+<tr class="separator:gab1267095ede8ceb43d49086929e3ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a1a053fb82453d60e2bb3928f92878b37">autorelease</a> ()</td></tr>
+<tr class="memdesc:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d1/d8c/classax_1_1_ref.html" title="Ref is used for reference count management.">Ref</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ga88f0d716ad287244a1475c3c1cb46818"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga88f0d716ad287244a1475c3c1cb46818">getBuiltinProgram</a> (uint32_t type)</td></tr>
+<tr class="memdesc:ga88f0d716ad287244a1475c3c1cb46818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get engine built-in program.  <br /></td></tr>
+<tr class="separator:ga88f0d716ad287244a1475c3c1cb46818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>_scriptObject</b></td></tr>
+<tr class="memdesc:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">scriptObject, support for swift <br /></td></tr>
+<tr class="separator:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_rooted</b></td></tr>
+<tr class="memdesc:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, it means that the object was already rooted. <br /></td></tr>
+<tr class="separator:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A program. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Program.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html">backend</a></li><li class="navelem"><a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html">Program</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:39 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

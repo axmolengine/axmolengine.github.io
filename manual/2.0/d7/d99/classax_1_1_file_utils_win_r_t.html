@@ -1,0 +1,685 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: FileUtilsWinRT Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d7/d99/classax_1_1_file_utils_win_r_t.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../dc/d0d/classax_1_1_file_utils_win_r_t-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">FileUtilsWinRT Class Reference<div class="ingroups"><a class="el" href="../../de/d8b/group__platform.html">Platform Specific</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Helper class to handle file operations.  
+ <a href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#details">More...</a></p>
+
+<p><code>#include &lt;FileUtilsWinRT.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aee8048628ff2b5c026c9e15acdcaacb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#aee8048628ff2b5c026c9e15acdcaacb8">init</a> ()</td></tr>
+<tr class="memdesc:aee8048628ff2b5c026c9e15acdcaacb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the instance of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>.  <br /></td></tr>
+<tr class="separator:aee8048628ff2b5c026c9e15acdcaacb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee364bb4f49db8fa725d1c765b4f974"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#a3ee364bb4f49db8fa725d1c765b4f974">getWritablePath</a> () const</td></tr>
+<tr class="memdesc:a3ee364bb4f49db8fa725d1c765b4f974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the writable path that may not be in the format of an absolute path.  <br /></td></tr>
+<tr class="separator:a3ee364bb4f49db8fa725d1c765b4f974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3add6bb2746ef25ab8922a14a3fc11"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#aee3add6bb2746ef25ab8922a14a3fc11">isAbsolutePath</a> (std::string_view strPath) const override</td></tr>
+<tr class="memdesc:aee3add6bb2746ef25ab8922a14a3fc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the path is an absolute path.  <br /></td></tr>
+<tr class="separator:aee3add6bb2746ef25ab8922a14a3fc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9103be5966e6936039e8f8df02fb1ed2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#a9103be5966e6936039e8f8df02fb1ed2">getPathForFilename</a> (std::string_view filename, std::string_view resolutionDirectory) const override</td></tr>
+<tr class="memdesc:a9103be5966e6936039e8f8df02fb1ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets full path for filename, resolution directory and search path.  <br /></td></tr>
+<tr class="separator:a9103be5966e6936039e8f8df02fb1ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3a3cb6addffa703dac3b0a85f72a4e"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#a7b3a3cb6addffa703dac3b0a85f72a4e">getFullPathForFilenameWithinDirectory</a> (std::string_view strDirectory, std::string_view strFilename) const override</td></tr>
+<tr class="memdesc:a7b3a3cb6addffa703dac3b0a85f72a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets full path for the directory and the filename.  <br /></td></tr>
+<tr class="separator:a7b3a3cb6addffa703dac3b0a85f72a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba7a60d1de120699719eb886cae88d9"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#a1ba7a60d1de120699719eb886cae88d9">getFileSize</a> (std::string_view filepath) const override</td></tr>
+<tr class="memdesc:a1ba7a60d1de120699719eb886cae88d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the file size.  <br /></td></tr>
+<tr class="separator:a1ba7a60d1de120699719eb886cae88d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3df28f2e466ea856f5d32b0fdd81c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#aea3df28f2e466ea856f5d32b0fdd81c8">getNativeWritableAbsolutePath</a> () const override</td></tr>
+<tr class="memdesc:aea3df28f2e466ea856f5d32b0fdd81c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the writable path in the native file-system format.  <br /></td></tr>
+<tr class="separator:aea3df28f2e466ea856f5d32b0fdd81c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_file_utils"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_file_utils')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a></td></tr>
+<tr class="memitem:aaf15781d0d63273a6e4047b768b92a27 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aaf15781d0d63273a6e4047b768b92a27">~FileUtils</a> ()</td></tr>
+<tr class="memdesc:aaf15781d0d63273a6e4047b768b92a27 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>.  <br /></td></tr>
+<tr class="separator:aaf15781d0d63273a6e4047b768b92a27 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba4ea8dbcc361e1cd8f538c9df532ac inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>purgeCachedEntries</b> ()</td></tr>
+<tr class="memdesc:a3ba4ea8dbcc361e1cd8f538c9df532ac inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purges full path caches. <br /></td></tr>
+<tr class="separator:a3ba4ea8dbcc361e1cd8f538c9df532ac inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15faa69b7b36a4819f9956d5508836c4 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getStringFromFile</b> (std::string_view filename) const</td></tr>
+<tr class="memdesc:a15faa69b7b36a4819f9956d5508836c4 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets string from a file. <br /></td></tr>
+<tr class="separator:a15faa69b7b36a4819f9956d5508836c4 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bab98cf9ece85a8b18dd0be02f3e09 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#af2bab98cf9ece85a8b18dd0be02f3e09">getStringFromFile</a> (std::string_view path, std::function&lt; void(std::string)&gt; callback) const</td></tr>
+<tr class="memdesc:af2bab98cf9ece85a8b18dd0be02f3e09 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets string from a file, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:af2bab98cf9ece85a8b18dd0be02f3e09 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c671f83d9997499a2c9c4c7b1a150f0 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual Data&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a5c671f83d9997499a2c9c4c7b1a150f0">getDataFromFile</a> (std::string_view filename) const</td></tr>
+<tr class="memdesc:a5c671f83d9997499a2c9c4c7b1a150f0 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates binary data from a file.  <br /></td></tr>
+<tr class="separator:a5c671f83d9997499a2c9c4c7b1a150f0 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf23e3f4b849288649648b4bbfe9d56b inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#acf23e3f4b849288649648b4bbfe9d56b">getDataFromFile</a> (std::string_view filename, std::function&lt; void(Data)&gt; callback) const</td></tr>
+<tr class="memdesc:acf23e3f4b849288649648b4bbfe9d56b inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a binary data object from a file, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:acf23e3f4b849288649648b4bbfe9d56b inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87244664a04ef5c3324262f276f5d534 inherit pub_methods_classax_1_1_file_utils"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Enable  = std::enable_if_t&lt;is_resizable_container_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a87244664a04ef5c3324262f276f5d534 inherit pub_methods_classax_1_1_file_utils"><td class="memTemplItemLeft" align="right" valign="top">Status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a87244664a04ef5c3324262f276f5d534">getContents</a> (std::string_view filename, T *buffer) const</td></tr>
+<tr class="memdesc:a87244664a04ef5c3324262f276f5d534 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whole file contents as string from a file.  <br /></td></tr>
+<tr class="separator:a87244664a04ef5c3324262f276f5d534 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d349f3a0325ab7e8985264d4c1e32c7 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a7d349f3a0325ab7e8985264d4c1e32c7">fullPathForFilename</a> (std::string_view filename) const</td></tr>
+<tr class="memdesc:a7d349f3a0325ab7e8985264d4c1e32c7 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fullpath for a given filename.  <br /></td></tr>
+<tr class="separator:a7d349f3a0325ab7e8985264d4c1e32c7 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fcdde3f3bb843e6eb9be0762c02565 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ab9fcdde3f3bb843e6eb9be0762c02565">fullPathFromRelativeFile</a> (std::string_view filename, std::string_view relativeFile) const</td></tr>
+<tr class="memdesc:ab9fcdde3f3bb843e6eb9be0762c02565 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets full path from a file name and the path of the relative file.  <br /></td></tr>
+<tr class="separator:ab9fcdde3f3bb843e6eb9be0762c02565 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad906224664baff99aaadb3a8b0e5c92d inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ad906224664baff99aaadb3a8b0e5c92d">setSearchPaths</a> (const std::vector&lt; std::string &gt; &amp;searchPaths)</td></tr>
+<tr class="memdesc:ad906224664baff99aaadb3a8b0e5c92d inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the array of search paths.  <br /></td></tr>
+<tr class="separator:ad906224664baff99aaadb3a8b0e5c92d inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af137d183b14ad56e856a2fb86a687cfb inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultResourceRootPath</b> () const</td></tr>
+<tr class="memdesc:af137d183b14ad56e856a2fb86a687cfb inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default resource root path. <br /></td></tr>
+<tr class="separator:af137d183b14ad56e856a2fb86a687cfb inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae3239c0f1a57e8d3116eced0e04e31 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultResourceRootPath</b> (std::string_view path)</td></tr>
+<tr class="memdesc:a4ae3239c0f1a57e8d3116eced0e04e31 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default resource root path. <br /></td></tr>
+<tr class="separator:a4ae3239c0f1a57e8d3116eced0e04e31 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabf245c2b32a7f182b036fb2c6a084d inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aaabf245c2b32a7f182b036fb2c6a084d">addSearchPath</a> (std::string_view path, const bool front=false)</td></tr>
+<tr class="memdesc:aaabf245c2b32a7f182b036fb2c6a084d inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add search path.  <br /></td></tr>
+<tr class="separator:aaabf245c2b32a7f182b036fb2c6a084d inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775dfeedfd3eee0aaacf09308a6fb70b inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a775dfeedfd3eee0aaacf09308a6fb70b">getSearchPaths</a> () const</td></tr>
+<tr class="memdesc:a775dfeedfd3eee0aaacf09308a6fb70b inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the array of search paths.  <br /></td></tr>
+<tr class="separator:a775dfeedfd3eee0aaacf09308a6fb70b inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a30015c79a554b664a3a5c950cd006 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a51a30015c79a554b664a3a5c950cd006">getOriginalSearchPaths</a> () const</td></tr>
+<tr class="memdesc:a51a30015c79a554b664a3a5c950cd006 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the original search path array set by 'setSearchPaths' or 'addSearchPath'.  <br /></td></tr>
+<tr class="separator:a51a30015c79a554b664a3a5c950cd006 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48a5687f4beadd50a7ead62bfa63c52 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aa48a5687f4beadd50a7ead62bfa63c52">getWritablePath</a> () const =0</td></tr>
+<tr class="memdesc:aa48a5687f4beadd50a7ead62bfa63c52 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the writable path that may not be in the format of an absolute path.  <br /></td></tr>
+<tr class="separator:aa48a5687f4beadd50a7ead62bfa63c52 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6accfce876e086005d853e783246075b inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a6accfce876e086005d853e783246075b">getNativeWritableAbsolutePath</a> () const =0</td></tr>
+<tr class="memdesc:a6accfce876e086005d853e783246075b inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the writable path in the native file-system format.  <br /></td></tr>
+<tr class="separator:a6accfce876e086005d853e783246075b inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eed76e37c798e1427466e02e9df849a inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setWritablePath</b> (std::string_view writablePath)</td></tr>
+<tr class="memdesc:a7eed76e37c798e1427466e02e9df849a inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets writable path. <br /></td></tr>
+<tr class="separator:a7eed76e37c798e1427466e02e9df849a inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9546c0181d5d44303522c27c2a8d41 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPopupNotify</b> (bool notify)</td></tr>
+<tr class="memdesc:acb9546c0181d5d44303522c27c2a8d41 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to pop-up a message box when failed to load an image. <br /></td></tr>
+<tr class="separator:acb9546c0181d5d44303522c27c2a8d41 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bd06d6799e317f36c99fd77749a8eb inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae0bd06d6799e317f36c99fd77749a8eb">isPopupNotify</a> () const</td></tr>
+<tr class="memdesc:ae0bd06d6799e317f36c99fd77749a8eb inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether to pop up a message box when failed to load an image.  <br /></td></tr>
+<tr class="separator:ae0bd06d6799e317f36c99fd77749a8eb inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6691940ef79099efbc69358a6197719 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual ValueMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ac6691940ef79099efbc69358a6197719">getValueMapFromFile</a> (std::string_view filename) const</td></tr>
+<tr class="memdesc:ac6691940ef79099efbc69358a6197719 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the contents of a file to a ValueMap.  <br /></td></tr>
+<tr class="separator:ac6691940ef79099efbc69358a6197719 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842a0ebc6c7587431492b64e222f2a41 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual ValueMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a842a0ebc6c7587431492b64e222f2a41">getValueMapFromData</a> (const char *filedata, int filesize) const</td></tr>
+<tr class="memdesc:a842a0ebc6c7587431492b64e222f2a41 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the contents of a file to a ValueMap.  <br /></td></tr>
+<tr class="separator:a842a0ebc6c7587431492b64e222f2a41 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba947e46ae1316b07ca2542054294183 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aba947e46ae1316b07ca2542054294183">writeToFile</a> (const ValueMap &amp;dict, std::string_view fullPath) const</td></tr>
+<tr class="memdesc:aba947e46ae1316b07ca2542054294183 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a ValueMap into a plist file  <br /></td></tr>
+<tr class="separator:aba947e46ae1316b07ca2542054294183 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c05a073d33060356b4d63f2f17a596 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae4c05a073d33060356b4d63f2f17a596">writeStringToFile</a> (std::string_view dataStr, std::string_view fullPath) const</td></tr>
+<tr class="memdesc:ae4c05a073d33060356b4d63f2f17a596 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a string into a file  <br /></td></tr>
+<tr class="separator:ae4c05a073d33060356b4d63f2f17a596 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305079687378043f30f65f6e6bbe8004 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a305079687378043f30f65f6e6bbe8004">writeStringToFile</a> (std::string dataStr, std::string_view fullPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:a305079687378043f30f65f6e6bbe8004 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string to a file, done async off the main cocos thread Use this function if you need file access without blocking the main thread.  <br /></td></tr>
+<tr class="separator:a305079687378043f30f65f6e6bbe8004 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bf7fba9a83a0c5c2fdfa2bce1c14f5 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a14bf7fba9a83a0c5c2fdfa2bce1c14f5">writeDataToFile</a> (const Data &amp;data, std::string_view fullPath) const</td></tr>
+<tr class="memdesc:a14bf7fba9a83a0c5c2fdfa2bce1c14f5 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">write Data into a file  <br /></td></tr>
+<tr class="separator:a14bf7fba9a83a0c5c2fdfa2bce1c14f5 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100046067f728bc2e5d967efa41da4f4 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a100046067f728bc2e5d967efa41da4f4">writeDataToFile</a> (Data data, std::string_view fullPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:a100046067f728bc2e5d967efa41da4f4 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Data into a file, done async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:a100046067f728bc2e5d967efa41da4f4 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9352fa6e74496220331dfb1bb29412fd inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a9352fa6e74496220331dfb1bb29412fd">writeValueMapToFile</a> (const ValueMap &amp;dict, std::string_view fullPath) const</td></tr>
+<tr class="memdesc:a9352fa6e74496220331dfb1bb29412fd inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">write ValueMap into a plist file  <br /></td></tr>
+<tr class="separator:a9352fa6e74496220331dfb1bb29412fd inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d3bde58e7128a5a28d8622d0546ff4 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae6d3bde58e7128a5a28d8622d0546ff4">writeValueMapToFile</a> (ValueMap dict, std::string_view fullPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:ae6d3bde58e7128a5a28d8622d0546ff4 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a ValueMap into a file, done async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:ae6d3bde58e7128a5a28d8622d0546ff4 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9f59a6cdaeaecff4cda80c66f19319 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#acf9f59a6cdaeaecff4cda80c66f19319">writeValueVectorToFile</a> (const ValueVector &amp;vecData, std::string_view fullPath) const</td></tr>
+<tr class="memdesc:acf9f59a6cdaeaecff4cda80c66f19319 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">write ValueVector into a plist file  <br /></td></tr>
+<tr class="separator:acf9f59a6cdaeaecff4cda80c66f19319 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c8681a7d2ba7bb68338f7d55ca54e6 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae3c8681a7d2ba7bb68338f7d55ca54e6">writeValueVectorToFile</a> (ValueVector vecData, std::string_view fullPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:ae3c8681a7d2ba7bb68338f7d55ca54e6 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a ValueVector into a file, done async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:ae3c8681a7d2ba7bb68338f7d55ca54e6 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b17a1c7597f57d9ffa5a3f87d3c32ef inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a4b17a1c7597f57d9ffa5a3f87d3c32ef">isFileExist</a> (std::string_view filename) const</td></tr>
+<tr class="memdesc:a4b17a1c7597f57d9ffa5a3f87d3c32ef inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a file exists.  <br /></td></tr>
+<tr class="separator:a4b17a1c7597f57d9ffa5a3f87d3c32ef inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244a4da7b4b6c40807194b79e442b550 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a244a4da7b4b6c40807194b79e442b550">isFileExist</a> (std::string_view filename, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:a244a4da7b4b6c40807194b79e442b550 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a file exists, done async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:a244a4da7b4b6c40807194b79e442b550 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d0eb5b0edd0ce0bf46f25b3f71576e inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a19d0eb5b0edd0ce0bf46f25b3f71576e">getFileExtension</a> (std::string_view filePath) const</td></tr>
+<tr class="memdesc:a19d0eb5b0edd0ce0bf46f25b3f71576e inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets filename extension is a suffix (separated from the base filename by a dot) in lower case.  <br /></td></tr>
+<tr class="separator:a19d0eb5b0edd0ce0bf46f25b3f71576e inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477889a5ce203a7d936bb2ff95cd21eb inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a477889a5ce203a7d936bb2ff95cd21eb">isAbsolutePath</a> (std::string_view path) const</td></tr>
+<tr class="memdesc:a477889a5ce203a7d936bb2ff95cd21eb inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the path is an absolute path.  <br /></td></tr>
+<tr class="separator:a477889a5ce203a7d936bb2ff95cd21eb inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d65ad59ea27c7b928f67a64bd2d8da6 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a3d65ad59ea27c7b928f67a64bd2d8da6">isDirectoryExist</a> (std::string_view dirPath) const</td></tr>
+<tr class="memdesc:a3d65ad59ea27c7b928f67a64bd2d8da6 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the path is a directory.  <br /></td></tr>
+<tr class="separator:a3d65ad59ea27c7b928f67a64bd2d8da6 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eea8856966365879b1e6aae1a8839b inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a72eea8856966365879b1e6aae1a8839b">isDirectoryExist</a> (std::string_view fullPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:a72eea8856966365879b1e6aae1a8839b inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the absoulate path is a directory, async off of the main cocos thread.  <br /></td></tr>
+<tr class="separator:a72eea8856966365879b1e6aae1a8839b inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e5a8d211da5c0b2a11ddd4f7ec7ac4 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a43e5a8d211da5c0b2a11ddd4f7ec7ac4">createDirectory</a> (std::string_view dirPath) const</td></tr>
+<tr class="memdesc:a43e5a8d211da5c0b2a11ddd4f7ec7ac4 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a directory.  <br /></td></tr>
+<tr class="separator:a43e5a8d211da5c0b2a11ddd4f7ec7ac4 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab676795661a94857e44c9c5065f065 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a6ab676795661a94857e44c9c5065f065">createDirectory</a> (std::string_view dirPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:a6ab676795661a94857e44c9c5065f065 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a directory, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:a6ab676795661a94857e44c9c5065f065 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ee3019372ffae684ec5ee04498b93d inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ad1ee3019372ffae684ec5ee04498b93d">removeDirectory</a> (std::string_view dirPath) const</td></tr>
+<tr class="memdesc:ad1ee3019372ffae684ec5ee04498b93d inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a directory.  <br /></td></tr>
+<tr class="separator:ad1ee3019372ffae684ec5ee04498b93d inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0e3bdd270d28428c6a3fe4c8d44db6 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aba0e3bdd270d28428c6a3fe4c8d44db6">removeDirectory</a> (std::string_view dirPath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:aba0e3bdd270d28428c6a3fe4c8d44db6 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a directory, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:aba0e3bdd270d28428c6a3fe4c8d44db6 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47620a43b06a9261d0303c96b3278c0a inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a47620a43b06a9261d0303c96b3278c0a">removeFile</a> (std::string_view filepath) const</td></tr>
+<tr class="memdesc:a47620a43b06a9261d0303c96b3278c0a inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a file.  <br /></td></tr>
+<tr class="separator:a47620a43b06a9261d0303c96b3278c0a inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897ce8cecfc678c1689e73a8c69b1cbc inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a897ce8cecfc678c1689e73a8c69b1cbc">removeFile</a> (std::string_view filepath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:a897ce8cecfc678c1689e73a8c69b1cbc inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a file, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:a897ce8cecfc678c1689e73a8c69b1cbc inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604e626bd2e7df8e78d6c149e3815cfd inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a604e626bd2e7df8e78d6c149e3815cfd">renameFile</a> (std::string_view path, std::string_view oldname, std::string_view name) const</td></tr>
+<tr class="memdesc:a604e626bd2e7df8e78d6c149e3815cfd inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames a file under the given directory.  <br /></td></tr>
+<tr class="separator:a604e626bd2e7df8e78d6c149e3815cfd inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcbe92a4ef23ceefbfbf5343247a5cf inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aebcbe92a4ef23ceefbfbf5343247a5cf">renameFile</a> (std::string_view path, std::string_view oldname, std::string_view name, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:aebcbe92a4ef23ceefbfbf5343247a5cf inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames a file under the given directory, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:aebcbe92a4ef23ceefbfbf5343247a5cf inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadd52afd711fec5d40f4309a3c3cc98 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#adadd52afd711fec5d40f4309a3c3cc98">renameFile</a> (std::string_view oldfullpath, std::string_view newfullpath) const</td></tr>
+<tr class="memdesc:adadd52afd711fec5d40f4309a3c3cc98 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames a file under the given directory.  <br /></td></tr>
+<tr class="separator:adadd52afd711fec5d40f4309a3c3cc98 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fde920cd23363ecc95b1a60e5f401d inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae8fde920cd23363ecc95b1a60e5f401d">renameFile</a> (std::string_view oldfullpath, std::string_view newfullpath, std::function&lt; void(bool)&gt; callback) const</td></tr>
+<tr class="memdesc:ae8fde920cd23363ecc95b1a60e5f401d inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames a file under the given directory, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:ae8fde920cd23363ecc95b1a60e5f401d inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0afcfecbe4c7794699c9eec9ed0a46 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a4d0afcfecbe4c7794699c9eec9ed0a46">getFileSize</a> (std::string_view filepath) const</td></tr>
+<tr class="memdesc:a4d0afcfecbe4c7794699c9eec9ed0a46 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the file size.  <br /></td></tr>
+<tr class="separator:a4d0afcfecbe4c7794699c9eec9ed0a46 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb3f6a340ceeecd16bbd4cfcc8a8ece inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a9cb3f6a340ceeecd16bbd4cfcc8a8ece">getFileSize</a> (std::string_view filepath, std::function&lt; void(int64_t)&gt; callback) const</td></tr>
+<tr class="memdesc:a9cb3f6a340ceeecd16bbd4cfcc8a8ece inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the file size, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:a9cb3f6a340ceeecd16bbd4cfcc8a8ece inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74905f12adcf4e348e4453ffe2b61e6 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae74905f12adcf4e348e4453ffe2b61e6">listFiles</a> (std::string_view dirPath) const</td></tr>
+<tr class="memdesc:ae74905f12adcf4e348e4453ffe2b61e6 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all files in a directory.  <br /></td></tr>
+<tr class="separator:ae74905f12adcf4e348e4453ffe2b61e6 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed36d4928e2d0cd9ff0abd5e8cd82fae inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aed36d4928e2d0cd9ff0abd5e8cd82fae">listFilesAsync</a> (std::string_view dirPath, std::function&lt; void(std::vector&lt; std::string &gt;)&gt; callback) const</td></tr>
+<tr class="memdesc:aed36d4928e2d0cd9ff0abd5e8cd82fae inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all files in a directory async, off of the main cocos thread.  <br /></td></tr>
+<tr class="separator:aed36d4928e2d0cd9ff0abd5e8cd82fae inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b35ab2d1bf99d34b4e7d21fd70352a inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a78b35ab2d1bf99d34b4e7d21fd70352a">listFilesRecursively</a> (std::string_view dirPath, std::vector&lt; std::string &gt; *files) const</td></tr>
+<tr class="memdesc:a78b35ab2d1bf99d34b4e7d21fd70352a inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all files recursively in a directory.  <br /></td></tr>
+<tr class="separator:a78b35ab2d1bf99d34b4e7d21fd70352a inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d29fc444dcfa90c66377790b794974d inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a3d29fc444dcfa90c66377790b794974d">listFilesRecursivelyAsync</a> (std::string_view dirPath, std::function&lt; void(std::vector&lt; std::string &gt;)&gt; callback) const</td></tr>
+<tr class="memdesc:a3d29fc444dcfa90c66377790b794974d inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all files recursively in a directory, async off the main cocos thread.  <br /></td></tr>
+<tr class="separator:a3d29fc444dcfa90c66377790b794974d inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c0fe0e5130a3b0a02ca5aaab3e11ef inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+const hlookup::string_map&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getFullPathCache</b> () const</td></tr>
+<tr class="memdesc:ac8c0fe0e5130a3b0a02ca5aaab3e11ef inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full path cache. <br /></td></tr>
+<tr class="separator:ac8c0fe0e5130a3b0a02ca5aaab3e11ef inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add42d1f8a2b79d98855dd1b65f2d501e inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#add42d1f8a2b79d98855dd1b65f2d501e">isFileExistInternal</a> (std::string_view filename) const =0</td></tr>
+<tr class="memdesc:add42d1f8a2b79d98855dd1b65f2d501e inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a file exists without considering search paths and resolution orders.  <br /></td></tr>
+<tr class="separator:add42d1f8a2b79d98855dd1b65f2d501e inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88c0cf7395d2539436e593b177bfdf0 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ae88c0cf7395d2539436e593b177bfdf0">isDirectoryExistInternal</a> (std::string_view dirPath) const</td></tr>
+<tr class="memdesc:ae88c0cf7395d2539436e593b177bfdf0 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a directory exists without considering search paths and resolution orders.  <br /></td></tr>
+<tr class="separator:ae88c0cf7395d2539436e593b177bfdf0 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42fcf18ea01ac30efb3a953be4d7315 inherit pub_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; IFileStream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ad42fcf18ea01ac30efb3a953be4d7315">openFileStream</a> (std::string_view filePath, IFileStream::Mode mode)</td></tr>
+<tr class="memdesc:ad42fcf18ea01ac30efb3a953be4d7315 inherit pub_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a FileStream based on the implementation provided in openFileStream or its overrides.  <br /></td></tr>
+<tr class="separator:ad42fcf18ea01ac30efb3a953be4d7315 inherit pub_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1_file_utils"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1_file_utils')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a></td></tr>
+<tr class="memitem:a640890b2ab74b58bfb014c53fe7c7350 inherit pub_static_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memdesc:a640890b2ab74b58bfb014c53fe7c7350 inherit pub_static_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the instance of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>. <br /></td></tr>
+<tr class="separator:a640890b2ab74b58bfb014c53fe7c7350 inherit pub_static_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05351a268226fab089bd81f68d9b4904 inherit pub_static_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyInstance</b> ()</td></tr>
+<tr class="memdesc:a05351a268226fab089bd81f68d9b4904 inherit pub_static_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the instance of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>. <br /></td></tr>
+<tr class="separator:a05351a268226fab089bd81f68d9b4904 inherit pub_static_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87d788f3a7011b3ddd42a865c73fbef inherit pub_static_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#ac87d788f3a7011b3ddd42a865c73fbef">setDelegate</a> (<a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a> *delegate)</td></tr>
+<tr class="memdesc:ac87d788f3a7011b3ddd42a865c73fbef inherit pub_static_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can inherit from platform dependent implementation of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>, such as FileUtilsAndroid, and use this function to set delegate, then <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a> will invoke delegate's implementation.  <br /></td></tr>
+<tr class="separator:ac87d788f3a7011b3ddd42a865c73fbef inherit pub_static_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb981338a8dd53448861a2e7050305ae inherit pub_static_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBinaryToFile</b> (const void *data, size_t dataSize, std::string_view fullPath)</td></tr>
+<tr class="memdesc:aeb981338a8dd53448861a2e7050305ae inherit pub_static_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">save data to file <br /></td></tr>
+<tr class="separator:aeb981338a8dd53448861a2e7050305ae inherit pub_static_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2192a32e8a931a531b699d9a220de8 inherit pub_static_methods_classax_1_1_file_utils"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a8d2192a32e8a931a531b699d9a220de8">getFileShortName</a> (std::string_view filePath)</td></tr>
+<tr class="memdesc:a8d2192a32e8a931a531b699d9a220de8 inherit pub_static_methods_classax_1_1_file_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets filename shotName.  <br /></td></tr>
+<tr class="separator:a8d2192a32e8a931a531b699d9a220de8 inherit pub_static_methods_classax_1_1_file_utils"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper class to handle file operations. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aee8048628ff2b5c026c9e15acdcaacb8" name="aee8048628ff2b5c026c9e15acdcaacb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8048628ff2b5c026c9e15acdcaacb8">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the instance of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>. </p>
+<p>It will set _searchPathArray. values.</p>
+<dl class="section note"><dt>Note</dt><dd>When you are porting Cocos2d-x to a new platform, you may need to take care of this method. You could assign a default value to _defaultResRootPath in the subclass of <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html" title="Helper class to handle file operations.">FileUtils</a>(e.g. FileUtilsAndroid). Then invoke the FileUtils::init(). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if succeed, otherwise it returns false. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a>.</p>
+
+</div>
+</div>
+<a id="a3ee364bb4f49db8fa725d1c765b4f974" name="a3ee364bb4f49db8fa725d1c765b4f974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee364bb4f49db8fa725d1c765b4f974">&#9670;&#160;</a></span>getWritablePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getWritablePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the writable path that may not be in the format of an absolute path. </p>
+<dl class="section return"><dt>Returns</dt><dd>The path that can be write/read a file in </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This may return the same value as <a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#aea3df28f2e466ea856f5d32b0fdd81c8" title="Gets the writable path in the native file-system format.">getNativeWritableAbsolutePath()</a>. If you require the absolute path to the underlying file system, then call <a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html#aea3df28f2e466ea856f5d32b0fdd81c8" title="Gets the writable path in the native file-system format.">getNativeWritableAbsolutePath()</a> instead. </dd></dl>
+
+<p>Implements <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#aa48a5687f4beadd50a7ead62bfa63c52">FileUtils</a>.</p>
+
+</div>
+</div>
+<a id="aee3add6bb2746ef25ab8922a14a3fc11" name="aee3add6bb2746ef25ab8922a14a3fc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3add6bb2746ef25ab8922a14a3fc11">&#9670;&#160;</a></span>isAbsolutePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isAbsolutePath </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the path is an absolute path. </p>
+<dl class="section note"><dt>Note</dt><dd>On Android, if the parameter passed in is relative to "assets/", this method will treat it as an absolute path. Also on Blackberry, path starts with "app/native/Resources/" is treated as an absolute path.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path that needs to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if it's an absolute path, false if not. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a477889a5ce203a7d936bb2ff95cd21eb">FileUtils</a>.</p>
+
+</div>
+</div>
+<a id="a9103be5966e6936039e8f8df02fb1ed2" name="a9103be5966e6936039e8f8df02fb1ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9103be5966e6936039e8f8df02fb1ed2">&#9670;&#160;</a></span>getPathForFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getPathForFilename </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>searchPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets full path for filename, resolution directory and search path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The file name. </td></tr>
+    <tr><td class="paramname">searchPath</td><td>The search path. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The full path of the file. It will return an empty string if the full path of the file doesn't exist. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a>.</p>
+
+</div>
+</div>
+<a id="a7b3a3cb6addffa703dac3b0a85f72a4e" name="a7b3a3cb6addffa703dac3b0a85f72a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3a3cb6addffa703dac3b0a85f72a4e">&#9670;&#160;</a></span>getFullPathForFilenameWithinDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getFullPathForFilenameWithinDirectory </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets full path for the directory and the filename. </p>
+<dl class="section note"><dt>Note</dt><dd>Only iOS and Mac need to override this method since they are using <code>[[NSBundle mainBundle] pathForResource: ofType: inDirectory:]</code> to make a full path. Other platforms will use the default implementation of this method. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">directory</td><td>The directory contains the file we are looking for. </td></tr>
+    <tr><td class="paramname">filename</td><td>The name of the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The full path of the file, if the file can't be found, it will return an empty string. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html">FileUtils</a>.</p>
+
+</div>
+</div>
+<a id="a1ba7a60d1de120699719eb886cae88d9" name="a1ba7a60d1de120699719eb886cae88d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba7a60d1de120699719eb886cae88d9">&#9670;&#160;</a></span>getFileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int64_t getFileSize </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the file size. </p>
+<dl class="section note"><dt>Note</dt><dd>If a relative path was passed in, it will be inserted a default root path at the beginning. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>The path of the file, it could be a relative or absolute path. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The file size. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a4d0afcfecbe4c7794699c9eec9ed0a46">FileUtils</a>.</p>
+
+</div>
+</div>
+<a id="aea3df28f2e466ea856f5d32b0fdd81c8" name="aea3df28f2e466ea856f5d32b0fdd81c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3df28f2e466ea856f5d32b0fdd81c8">&#9670;&#160;</a></span>getNativeWritableAbsolutePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getNativeWritableAbsolutePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the writable path in the native file-system format. </p>
+<dl class="section return"><dt>Returns</dt><dd>The path that can be write/read a file in </dd></dl>
+
+<p>Implements <a class="el" href="../../d9/dbb/classax_1_1_file_utils.html#a6accfce876e086005d853e783246075b">FileUtils</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>FileUtilsWinRT.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d7/d99/classax_1_1_file_utils_win_r_t.html">FileUtilsWinRT</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:38 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

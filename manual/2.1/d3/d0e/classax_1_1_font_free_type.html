@@ -1,0 +1,367 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: FontFreeType Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.1.5</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d3/d0e/classax_1_1_font_free_type.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d7/db8/classax_1_1_font_free_type-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">FontFreeType Class Reference<div class="ingroups"><a class="el" href="../../d0/dc7/group____2d.html">2D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html" title="FontFreeType is a class of rendering ttf/ttc characters.">FontFreeType</a> is a class of rendering ttf/ttc characters.  
+ <a href="../../d3/d0e/classax_1_1_font_free_type.html#details">More...</a></p>
+
+<p><code>#include &lt;FontFreeType.h&gt;</code></p>
+
+<p>Inherits Font.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac7d30f47cc6b18e29e32ab3a716ccac3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html#ac7d30f47cc6b18e29e32ab3a716ccac3">setFontEngine</a> (IFontEngine *)</td></tr>
+<tr class="memdesc:ac7d30f47cc6b18e29e32ab3a716ccac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font engine for ttf fallback render support.  <br /></td></tr>
+<tr class="separator:ac7d30f47cc6b18e29e32ab3a716ccac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc60a5f57d2ecb5d1891a4e2cd27e0c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html#abcc60a5f57d2ecb5d1891a4e2cd27e0c">setStreamParsingEnabled</a> (bool bEnabled)</td></tr>
+<tr class="separator:abcc60a5f57d2ecb5d1891a4e2cd27e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33f88c645b2a0ddaea774c083c79a9b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html#aa33f88c645b2a0ddaea774c083c79a9b">setMissingGlyphCharacter</a> (char32_t charCode)</td></tr>
+<tr class="memdesc:aa33f88c645b2a0ddaea774c083c79a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Missing Glyph Character, by default render square for missing characters.  <br /></td></tr>
+<tr class="separator:aa33f88c645b2a0ddaea774c083c79a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d00aecd9e3d6d3e1ed6408eb840648a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html#a5d00aecd9e3d6d3e1ed6408eb840648a">setShareDistanceFieldEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:a5d00aecd9e3d6d3e1ed6408eb840648a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether enable SDF font rendering globally, by default: disabled, since axmol-2.1.0.  <br /></td></tr>
+<tr class="separator:a5d00aecd9e3d6d3e1ed6408eb840648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33f352a284b83196118f96dbf206350"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html#ab33f352a284b83196118f96dbf206350">setNativeBytecodeHintingEnabled</a> (bool bEnabled)</td></tr>
+<tr class="memdesc:ab33f352a284b83196118f96dbf206350"><td class="mdescLeft">&#160;</td><td class="mdescRight">TrueType fonts with native bytecode hinting * *.  <br /></td></tr>
+<tr class="separator:ab33f352a284b83196118f96dbf206350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html" title="FontFreeType is a class of rendering ttf/ttc characters.">FontFreeType</a> is a class of rendering ttf/ttc characters. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac7d30f47cc6b18e29e32ab3a716ccac3" name="ac7d30f47cc6b18e29e32ab3a716ccac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d30f47cc6b18e29e32ab3a716ccac3">&#9670;&#160;</a></span>setFontEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setFontEngine </td>
+          <td>(</td>
+          <td class="paramtype">IFontEngine *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set font engine for ttf fallback render support. </p>
+<dl class="section since"><dt>Since</dt><dd>axmol-2.1.3 </dd></dl>
+
+</div>
+</div>
+<a id="abcc60a5f57d2ecb5d1891a4e2cd27e0c" name="abcc60a5f57d2ecb5d1891a4e2cd27e0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc60a5f57d2ecb5d1891a4e2cd27e0c">&#9670;&#160;</a></span>setStreamParsingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setStreamParsingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>: if you want enable stream parsing, you need do one of follow steps a. disable .ttf compress on .apk, see: <a href="https://simdsoft.com/notes/#build-apk-config-nocompress-file-type-at-appbuildgradle">https://simdsoft.com/notes/#build-apk-config-nocompress-file-type-at-appbuildgradle</a> b. uncomporess .ttf to disk by yourself. </dd></dl>
+
+</div>
+</div>
+<a id="aa33f88c645b2a0ddaea774c083c79a9b" name="aa33f88c645b2a0ddaea774c083c79a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33f88c645b2a0ddaea774c083c79a9b">&#9670;&#160;</a></span>setMissingGlyphCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setMissingGlyphCharacter </td>
+          <td>(</td>
+          <td class="paramtype">char32_t&#160;</td>
+          <td class="paramname"><em>charCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the Missing Glyph Character, by default render square for missing characters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">charCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d00aecd9e3d6d3e1ed6408eb840648a" name="a5d00aecd9e3d6d3e1ed6408eb840648a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d00aecd9e3d6d3e1ed6408eb840648a">&#9670;&#160;</a></span>setShareDistanceFieldEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setShareDistanceFieldEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether enable SDF font rendering globally, by default: disabled, since axmol-2.1.0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab33f352a284b83196118f96dbf206350" name="ab33f352a284b83196118f96dbf206350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33f352a284b83196118f96dbf206350">&#9670;&#160;</a></span>setNativeBytecodeHintingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setNativeBytecodeHintingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TrueType fonts with native bytecode hinting * *. </p>
+<p>All applications that handle TrueType fonts with native hinting must be aware that TTFs expect different rounding of vertical font dimensions. The application has to cater for this, especially if it wants to rely on a TTF's vertical data (for example, to properly align box characters vertically).</p><ul>
+<li>Since freetype-2.8.1 TureType matrics isn't sync to size_matrics</li>
+<li>By default it's enabled for compatible with cocos2d-x-4.0 or older with freetype-2.5.5</li>
+<li>Please see freetype.h </li>
+</ul>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>FontFreeType.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d3/d0e/classax_1_1_font_free_type.html">FontFreeType</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:42 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

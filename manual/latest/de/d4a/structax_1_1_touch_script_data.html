@@ -1,0 +1,335 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: TouchScriptData Struct Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;2.2.1-044cc87</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('de/d4a/structax_1_1_touch_script_data.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../d7/dba/structax_1_1_touch_script_data-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TouchScriptData Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>For Lua, the <a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html" title="For Lua, the TouchScriptData is used to find the Lua function pointer by the nativeObject,...">TouchScriptData</a> is used to find the Lua function pointer by the nativeObject, then call the Lua function by push touch data and actionType converted to string type into the Lua stack as the parameters when the touch event is triggered.  
+ <a href="../../de/d4a/structax_1_1_touch_script_data.html#details">More...</a></p>
+
+<p><code>#include &lt;ScriptSupport.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3732f8a5c0f87e1efdb64425aeb767d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html#a3732f8a5c0f87e1efdb64425aeb767d2">TouchScriptData</a> (<a class="el" href="../../dc/d98/classax_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8">EventTouch::EventCode</a> inActionType, void *inNativeObject, <a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a> *inTouch, <a class="el" href="../../d5/db6/classax_1_1_event.html">Event</a> *evt)</td></tr>
+<tr class="memdesc:a3732f8a5c0f87e1efdb64425aeb767d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of <a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html" title="For Lua, the TouchScriptData is used to find the Lua function pointer by the nativeObject,...">TouchScriptData</a>.  <br /></td></tr>
+<tr class="separator:a3732f8a5c0f87e1efdb64425aeb767d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad1951eccacb668d1e4e70879c5004240"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d98/classax_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8">EventTouch::EventCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html#ad1951eccacb668d1e4e70879c5004240">actionType</a></td></tr>
+<tr class="memdesc:ad1951eccacb668d1e4e70879c5004240"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../dc/d98/classax_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8" title="EventCode Touch event code.">EventTouch::EventCode</a> type.  <br /></td></tr>
+<tr class="separator:ad1951eccacb668d1e4e70879c5004240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe390c9d801de69e517eb737078c2a47"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html#abe390c9d801de69e517eb737078c2a47">nativeObject</a></td></tr>
+<tr class="memdesc:abe390c9d801de69e517eb737078c2a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Lua, it Used to find the Lua function pointer by the ScriptHandlerMgr.  <br /></td></tr>
+<tr class="separator:abe390c9d801de69e517eb737078c2a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dd7a720f22021c43833a6ea5cbb5b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html#a58dd7a720f22021c43833a6ea5cbb5b3">touch</a></td></tr>
+<tr class="memdesc:a58dd7a720f22021c43833a6ea5cbb5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">touch information.  <br /></td></tr>
+<tr class="separator:a58dd7a720f22021c43833a6ea5cbb5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765488c8f26c7f8713d5245212dcae01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db6/classax_1_1_event.html">Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html#a765488c8f26c7f8713d5245212dcae01">event</a></td></tr>
+<tr class="memdesc:a765488c8f26c7f8713d5245212dcae01"><td class="mdescLeft">&#160;</td><td class="mdescRight">event information,it is useless for Lua.  <br /></td></tr>
+<tr class="separator:a765488c8f26c7f8713d5245212dcae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For Lua, the <a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html" title="For Lua, the TouchScriptData is used to find the Lua function pointer by the nativeObject,...">TouchScriptData</a> is used to find the Lua function pointer by the nativeObject, then call the Lua function by push touch data and actionType converted to string type into the Lua stack as the parameters when the touch event is triggered. </p>
+<p>@js NA </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3732f8a5c0f87e1efdb64425aeb767d2" name="a3732f8a5c0f87e1efdb64425aeb767d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3732f8a5c0f87e1efdb64425aeb767d2">&#9670;&#160;</a></span>TouchScriptData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html">TouchScriptData</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d98/classax_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8">EventTouch::EventCode</a>&#160;</td>
+          <td class="paramname"><em>inActionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>inNativeObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a> *&#160;</td>
+          <td class="paramname"><em>inTouch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/db6/classax_1_1_event.html">Event</a> *&#160;</td>
+          <td class="paramname"><em>evt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor of <a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html" title="For Lua, the TouchScriptData is used to find the Lua function pointer by the nativeObject,...">TouchScriptData</a>. </p>
+<p>@lua NA @js NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad1951eccacb668d1e4e70879c5004240" name="ad1951eccacb668d1e4e70879c5004240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1951eccacb668d1e4e70879c5004240">&#9670;&#160;</a></span>actionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d98/classax_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8">EventTouch::EventCode</a> actionType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="../../dc/d98/classax_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8" title="EventCode Touch event code.">EventTouch::EventCode</a> type. </p>
+<p>@lua NA @js NA </p>
+
+</div>
+</div>
+<a id="abe390c9d801de69e517eb737078c2a47" name="abe390c9d801de69e517eb737078c2a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe390c9d801de69e517eb737078c2a47">&#9670;&#160;</a></span>nativeObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* nativeObject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For Lua, it Used to find the Lua function pointer by the ScriptHandlerMgr. </p>
+<p>@lua NA @js NA </p>
+
+</div>
+</div>
+<a id="a58dd7a720f22021c43833a6ea5cbb5b3" name="a58dd7a720f22021c43833a6ea5cbb5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58dd7a720f22021c43833a6ea5cbb5b3">&#9670;&#160;</a></span>touch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a>* touch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>touch information. </p>
+<p>it would be in x,y form to push into the Lua stack.</p>
+<p>@lua NA @js NA </p>
+
+</div>
+</div>
+<a id="a765488c8f26c7f8713d5245212dcae01" name="a765488c8f26c7f8713d5245212dcae01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765488c8f26c7f8713d5245212dcae01">&#9670;&#160;</a></span>event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/db6/classax_1_1_event.html">Event</a>* event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>event information,it is useless for Lua. </p>
+<p>@lua NA @js NA </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>ScriptSupport.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../de/d4a/structax_1_1_touch_script_data.html">TouchScriptData</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:47 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

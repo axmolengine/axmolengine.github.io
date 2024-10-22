@@ -1,0 +1,1811 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Vec3 Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d0/de0/classax_1_1_vec3.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="../../d9/d1a/classax_1_1_vec3-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Vec3 Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Defines a 3-element floating point vector.  
+ <a href="../../d0/de0/classax_1_1_vec3.html#details">More...</a></p>
+
+<p><code>#include &lt;Vec3.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad55a14e14477bd190e0d4b8acf3a0d14"><td class="memItemLeft" align="right" valign="top"><a id="ad55a14e14477bd190e0d4b8acf3a0d14" name="ad55a14e14477bd190e0d4b8acf3a0d14"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Vec3</b> ()</td></tr>
+<tr class="memdesc:ad55a14e14477bd190e0d4b8acf3a0d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new vector initialized to all zeros. <br /></td></tr>
+<tr class="separator:ad55a14e14477bd190e0d4b8acf3a0d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adefe18ac87c62fafc1bf9d954deb3e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a2adefe18ac87c62fafc1bf9d954deb3e">Vec3</a> (float xx, float yy, float zz)</td></tr>
+<tr class="memdesc:a2adefe18ac87c62fafc1bf9d954deb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new vector initialized to the specified values.  <br /></td></tr>
+<tr class="separator:a2adefe18ac87c62fafc1bf9d954deb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad55ee2db05d8359b4a1faecb7e6f63"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a8ad55ee2db05d8359b4a1faecb7e6f63">Vec3</a> (const float *array)</td></tr>
+<tr class="memdesc:a8ad55ee2db05d8359b4a1faecb7e6f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new vector from the values in the specified array.  <br /></td></tr>
+<tr class="separator:a8ad55ee2db05d8359b4a1faecb7e6f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5915d3a2aa3a6b62c6a679d1ae3deb"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#aac5915d3a2aa3a6b62c6a679d1ae3deb">Vec3</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;p1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;p2)</td></tr>
+<tr class="memdesc:aac5915d3a2aa3a6b62c6a679d1ae3deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a vector that describes the direction between the specified points.  <br /></td></tr>
+<tr class="separator:aac5915d3a2aa3a6b62c6a679d1ae3deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d50f30c2273c1645f1514b32d39077f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a1d50f30c2273c1645f1514b32d39077f">isZero</a> () const</td></tr>
+<tr class="memdesc:a1d50f30c2273c1645f1514b32d39077f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this vector contains all zeros.  <br /></td></tr>
+<tr class="separator:a1d50f30c2273c1645f1514b32d39077f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fcbad255a535bc3c1edfecebe08454"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#ad6fcbad255a535bc3c1edfecebe08454">isOne</a> () const</td></tr>
+<tr class="memdesc:ad6fcbad255a535bc3c1edfecebe08454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this vector contains all ones.  <br /></td></tr>
+<tr class="separator:ad6fcbad255a535bc3c1edfecebe08454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae610b67e30d286a4eb847304271c1c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#ae610b67e30d286a4eb847304271c1c08">add</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v)</td></tr>
+<tr class="memdesc:ae610b67e30d286a4eb847304271c1c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the elements of the specified vector to this one.  <br /></td></tr>
+<tr class="separator:ae610b67e30d286a4eb847304271c1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136406d27d3c3e74d7fb2e455209b1f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a136406d27d3c3e74d7fb2e455209b1f8">add</a> (float xx, float yy, float zz)</td></tr>
+<tr class="memdesc:a136406d27d3c3e74d7fb2e455209b1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the elements of this vector to the specified values.  <br /></td></tr>
+<tr class="separator:a136406d27d3c3e74d7fb2e455209b1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9b3f14075d21ec6427f116c6d67d53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#afa9b3f14075d21ec6427f116c6d67d53">clamp</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;min, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;max)</td></tr>
+<tr class="memdesc:afa9b3f14075d21ec6427f116c6d67d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps this vector within the specified range.  <br /></td></tr>
+<tr class="separator:afa9b3f14075d21ec6427f116c6d67d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196f402ffd9eb6954f93a219127890ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a196f402ffd9eb6954f93a219127890ab">cross</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v)</td></tr>
+<tr class="memdesc:a196f402ffd9eb6954f93a219127890ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this vector to the cross product between itself and the specified vector.  <br /></td></tr>
+<tr class="separator:a196f402ffd9eb6954f93a219127890ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172371f805b1d982be540ddd2f4ecc18"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a172371f805b1d982be540ddd2f4ecc18">distance</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:a172371f805b1d982be540ddd2f4ecc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between this vector and v.  <br /></td></tr>
+<tr class="separator:a172371f805b1d982be540ddd2f4ecc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33069a7ea63f5ef242ed9fbeec690f9e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a33069a7ea63f5ef242ed9fbeec690f9e">distanceSquared</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:a33069a7ea63f5ef242ed9fbeec690f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared distance between this vector and v.  <br /></td></tr>
+<tr class="separator:a33069a7ea63f5ef242ed9fbeec690f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e5716cf8c1e9fa4f72577a4c734c68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a38e5716cf8c1e9fa4f72577a4c734c68">dot</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:a38e5716cf8c1e9fa4f72577a4c734c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dot product of this vector and the specified vector.  <br /></td></tr>
+<tr class="separator:a38e5716cf8c1e9fa4f72577a4c734c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cc30ec124919b956140f357e4da8f9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a75cc30ec124919b956140f357e4da8f9">length</a> () const</td></tr>
+<tr class="memdesc:a75cc30ec124919b956140f357e4da8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the length of this vector.  <br /></td></tr>
+<tr class="separator:a75cc30ec124919b956140f357e4da8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3363e7ac95ddbe3eec7510dc5d1d18"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#adc3363e7ac95ddbe3eec7510dc5d1d18">lengthSquared</a> () const</td></tr>
+<tr class="memdesc:adc3363e7ac95ddbe3eec7510dc5d1d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared length of this vector.  <br /></td></tr>
+<tr class="separator:adc3363e7ac95ddbe3eec7510dc5d1d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdb1512395327f8236a4f4a4d4ff648"><td class="memItemLeft" align="right" valign="top"><a id="abcdb1512395327f8236a4f4a4d4ff648" name="abcdb1512395327f8236a4f4a4d4ff648"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>negate</b> ()</td></tr>
+<tr class="memdesc:abcdb1512395327f8236a4f4a4d4ff648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negates this vector. <br /></td></tr>
+<tr class="separator:abcdb1512395327f8236a4f4a4d4ff648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0de676568888d848beb97dcc53ae47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#acd0de676568888d848beb97dcc53ae47">normalize</a> ()</td></tr>
+<tr class="memdesc:acd0de676568888d848beb97dcc53ae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes this vector.  <br /></td></tr>
+<tr class="separator:acd0de676568888d848beb97dcc53ae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469be7bf039431948de394eb93d5bdec"><td class="memItemLeft" align="right" valign="top"><a id="a469be7bf039431948de394eb93d5bdec" name="a469be7bf039431948de394eb93d5bdec"></a>
+<a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getNormalized</b> () const</td></tr>
+<tr class="memdesc:a469be7bf039431948de394eb93d5bdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the normalized vector. <br /></td></tr>
+<tr class="separator:a469be7bf039431948de394eb93d5bdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089a64c131eb6e65b7220929a53748f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a089a64c131eb6e65b7220929a53748f5">scale</a> (float scalar)</td></tr>
+<tr class="memdesc:a089a64c131eb6e65b7220929a53748f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales all elements of this vector by the specified value.  <br /></td></tr>
+<tr class="separator:a089a64c131eb6e65b7220929a53748f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1011db65b910b7a271854ed099ac179"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#af1011db65b910b7a271854ed099ac179">set</a> (float xx, float yy, float zz)</td></tr>
+<tr class="memdesc:af1011db65b910b7a271854ed099ac179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the elements of this vector to the specified values.  <br /></td></tr>
+<tr class="separator:af1011db65b910b7a271854ed099ac179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964a23fad06ed8360e78f442ecd026af"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a964a23fad06ed8360e78f442ecd026af">set</a> (const float *array)</td></tr>
+<tr class="memdesc:a964a23fad06ed8360e78f442ecd026af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the elements of this vector from the values in the specified array.  <br /></td></tr>
+<tr class="separator:a964a23fad06ed8360e78f442ecd026af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72e6c0c1a43986a15c8c2f57b4d38b4"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#ac72e6c0c1a43986a15c8c2f57b4d38b4">set</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v)</td></tr>
+<tr class="memdesc:ac72e6c0c1a43986a15c8c2f57b4d38b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the elements of this vector to those in the specified vector.  <br /></td></tr>
+<tr class="separator:ac72e6c0c1a43986a15c8c2f57b4d38b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058ccdd2f781cc9c95bb4534c7e1e279"><td class="memItemLeft" align="right" valign="top"><a id="a058ccdd2f781cc9c95bb4534c7e1e279" name="a058ccdd2f781cc9c95bb4534c7e1e279"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;p1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;p2)</td></tr>
+<tr class="memdesc:a058ccdd2f781cc9c95bb4534c7e1e279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this vector to the directional vector between the specified points. <br /></td></tr>
+<tr class="separator:a058ccdd2f781cc9c95bb4534c7e1e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47affd1a10b589811fc4828c1a2e0c6d"><td class="memItemLeft" align="right" valign="top"><a id="a47affd1a10b589811fc4828c1a2e0c6d" name="a47affd1a10b589811fc4828c1a2e0c6d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setZero</b> ()</td></tr>
+<tr class="memdesc:a47affd1a10b589811fc4828c1a2e0c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the elements of this vector to zero. <br /></td></tr>
+<tr class="separator:a47affd1a10b589811fc4828c1a2e0c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3d3652218508c5af68a1a7ed5abd91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a7e3d3652218508c5af68a1a7ed5abd91">subtract</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v)</td></tr>
+<tr class="memdesc:a7e3d3652218508c5af68a1a7ed5abd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts this vector and the specified vector as (this - v) and stores the result in this vector.  <br /></td></tr>
+<tr class="separator:a7e3d3652218508c5af68a1a7ed5abd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb64b9583d2d27de78a8311e3c494ccd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#afb64b9583d2d27de78a8311e3c494ccd">smooth</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;target, float elapsedTime, float responseTime)</td></tr>
+<tr class="memdesc:afb64b9583d2d27de78a8311e3c494ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates this vector towards the given target using a smoothing function.  <br /></td></tr>
+<tr class="separator:afb64b9583d2d27de78a8311e3c494ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f8ddafa066973c5696cfd559fb29d3"><td class="memItemLeft" align="right" valign="top"><a id="a16f8ddafa066973c5696cfd559fb29d3" name="a16f8ddafa066973c5696cfd559fb29d3"></a>
+<a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lerp</b> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;target, float alpha) const</td></tr>
+<tr class="memdesc:a16f8ddafa066973c5696cfd559fb29d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear interpolation between two vectors A and B by alpha which is in the range [0,1]. <br /></td></tr>
+<tr class="separator:a16f8ddafa066973c5696cfd559fb29d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47588532eb5ee4f2eb8e974797e1db1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#ad47588532eb5ee4f2eb8e974797e1db1">operator+</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:ad47588532eb5ee4f2eb8e974797e1db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sum of this vector with the given vector.  <br /></td></tr>
+<tr class="separator:ad47588532eb5ee4f2eb8e974797e1db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d2a245db8c73563e8ce74041b650a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a93d2a245db8c73563e8ce74041b650a1">operator+=</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v)</td></tr>
+<tr class="memdesc:a93d2a245db8c73563e8ce74041b650a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given vector to this vector.  <br /></td></tr>
+<tr class="separator:a93d2a245db8c73563e8ce74041b650a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea969f8bda894f21ddbbe89841ec35f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#adea969f8bda894f21ddbbe89841ec35f">operator-</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:adea969f8bda894f21ddbbe89841ec35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the difference of this vector with the given vector.  <br /></td></tr>
+<tr class="separator:adea969f8bda894f21ddbbe89841ec35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ceffde2a11f931ef5d46586d6019371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a3ceffde2a11f931ef5d46586d6019371">operator-=</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v)</td></tr>
+<tr class="memdesc:a3ceffde2a11f931ef5d46586d6019371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the given vector from this vector.  <br /></td></tr>
+<tr class="separator:a3ceffde2a11f931ef5d46586d6019371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1c6e4aebba36551a71626c7099e918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a2e1c6e4aebba36551a71626c7099e918">operator-</a> () const</td></tr>
+<tr class="memdesc:a2e1c6e4aebba36551a71626c7099e918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the negation of this vector.  <br /></td></tr>
+<tr class="separator:a2e1c6e4aebba36551a71626c7099e918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa3dab5170a7307f965b5ab70bfa7bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a1fa3dab5170a7307f965b5ab70bfa7bb">operator*</a> (float s) const</td></tr>
+<tr class="memdesc:a1fa3dab5170a7307f965b5ab70bfa7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the scalar product of this vector with the given value.  <br /></td></tr>
+<tr class="separator:a1fa3dab5170a7307f965b5ab70bfa7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14aa34db93d7e9c563545b8746db8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#ac14aa34db93d7e9c563545b8746db8d6">operator*=</a> (float s)</td></tr>
+<tr class="memdesc:ac14aa34db93d7e9c563545b8746db8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales this vector by the given value.  <br /></td></tr>
+<tr class="separator:ac14aa34db93d7e9c563545b8746db8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd1f2dc4393103002f6b760807c7b41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a9cd1f2dc4393103002f6b760807c7b41">operator/</a> (float s) const</td></tr>
+<tr class="memdesc:a9cd1f2dc4393103002f6b760807c7b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the components of this vector divided by the given constant.  <br /></td></tr>
+<tr class="separator:a9cd1f2dc4393103002f6b760807c7b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa787a781ca43116f7b06d7bb1a63209"><td class="memItemLeft" align="right" valign="top"><a id="aaa787a781ca43116f7b06d7bb1a63209" name="aaa787a781ca43116f7b06d7bb1a63209"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:aaa787a781ca43116f7b06d7bb1a63209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the vector's scalar components are all greater that the ones of the vector it is compared against. <br /></td></tr>
+<tr class="separator:aaa787a781ca43116f7b06d7bb1a63209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33065790b59cf856aba4629e7d75425"><td class="memItemLeft" align="right" valign="top"><a id="ac33065790b59cf856aba4629e7d75425" name="ac33065790b59cf856aba4629e7d75425"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ac33065790b59cf856aba4629e7d75425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the vector's scalar components are all smaller that the ones of the vector it is compared against. <br /></td></tr>
+<tr class="separator:ac33065790b59cf856aba4629e7d75425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab688711e5478915bb1d7285489769d43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#ab688711e5478915bb1d7285489769d43">operator==</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:ab688711e5478915bb1d7285489769d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if this vector is equal to the given vector.  <br /></td></tr>
+<tr class="separator:ab688711e5478915bb1d7285489769d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d5b2bcd2cb3c6a10a377aae6bb5214"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a47d5b2bcd2cb3c6a10a377aae6bb5214">operator!=</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v) const</td></tr>
+<tr class="memdesc:a47d5b2bcd2cb3c6a10a377aae6bb5214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if this vector is not equal to the given vector.  <br /></td></tr>
+<tr class="separator:a47d5b2bcd2cb3c6a10a377aae6bb5214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af5da327b709a608dfe48349a302f1226"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#af5da327b709a608dfe48349a302f1226">fromColor</a> (unsigned int color)</td></tr>
+<tr class="memdesc:af5da327b709a608dfe48349a302f1226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new vector from an integer interpreted as an RGB value.  <br /></td></tr>
+<tr class="separator:af5da327b709a608dfe48349a302f1226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14366ec6eb2e5b0660e4e327a1d6360"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#aa14366ec6eb2e5b0660e4e327a1d6360">angle</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v2)</td></tr>
+<tr class="memdesc:aa14366ec6eb2e5b0660e4e327a1d6360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle (in radians) between the specified vectors.  <br /></td></tr>
+<tr class="separator:aa14366ec6eb2e5b0660e4e327a1d6360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56123b4aa40b27ab667e3d6b22579e06"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a56123b4aa40b27ab667e3d6b22579e06">add</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v2, <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *dst)</td></tr>
+<tr class="memdesc:a56123b4aa40b27ab667e3d6b22579e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified vectors and stores the result in dst.  <br /></td></tr>
+<tr class="separator:a56123b4aa40b27ab667e3d6b22579e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0310289e611c930cae6f7b9dcf792ba2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a0310289e611c930cae6f7b9dcf792ba2">clamp</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;min, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;max, <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *dst)</td></tr>
+<tr class="memdesc:a0310289e611c930cae6f7b9dcf792ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the specified vector within the specified range and returns it in dst.  <br /></td></tr>
+<tr class="separator:a0310289e611c930cae6f7b9dcf792ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa136604d56fcc3951f7c372f349d39db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#aa136604d56fcc3951f7c372f349d39db">cross</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v2, <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *dst)</td></tr>
+<tr class="memdesc:aa136604d56fcc3951f7c372f349d39db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the cross product of the specified vectors and stores the result in dst.  <br /></td></tr>
+<tr class="separator:aa136604d56fcc3951f7c372f349d39db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd62abc678f2248f2f1116b60d6ca82"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#aedd62abc678f2248f2f1116b60d6ca82">dot</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v2)</td></tr>
+<tr class="memdesc:aedd62abc678f2248f2f1116b60d6ca82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dot product between the specified vectors.  <br /></td></tr>
+<tr class="separator:aedd62abc678f2248f2f1116b60d6ca82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825538ea20c354d7b2acd1059dc86c92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a825538ea20c354d7b2acd1059dc86c92">subtract</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v1, const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;v2, <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *dst)</td></tr>
+<tr class="memdesc:a825538ea20c354d7b2acd1059dc86c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the specified vectors and stores the result in dst.  <br /></td></tr>
+<tr class="separator:a825538ea20c354d7b2acd1059dc86c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad0da36b2558901e21e7a30f6c227a45e"><td class="memItemLeft" align="right" valign="top"><a id="ad0da36b2558901e21e7a30f6c227a45e" name="ad0da36b2558901e21e7a30f6c227a45e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr class="memdesc:ad0da36b2558901e21e7a30f6c227a45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x-coordinate. <br /></td></tr>
+<tr class="separator:ad0da36b2558901e21e7a30f6c227a45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f0d3eebc3c443f9be81bf48561a217"><td class="memItemLeft" align="right" valign="top"><a id="aa4f0d3eebc3c443f9be81bf48561a217" name="aa4f0d3eebc3c443f9be81bf48561a217"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr class="memdesc:aa4f0d3eebc3c443f9be81bf48561a217"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y-coordinate. <br /></td></tr>
+<tr class="separator:aa4f0d3eebc3c443f9be81bf48561a217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73583b1e980b0aa03f9884812e9fd4d"><td class="memItemLeft" align="right" valign="top"><a id="af73583b1e980b0aa03f9884812e9fd4d" name="af73583b1e980b0aa03f9884812e9fd4d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
+<tr class="memdesc:af73583b1e980b0aa03f9884812e9fd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The z-coordinate. <br /></td></tr>
+<tr class="separator:af73583b1e980b0aa03f9884812e9fd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a8b739983269fd7a14914799a0f2b2f27"><td class="memItemLeft" align="right" valign="top"><a id="a8b739983269fd7a14914799a0f2b2f27" name="a8b739983269fd7a14914799a0f2b2f27"></a>
+static const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ZERO</b></td></tr>
+<tr class="memdesc:a8b739983269fd7a14914799a0f2b2f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">equals to Vec3(0,0,0) <br /></td></tr>
+<tr class="separator:a8b739983269fd7a14914799a0f2b2f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1790cbc674b4be65d3f1b6a885df8268"><td class="memItemLeft" align="right" valign="top"><a id="a1790cbc674b4be65d3f1b6a885df8268" name="a1790cbc674b4be65d3f1b6a885df8268"></a>
+static const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ONE</b></td></tr>
+<tr class="memdesc:a1790cbc674b4be65d3f1b6a885df8268"><td class="mdescLeft">&#160;</td><td class="mdescRight">equals to Vec3(1,1,1) <br /></td></tr>
+<tr class="separator:a1790cbc674b4be65d3f1b6a885df8268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59858525683d95efab19919821746ba3"><td class="memItemLeft" align="right" valign="top"><a id="a59858525683d95efab19919821746ba3" name="a59858525683d95efab19919821746ba3"></a>
+static const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UNIT_X</b></td></tr>
+<tr class="memdesc:a59858525683d95efab19919821746ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">equals to Vec3(1,0,0) <br /></td></tr>
+<tr class="separator:a59858525683d95efab19919821746ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21aa0861fc946e123c0045c6ab2bf275"><td class="memItemLeft" align="right" valign="top"><a id="a21aa0861fc946e123c0045c6ab2bf275" name="a21aa0861fc946e123c0045c6ab2bf275"></a>
+static const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UNIT_Y</b></td></tr>
+<tr class="memdesc:a21aa0861fc946e123c0045c6ab2bf275"><td class="mdescLeft">&#160;</td><td class="mdescRight">equals to Vec3(0,1,0) <br /></td></tr>
+<tr class="separator:a21aa0861fc946e123c0045c6ab2bf275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0fc752b288d2911c44d35a08000119"><td class="memItemLeft" align="right" valign="top"><a id="a8a0fc752b288d2911c44d35a08000119" name="a8a0fc752b288d2911c44d35a08000119"></a>
+static const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UNIT_Z</b></td></tr>
+<tr class="memdesc:a8a0fc752b288d2911c44d35a08000119"><td class="mdescLeft">&#160;</td><td class="mdescRight">equals to Vec3(0,0,1) <br /></td></tr>
+<tr class="separator:a8a0fc752b288d2911c44d35a08000119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines a 3-element floating point vector. </p>
+<p>When using a vector to represent a surface normal, the vector should typically be normalized. Other uses of directional vectors may wish to leave the magnitude of the vector intact. When used as a point, the elements of the vector represent a position in 3D space. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2adefe18ac87c62fafc1bf9d954deb3e" name="a2adefe18ac87c62fafc1bf9d954deb3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adefe18ac87c62fafc1bf9d954deb3e">&#9670;&#160;</a></span>Vec3() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new vector initialized to the specified values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xx</td><td>The x coordinate. </td></tr>
+    <tr><td class="paramname">yy</td><td>The y coordinate. </td></tr>
+    <tr><td class="paramname">zz</td><td>The z coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ad55ee2db05d8359b4a1faecb7e6f63" name="a8ad55ee2db05d8359b4a1faecb7e6f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad55ee2db05d8359b4a1faecb7e6f63">&#9670;&#160;</a></span>Vec3() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new vector from the values in the specified array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>An array containing the elements of the vector in the order x, y, z. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac5915d3a2aa3a6b62c6a679d1ae3deb" name="aac5915d3a2aa3a6b62c6a679d1ae3deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5915d3a2aa3a6b62c6a679d1ae3deb">&#9670;&#160;</a></span>Vec3() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a vector that describes the direction between the specified points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>The first point. </td></tr>
+    <tr><td class="paramname">p2</td><td>The second point. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af5da327b709a608dfe48349a302f1226" name="af5da327b709a608dfe48349a302f1226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5da327b709a608dfe48349a302f1226">&#9670;&#160;</a></span>fromColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> fromColor </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new vector from an integer interpreted as an RGB value. </p>
+<p>E.g. 0xff0000 represents red or the vector (1, 0, 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The integer to interpret as an RGB value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector corresponding to the interpreted RGB color. </dd></dl>
+
+</div>
+</div>
+<a id="a1d50f30c2273c1645f1514b32d39077f" name="a1d50f30c2273c1645f1514b32d39077f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d50f30c2273c1645f1514b32d39077f">&#9670;&#160;</a></span>isZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether this vector contains all zeros. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if this vector contains all zeros, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ad6fcbad255a535bc3c1edfecebe08454" name="ad6fcbad255a535bc3c1edfecebe08454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fcbad255a535bc3c1edfecebe08454">&#9670;&#160;</a></span>isOne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isOne </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether this vector contains all ones. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if this vector contains all ones, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aa14366ec6eb2e5b0660e4e327a1d6360" name="aa14366ec6eb2e5b0660e4e327a1d6360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14366ec6eb2e5b0660e4e327a1d6360">&#9670;&#160;</a></span>angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float angle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the angle (in radians) between the specified vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The first vector. </td></tr>
+    <tr><td class="paramname">v2</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The angle between the two vectors (in radians). </dd></dl>
+
+</div>
+</div>
+<a id="ae610b67e30d286a4eb847304271c1c08" name="ae610b67e30d286a4eb847304271c1c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae610b67e30d286a4eb847304271c1c08">&#9670;&#160;</a></span>add() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the elements of the specified vector to this one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a136406d27d3c3e74d7fb2e455209b1f8" name="a136406d27d3c3e74d7fb2e455209b1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136406d27d3c3e74d7fb2e455209b1f8">&#9670;&#160;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the elements of this vector to the specified values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xx</td><td>The add x coordinate. </td></tr>
+    <tr><td class="paramname">yy</td><td>The add y coordinate. </td></tr>
+    <tr><td class="paramname">zz</td><td>The add z coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a56123b4aa40b27ab667e3d6b22579e06" name="a56123b4aa40b27ab667e3d6b22579e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56123b4aa40b27ab667e3d6b22579e06">&#9670;&#160;</a></span>add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the specified vectors and stores the result in dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The first vector. </td></tr>
+    <tr><td class="paramname">v2</td><td>The second vector. </td></tr>
+    <tr><td class="paramname">dst</td><td>A vector to store the result in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa9b3f14075d21ec6427f116c6d67d53" name="afa9b3f14075d21ec6427f116c6d67d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9b3f14075d21ec6427f116c6d67d53">&#9670;&#160;</a></span>clamp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clamps this vector within the specified range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0310289e611c930cae6f7b9dcf792ba2" name="a0310289e611c930cae6f7b9dcf792ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0310289e611c930cae6f7b9dcf792ba2">&#9670;&#160;</a></span>clamp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void clamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clamps the specified vector within the specified range and returns it in dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to clamp. </td></tr>
+    <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value. </td></tr>
+    <tr><td class="paramname">dst</td><td>A vector to store the result in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a196f402ffd9eb6954f93a219127890ab" name="a196f402ffd9eb6954f93a219127890ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196f402ffd9eb6954f93a219127890ab">&#9670;&#160;</a></span>cross() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cross </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets this vector to the cross product between itself and the specified vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to compute the cross product with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa136604d56fcc3951f7c372f349d39db" name="aa136604d56fcc3951f7c372f349d39db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa136604d56fcc3951f7c372f349d39db">&#9670;&#160;</a></span>cross() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cross </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the cross product of the specified vectors and stores the result in dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The first vector. </td></tr>
+    <tr><td class="paramname">v2</td><td>The second vector. </td></tr>
+    <tr><td class="paramname">dst</td><td>A vector to store the result in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a172371f805b1d982be540ddd2f4ecc18" name="a172371f805b1d982be540ddd2f4ecc18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172371f805b1d982be540ddd2f4ecc18">&#9670;&#160;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the distance between this vector and v. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The other vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The distance between this vector and v.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a33069a7ea63f5ef242ed9fbeec690f9e" title="Returns the squared distance between this vector and v.">distanceSquared</a> </dd></dl>
+
+</div>
+</div>
+<a id="a33069a7ea63f5ef242ed9fbeec690f9e" name="a33069a7ea63f5ef242ed9fbeec690f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33069a7ea63f5ef242ed9fbeec690f9e">&#9670;&#160;</a></span>distanceSquared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distanceSquared </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the squared distance between this vector and v. </p>
+<p>When it is not necessary to get the exact distance between two vectors (for example, when simply comparing the distance between different vectors), it is advised to use this method instead of distance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The other vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The squared distance between this vector and v.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a172371f805b1d982be540ddd2f4ecc18" title="Returns the distance between this vector and v.">distance</a> </dd></dl>
+
+</div>
+</div>
+<a id="a38e5716cf8c1e9fa4f72577a4c734c68" name="a38e5716cf8c1e9fa4f72577a4c734c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e5716cf8c1e9fa4f72577a4c734c68">&#9670;&#160;</a></span>dot() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the dot product of this vector and the specified vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to compute the dot product with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dot product. </dd></dl>
+
+</div>
+</div>
+<a id="aedd62abc678f2248f2f1116b60d6ca82" name="aedd62abc678f2248f2f1116b60d6ca82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd62abc678f2248f2f1116b60d6ca82">&#9670;&#160;</a></span>dot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the dot product between the specified vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The first vector. </td></tr>
+    <tr><td class="paramname">v2</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dot product between the vectors. </dd></dl>
+
+</div>
+</div>
+<a id="a75cc30ec124919b956140f357e4da8f9" name="a75cc30ec124919b956140f357e4da8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75cc30ec124919b956140f357e4da8f9">&#9670;&#160;</a></span>length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the length of this vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The length of the vector.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de0/classax_1_1_vec3.html#adc3363e7ac95ddbe3eec7510dc5d1d18" title="Returns the squared length of this vector.">lengthSquared</a> </dd></dl>
+
+</div>
+</div>
+<a id="adc3363e7ac95ddbe3eec7510dc5d1d18" name="adc3363e7ac95ddbe3eec7510dc5d1d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3363e7ac95ddbe3eec7510dc5d1d18">&#9670;&#160;</a></span>lengthSquared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lengthSquared </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the squared length of this vector. </p>
+<p>When it is not necessary to get the exact length of a vector (for example, when simply comparing the lengths of different vectors), it is advised to use this method instead of length.</p>
+<dl class="section return"><dt>Returns</dt><dd>The squared length of the vector.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de0/classax_1_1_vec3.html#a75cc30ec124919b956140f357e4da8f9" title="Computes the length of this vector.">length</a> </dd></dl>
+
+</div>
+</div>
+<a id="acd0de676568888d848beb97dcc53ae47" name="acd0de676568888d848beb97dcc53ae47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0de676568888d848beb97dcc53ae47">&#9670;&#160;</a></span>normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void normalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Normalizes this vector. </p>
+<p>This method normalizes this <a class="el" href="../../d0/de0/classax_1_1_vec3.html" title="Defines a 3-element floating point vector.">Vec3</a> so that it is of unit length (in other words, the length of the vector after calling this method will be 1.0f). If the vector already has unit length or if the length of the vector is zero, this method does nothing.</p>
+<dl class="section return"><dt>Returns</dt><dd>This vector, after the normalization occurs. </dd></dl>
+
+</div>
+</div>
+<a id="a089a64c131eb6e65b7220929a53748f5" name="a089a64c131eb6e65b7220929a53748f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089a64c131eb6e65b7220929a53748f5">&#9670;&#160;</a></span>scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scales all elements of this vector by the specified value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>The scalar value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1011db65b910b7a271854ed099ac179" name="af1011db65b910b7a271854ed099ac179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1011db65b910b7a271854ed099ac179">&#9670;&#160;</a></span>set() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void set </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the elements of this vector to the specified values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xx</td><td>The new x coordinate. </td></tr>
+    <tr><td class="paramname">yy</td><td>The new y coordinate. </td></tr>
+    <tr><td class="paramname">zz</td><td>The new z coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a964a23fad06ed8360e78f442ecd026af" name="a964a23fad06ed8360e78f442ecd026af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964a23fad06ed8360e78f442ecd026af">&#9670;&#160;</a></span>set() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void set </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the elements of this vector from the values in the specified array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>An array containing the elements of the vector in the order x, y, z. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac72e6c0c1a43986a15c8c2f57b4d38b4" name="ac72e6c0c1a43986a15c8c2f57b4d38b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72e6c0c1a43986a15c8c2f57b4d38b4">&#9670;&#160;</a></span>set() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the elements of this vector to those in the specified vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7e3d3652218508c5af68a1a7ed5abd91" name="a7e3d3652218508c5af68a1a7ed5abd91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3d3652218508c5af68a1a7ed5abd91">&#9670;&#160;</a></span>subtract() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void subtract </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts this vector and the specified vector as (this - v) and stores the result in this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a825538ea20c354d7b2acd1059dc86c92" name="a825538ea20c354d7b2acd1059dc86c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825538ea20c354d7b2acd1059dc86c92">&#9670;&#160;</a></span>subtract() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void subtract </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts the specified vectors and stores the result in dst. </p>
+<p>The resulting vector is computed as (v1 - v2).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The first vector. </td></tr>
+    <tr><td class="paramname">v2</td><td>The second vector. </td></tr>
+    <tr><td class="paramname">dst</td><td>The destination vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb64b9583d2d27de78a8311e3c494ccd" name="afb64b9583d2d27de78a8311e3c494ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb64b9583d2d27de78a8311e3c494ccd">&#9670;&#160;</a></span>smooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void smooth </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>elapsedTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>responseTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates this vector towards the given target using a smoothing function. </p>
+<p>The given response time determines the amount of smoothing (lag). A longer response time yields a smoother result and more lag. To force this vector to follow the target closely, provide a response time that is very small relative to the given elapsed time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>target value. </td></tr>
+    <tr><td class="paramname">elapsedTime</td><td>elapsed time between calls. </td></tr>
+    <tr><td class="paramname">responseTime</td><td>response time (in the same units as elapsedTime). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad47588532eb5ee4f2eb8e974797e1db1" name="ad47588532eb5ee4f2eb8e974797e1db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47588532eb5ee4f2eb8e974797e1db1">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the sum of this vector with the given vector. </p>
+<p>Note: this does not modify this vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The vector sum. </dd></dl>
+
+</div>
+</div>
+<a id="a93d2a245db8c73563e8ce74041b650a1" name="a93d2a245db8c73563e8ce74041b650a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d2a245db8c73563e8ce74041b650a1">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp; operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the given vector to this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>This vector, after the addition occurs. </dd></dl>
+
+</div>
+</div>
+<a id="adea969f8bda894f21ddbbe89841ec35f" name="adea969f8bda894f21ddbbe89841ec35f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea969f8bda894f21ddbbe89841ec35f">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the difference of this vector with the given vector. </p>
+<p>Note: this does not modify this vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The vector difference. </dd></dl>
+
+</div>
+</div>
+<a id="a3ceffde2a11f931ef5d46586d6019371" name="a3ceffde2a11f931ef5d46586d6019371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ceffde2a11f931ef5d46586d6019371">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp; operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts the given vector from this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>This vector, after the subtraction occurs. </dd></dl>
+
+</div>
+</div>
+<a id="a2e1c6e4aebba36551a71626c7099e918" name="a2e1c6e4aebba36551a71626c7099e918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1c6e4aebba36551a71626c7099e918">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> operator- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the negation of this vector. </p>
+<p>Note: this does not modify this vector.</p>
+<dl class="section return"><dt>Returns</dt><dd>The negation of this vector. </dd></dl>
+
+</div>
+</div>
+<a id="a1fa3dab5170a7307f965b5ab70bfa7bb" name="a1fa3dab5170a7307f965b5ab70bfa7bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa3dab5170a7307f965b5ab70bfa7bb">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the scalar product of this vector with the given value. </p>
+<p>Note: this does not modify this vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The value to scale by. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled vector. </dd></dl>
+
+</div>
+</div>
+<a id="ac14aa34db93d7e9c563545b8746db8d6" name="ac14aa34db93d7e9c563545b8746db8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14aa34db93d7e9c563545b8746db8d6">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp; operator*= </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scales this vector by the given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The value to scale by. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>This vector, after the scale occurs. </dd></dl>
+
+</div>
+</div>
+<a id="a9cd1f2dc4393103002f6b760807c7b41" name="a9cd1f2dc4393103002f6b760807c7b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd1f2dc4393103002f6b760807c7b41">&#9670;&#160;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the components of this vector divided by the given constant. </p>
+<p>Note: this does not modify this vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>the constant to divide this vector with </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a smaller vector </dd></dl>
+
+</div>
+</div>
+<a id="ab688711e5478915bb1d7285489769d43" name="ab688711e5478915bb1d7285489769d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab688711e5478915bb1d7285489769d43">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if this vector is equal to the given vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to compare against.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if this vector is equal to the given vector, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a47d5b2bcd2cb3c6a10a377aae6bb5214" name="a47d5b2bcd2cb3c6a10a377aae6bb5214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d5b2bcd2cb3c6a10a377aae6bb5214">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if this vector is not equal to the given vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to compare against.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if this vector is not equal to the given vector, false otherwise. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Vec3.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:52 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

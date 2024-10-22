@@ -1,0 +1,268 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: MeshVertexData Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dc/d1d/classax_1_1_mesh_vertex_data.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d7/de1/classax_1_1_mesh_vertex_data-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">MeshVertexData Class Reference<div class="ingroups"><a class="el" href="../../da/d35/group____3d.html">3D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>the <a class="el" href="../../dc/d1d/classax_1_1_mesh_vertex_data.html" title="the MeshVertexData class.">MeshVertexData</a> class.  
+ <a href="../../dc/d1d/classax_1_1_mesh_vertex_data.html#details">More...</a></p>
+
+<p><code>#include &lt;MeshVertexIndexData.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6648c93a0d34ea410bb38d6ef17faa8c"><td class="memItemLeft" align="right" valign="top"><a id="a6648c93a0d34ea410bb38d6ef17faa8c" name="a6648c93a0d34ea410bb38d6ef17faa8c"></a>
+<a class="el" href="../../dc/d94/classax_1_1backend_1_1_buffer.html">backend::Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getVertexBuffer</b> () const</td></tr>
+<tr class="memdesc:a6648c93a0d34ea410bb38d6ef17faa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get vertexbuffer <br /></td></tr>
+<tr class="separator:a6648c93a0d34ea410bb38d6ef17faa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0881875d751ee3d57f1ee06693fab37"><td class="memItemLeft" align="right" valign="top"><a id="ad0881875d751ee3d57f1ee06693fab37" name="ad0881875d751ee3d57f1ee06693fab37"></a>
+ssize_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMeshVertexAttribCount</b> () const</td></tr>
+<tr class="memdesc:ad0881875d751ee3d57f1ee06693fab37"><td class="mdescLeft">&#160;</td><td class="mdescRight">get attributes count <br /></td></tr>
+<tr class="separator:ad0881875d751ee3d57f1ee06693fab37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4534c4c1f5c9370a2a4313db74c07caa"><td class="memItemLeft" align="right" valign="top"><a id="a4534c4c1f5c9370a2a4313db74c07caa" name="a4534c4c1f5c9370a2a4313db74c07caa"></a>
+const <a class="el" href="../../dc/de9/structax_1_1_mesh_vertex_attrib.html">MeshVertexAttrib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getMeshVertexAttrib</b> (ssize_t index) const</td></tr>
+<tr class="memdesc:a4534c4c1f5c9370a2a4313db74c07caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">get attribute by index <br /></td></tr>
+<tr class="separator:a4534c4c1f5c9370a2a4313db74c07caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2af3dce3f0aa9f880b4ccb70f596a1"><td class="memItemLeft" align="right" valign="top"><a id="a7b2af3dce3f0aa9f880b4ccb70f596a1" name="a7b2af3dce3f0aa9f880b4ccb70f596a1"></a>
+ssize_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMeshIndexDataCount</b> () const</td></tr>
+<tr class="memdesc:a7b2af3dce3f0aa9f880b4ccb70f596a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get index data count <br /></td></tr>
+<tr class="separator:a7b2af3dce3f0aa9f880b4ccb70f596a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cda34eec314e911993dba5fb9fdfd6"><td class="memItemLeft" align="right" valign="top"><a id="a31cda34eec314e911993dba5fb9fdfd6" name="a31cda34eec314e911993dba5fb9fdfd6"></a>
+<a class="el" href="../../d1/d6c/classax_1_1_mesh_index_data.html">MeshIndexData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMeshIndexDataByIndex</b> (int index) const</td></tr>
+<tr class="memdesc:a31cda34eec314e911993dba5fb9fdfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get index data by index <br /></td></tr>
+<tr class="separator:a31cda34eec314e911993dba5fb9fdfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9487ee0ef3adcbafd253a8b4f99a94"><td class="memItemLeft" align="right" valign="top"><a id="a4d9487ee0ef3adcbafd253a8b4f99a94" name="a4d9487ee0ef3adcbafd253a8b4f99a94"></a>
+<a class="el" href="../../d1/d6c/classax_1_1_mesh_index_data.html">MeshIndexData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMeshIndexDataById</b> (std::string_view id) const</td></tr>
+<tr class="memdesc:a4d9487ee0ef3adcbafd253a8b4f99a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">get index data by id <br /></td></tr>
+<tr class="separator:a4d9487ee0ef3adcbafd253a8b4f99a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3691a8cf2fd0df629ae71be45592e01"><td class="memItemLeft" align="right" valign="top"><a id="ac3691a8cf2fd0df629ae71be45592e01" name="ac3691a8cf2fd0df629ae71be45592e01"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasVertexAttrib</b> (shaderinfos::VertexKey attrib) const</td></tr>
+<tr class="memdesc:ac3691a8cf2fd0df629ae71be45592e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">has vertex attribute? <br /></td></tr>
+<tr class="separator:ac3691a8cf2fd0df629ae71be45592e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a1a053fb82453d60e2bb3928f92878b37">autorelease</a> ()</td></tr>
+<tr class="memdesc:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d1/d8c/classax_1_1_ref.html" title="Ref is used for reference count management.">Ref</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6c9bcac50addabbecc5a704f01470325"><td class="memItemLeft" align="right" valign="top"><a id="a6c9bcac50addabbecc5a704f01470325" name="a6c9bcac50addabbecc5a704f01470325"></a>
+static <a class="el" href="../../dc/d1d/classax_1_1_mesh_vertex_data.html">MeshVertexData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const <a class="el" href="../../d9/d0e/structax_1_1_mesh_data.html">MeshData</a> &amp;meshdata, <a class="el" href="../../d0/d6d/classax_1_1_custom_command.html#a059425be8f7a4df6579121e91963b421">CustomCommand::IndexFormat</a> format=CustomCommand::IndexFormat::U_SHORT)</td></tr>
+<tr class="memdesc:a6c9bcac50addabbecc5a704f01470325"><td class="mdescLeft">&#160;</td><td class="mdescRight">create <br /></td></tr>
+<tr class="separator:a6c9bcac50addabbecc5a704f01470325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>_scriptObject</b></td></tr>
+<tr class="memdesc:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">scriptObject, support for swift <br /></td></tr>
+<tr class="separator:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_rooted</b></td></tr>
+<tr class="memdesc:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, it means that the object was already rooted. <br /></td></tr>
+<tr class="separator:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>the <a class="el" href="../../dc/d1d/classax_1_1_mesh_vertex_data.html" title="the MeshVertexData class.">MeshVertexData</a> class. </p>
+<p>the <a class="el" href="../../dc/d1d/classax_1_1_mesh_vertex_data.html" title="the MeshVertexData class.">MeshVertexData</a> contain all of the vertices data which mesh need. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>MeshVertexIndexData.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../dc/d1d/classax_1_1_mesh_vertex_data.html">MeshVertexData</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:38 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

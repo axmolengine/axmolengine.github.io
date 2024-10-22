@@ -1,0 +1,232 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Class Members - Functions</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "";
+</script>
+<script src="hacks.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_func_d.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<div class="textblock">Here is a list of all documented functions with links to the class documentation for each member:</div>
+
+<h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>decompose()&#160;:&#160;<a class="el" href="d8/d6e/classax_1_1_mat4.html#ae66ac9d8bcfaa2be01115b118d7cb81c">Mat4</a></li>
+<li>deleteValueForKey()&#160;:&#160;<a class="el" href="de/d96/classax_1_1_user_default.html#a55168cb8e52225adc00e4fe84d5096d6">UserDefault</a></li>
+<li>DepthStencilStateGL()&#160;:&#160;<a class="el" href="df/d9b/classax_1_1backend_1_1_depth_stencil_state_g_l.html#ab9fab5d7aa2676fd711c00419504b224">DepthStencilStateGL</a></li>
+<li>DepthStencilStateMTL()&#160;:&#160;<a class="el" href="d2/db3/classax_1_1backend_1_1_depth_stencil_state_m_t_l.html#a0dd4e211305131b22e932df54ac162af">DepthStencilStateMTL</a></li>
+<li>description()&#160;:&#160;<a class="el" href="d2/db7/classax_1_1_action.html#ae15969a396ebef1337cee92cf30eb0ec">Action</a></li>
+<li>destroyInstance()&#160;:&#160;<a class="el" href="d7/d91/classax_1_1_animation_cache.html#a05351a268226fab089bd81f68d9b4904">AnimationCache</a>, <a class="el" href="dc/d4b/classax_1_1_async_task_pool.html#a05351a268226fab089bd81f68d9b4904">AsyncTaskPool</a>, <a class="el" href="d1/db2/classax_1_1backend_1_1_program_manager.html#a05351a268226fab089bd81f68d9b4904">ProgramManager</a>, <a class="el" href="d4/d19/classax_1_1backend_1_1_shader_cache.html#a05351a268226fab089bd81f68d9b4904">ShaderCache</a>, <a class="el" href="dd/d93/classax_1_1_configuration.html#a05351a268226fab089bd81f68d9b4904">Configuration</a>, <a class="el" href="d9/dbb/classax_1_1_file_utils.html#a05351a268226fab089bd81f68d9b4904">FileUtils</a>, <a class="el" href="d7/da3/classax_1_1network_1_1_http_client.html#a05351a268226fab089bd81f68d9b4904">HttpClient</a>, <a class="el" href="d5/dcc/classax_1_1_script_engine_manager.html#a05351a268226fab089bd81f68d9b4904">ScriptEngineManager</a>, <a class="el" href="d8/dff/classax_1_1_sprite_frame_cache.html#a05351a268226fab089bd81f68d9b4904">SpriteFrameCache</a>, <a class="el" href="de/d96/classax_1_1_user_default.html#a05351a268226fab089bd81f68d9b4904">UserDefault</a></li>
+<li>detachWithIME()&#160;:&#160;<a class="el" href="d2/da6/classax_1_1_i_m_e_delegate.html#a6dadd87eac43259394bd09f71ff42774">IMEDelegate</a>, <a class="el" href="da/da4/classax_1_1_text_field_t_t_f.html#a7bd36a314d0782aee5f9b4f29d46e2ca">TextFieldTTF</a>, <a class="el" href="da/de5/classax_1_1ui_1_1_text_field.html#a8ef3de3dcba2d54917a93e5f3d27b0d6">TextField</a></li>
+<li>determinant()&#160;:&#160;<a class="el" href="d8/d6e/classax_1_1_mat4.html#abf5294f4441531747d3fd7c003f52d09">Mat4</a></li>
+<li>determineIndex()&#160;:&#160;<a class="el" href="d9/de9/classax_1_1_animation_curve.html#a5dad082a2ba60dbbaa13cd3b0194e3f3">AnimationCurve&lt; componentSize &gt;</a></li>
+<li>DeviceInfoMTL()&#160;:&#160;<a class="el" href="de/dbe/classax_1_1backend_1_1_device_info_m_t_l.html#a59f64dbac7cb50c59d186bcdc8ba4533">DeviceInfoMTL</a></li>
+<li>didNotSelectSelf()&#160;:&#160;<a class="el" href="da/de5/classax_1_1ui_1_1_text_field.html#a2b65d866ae9298dcd92ae11ddc471943">TextField</a></li>
+<li>Director()&#160;:&#160;<a class="el" href="d4/d72/classax_1_1_director.html#a61dc3890f2e7335dfcdb69c41bdbeb5d">Director</a></li>
+<li>disableEffect()&#160;:&#160;<a class="el" href="d2/d1f/classax_1_1_label.html#aca9d9b6a58277ce7fa8dfe8c345ac43a">Label</a>, <a class="el" href="d9/d63/classax_1_1ui_1_1_text.html#a39588b60bc8fe9afec02249b1306a605">Text</a></li>
+<li>disableParticle()&#160;:&#160;<a class="el" href="dd/dd4/classax_1_1_particle_batch_node.html#a45abff79fa120ccdd34791f4be4a1e3d">ParticleBatchNode</a></li>
+<li>dispatchControlKey()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#a83ec88fd45de349d949c103981d60a13">IMEDispatcher</a></li>
+<li>dispatchCustomEvent()&#160;:&#160;<a class="el" href="de/d23/classax_1_1_event_dispatcher.html#a58d9544441b3152fadd68f14c241c4f4">EventDispatcher</a></li>
+<li>dispatchDeleteBackward()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#a5acd5dc8a188288dc2771f6763fcbfb7">IMEDispatcher</a></li>
+<li>dispatchEvent()&#160;:&#160;<a class="el" href="de/d23/classax_1_1_event_dispatcher.html#a908d34151247e498f9516baa45e9a8cc">EventDispatcher</a></li>
+<li>dispatchFocusEvent()&#160;:&#160;<a class="el" href="dc/db1/classax_1_1ui_1_1_widget.html#aa3bcdd8518261146c6f87e71b6023c28">Widget</a></li>
+<li>dispatchInsertText()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#a28b6a82b2bda28c9c213f01112c403e5">IMEDispatcher</a></li>
+<li>dispatchKeyboardDidHide()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#a2ec916156b027c417045822f96dff1f1">IMEDispatcher</a></li>
+<li>dispatchKeyboardDidShow()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#af40f808b32c36759ae3d7110dfe9dfe3">IMEDispatcher</a></li>
+<li>dispatchKeyboardWillHide()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#abf382cfc97eecb57e17cc2af456d93e4">IMEDispatcher</a></li>
+<li>dispatchKeyboardWillShow()&#160;:&#160;<a class="el" href="d5/dc6/classax_1_1_i_m_e_dispatcher.html#affb524493e61bfb897d486dd4a383996">IMEDispatcher</a></li>
+<li>dist2Plane()&#160;:&#160;<a class="el" href="d8/d01/classax_1_1_plane.html#a904fdb2b01cc0bfdbb64235a57e5f766">Plane</a></li>
+<li>distance()&#160;:&#160;<a class="el" href="d3/d6f/classax_1_1_vec2.html#ae032917933ed364e3c87a3bf069332d5">Vec2</a>, <a class="el" href="d0/de0/classax_1_1_vec3.html#a172371f805b1d982be540ddd2f4ecc18">Vec3</a>, <a class="el" href="da/dfc/classax_1_1_vec4.html#a768b162a16e055785b21c61cae9b573a">Vec4</a></li>
+<li>distanceSquared()&#160;:&#160;<a class="el" href="d3/d6f/classax_1_1_vec2.html#aacfdafe375f26cb3198adc3019de7668">Vec2</a>, <a class="el" href="d0/de0/classax_1_1_vec3.html#a33069a7ea63f5ef242ed9fbeec690f9e">Vec3</a>, <a class="el" href="da/dfc/classax_1_1_vec4.html#a50bee2c43cd3c38b4152435e75f280d8">Vec4</a></li>
+<li>doLayout()&#160;:&#160;<a class="el" href="d2/db8/classax_1_1ui_1_1_helper.html#aa1a1f89b9f5de9877a8be1de1e502650">Helper</a>, <a class="el" href="d4/d01/classax_1_1ui_1_1_layout_manager.html#af504c9b849da3be962f56a96100ccda1">LayoutManager</a></li>
+<li>dot()&#160;:&#160;<a class="el" href="d3/d6f/classax_1_1_vec2.html#aa91ba6b561f6190ede3070eb955a3314">Vec2</a>, <a class="el" href="d0/de0/classax_1_1_vec3.html#a38e5716cf8c1e9fa4f72577a4c734c68">Vec3</a>, <a class="el" href="da/dfc/classax_1_1_vec4.html#ab4ebb79147183a08c52a9c0dbf6d6706">Vec4</a></li>
+<li>draw()&#160;:&#160;<a class="el" href="d3/d76/classax_1_1_atlas_node.html#a0f59730fa0bd109f318e0a18bb4f8945">AtlasNode</a>, <a class="el" href="dd/d37/classax_1_1_bill_board.html#a0f59730fa0bd109f318e0a18bb4f8945">BillBoard</a>, <a class="el" href="dc/da6/classax_1_1_draw_node.html#a0f59730fa0bd109f318e0a18bb4f8945">DrawNode</a>, <a class="el" href="d5/dbe/classax_1_1_fast_t_m_x_layer.html#a0f59730fa0bd109f318e0a18bb4f8945">FastTMXLayer</a>, <a class="el" href="d2/d1f/classax_1_1_label.html#a0f59730fa0bd109f318e0a18bb4f8945">Label</a>, <a class="el" href="dc/df5/classax_1_1_layer_radial_gradient.html#a0f59730fa0bd109f318e0a18bb4f8945">LayerRadialGradient</a>, <a class="el" href="d3/d13/classax_1_1_mesh_renderer.html#a0f59730fa0bd109f318e0a18bb4f8945">MeshRenderer</a>, <a class="el" href="d9/d3b/classax_1_1_motion_streak3_d.html#a0f59730fa0bd109f318e0a18bb4f8945">MotionStreak3D</a>, <a class="el" href="d8/d8f/classax_1_1_motion_streak.html#a0f59730fa0bd109f318e0a18bb4f8945">MotionStreak</a>, <a class="el" href="df/da2/classax_1_1_node.html#afbf06584207d830ad5604f077667bbf4">Node</a>, <a class="el" href="dd/dd4/classax_1_1_particle_batch_node.html#a0f59730fa0bd109f318e0a18bb4f8945">ParticleBatchNode</a>, <a class="el" href="da/dbd/classax_1_1_particle_system_quad.html#a0f59730fa0bd109f318e0a18bb4f8945">ParticleSystemQuad</a>, <a class="el" href="d9/dc3/classax_1_1_progress_timer.html#a0f59730fa0bd109f318e0a18bb4f8945">ProgressTimer</a>, <a class="el" href="db/db7/classax_1_1_render_texture.html#a0f59730fa0bd109f318e0a18bb4f8945">RenderTexture</a>, <a class="el" href="de/d88/classax_1_1_skybox.html#a0f59730fa0bd109f318e0a18bb4f8945">Skybox</a>, <a class="el" href="da/d34/classax_1_1_sprite.html#a0f59730fa0bd109f318e0a18bb4f8945">Sprite</a>, <a class="el" href="d2/dc1/classax_1_1_sprite_batch_node.html#a0f59730fa0bd109f318e0a18bb4f8945">SpriteBatchNode</a>, <a class="el" href="d6/da0/classax_1_1_terrain.html#aeb26adbd64b9c0b20a4e11925c9cf839">Terrain</a>, <a class="el" href="d5/de9/classax_1_1_transition_cross_fade.html#a0f59730fa0bd109f318e0a18bb4f8945">TransitionCrossFade</a>, <a class="el" href="d6/d27/classax_1_1_transition_fade_t_r.html#a0f59730fa0bd109f318e0a18bb4f8945">TransitionFadeTR</a>, <a class="el" href="df/d06/classax_1_1_transition_page_turn.html#a0f59730fa0bd109f318e0a18bb4f8945">TransitionPageTurn</a>, <a class="el" href="da/d04/classax_1_1_transition_scene.html#a0f59730fa0bd109f318e0a18bb4f8945">TransitionScene</a>, <a class="el" href="d7/d03/classax_1_1_transition_split_cols.html#a0f59730fa0bd109f318e0a18bb4f8945">TransitionSplitCols</a>, <a class="el" href="df/dd6/classax_1_1_transition_turn_off_tiles.html#a0f59730fa0bd109f318e0a18bb4f8945">TransitionTurnOffTiles</a>, <a class="el" href="d4/d59/classax_1_1ui_1_1_edit_box.html#aeff01fa07213fd81c3555a1cbb8893aa">EditBox</a>, <a class="el" href="d9/def/classax_1_1ui_1_1_media_player.html#a0f59730fa0bd109f318e0a18bb4f8945">MediaPlayer</a></li>
+<li>drawArrays()&#160;:&#160;<a class="el" href="d5/d28/classax_1_1backend_1_1_command_buffer.html#add9a117aa49a04a8f051681e20da3ccb">CommandBuffer</a>, <a class="el" href="d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#ae669962b728639674d8b867995280b82">CommandBufferGL</a>, <a class="el" href="d0/d2e/classax_1_1backend_1_1_command_buffer_m_t_l.html#af3606b825dd4059bfd0502d3e39c4a70">CommandBufferMTL</a></li>
+<li>drawAtPoint()&#160;:&#160;<a class="el" href="d3/dd4/classax_1_1_texture2_d.html#a811813904398b12da0c1e221f1235a90">Texture2D</a></li>
+<li>drawBackground()&#160;:&#160;<a class="el" href="d9/d4a/classax_1_1_camera_background_brush.html#a4736dae5ba8dd2408be19b4d886cfb44">CameraBackgroundBrush</a>, <a class="el" href="db/d68/classax_1_1_camera_background_color_brush.html#ad48666ee10682dd42dc16d1318406b0f">CameraBackgroundColorBrush</a>, <a class="el" href="d0/d35/classax_1_1_camera_background_depth_brush.html#ad48666ee10682dd42dc16d1318406b0f">CameraBackgroundDepthBrush</a>, <a class="el" href="db/d40/classax_1_1_camera_background_sky_box_brush.html#ad48666ee10682dd42dc16d1318406b0f">CameraBackgroundSkyBoxBrush</a></li>
+<li>drawCardinalSpline()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#ac21263cf2a49f9c8755a42fc31f3b407">DrawNode</a></li>
+<li>drawCatmullRom()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#ab1f3ea49c34ba2b2fabd67bbab232fc1">DrawNode</a></li>
+<li>drawCircle()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a8b5b2737a4a0c6c45a3c456f2b00dcbf">DrawNode</a></li>
+<li>drawCubicBezier()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#aa8501d57dad57d8ee433a7baeab30bac">DrawNode</a></li>
+<li>drawDot()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a4cc56413080c9791b01ce7325a11080d">DrawNode</a></li>
+<li>drawElements()&#160;:&#160;<a class="el" href="d5/d28/classax_1_1backend_1_1_command_buffer.html#a96f7a43e0394fae1771ef3a703e4cbbe">CommandBuffer</a>, <a class="el" href="d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#adc3c7af4a369d5e21c28c2732a2841c2">CommandBufferGL</a>, <a class="el" href="d0/d2e/classax_1_1backend_1_1_command_buffer_m_t_l.html#a7103a7d768fcf9cb6b605bcd79ba0583">CommandBufferMTL</a></li>
+<li>drawElementsInstanced()&#160;:&#160;<a class="el" href="d5/d28/classax_1_1backend_1_1_command_buffer.html#ae61356a49b3d4f563ad4ad6b1b35823e">CommandBuffer</a>, <a class="el" href="d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#aee8434e3e4ce7f711a20897a2fa6305e">CommandBufferGL</a>, <a class="el" href="d4/dc6/classax_1_1backend_1_1_command_buffer_g_l_e_s2.html#a4ac5f93b0e8905b62882ba296a64a252">CommandBufferGLES2</a>, <a class="el" href="d0/d2e/classax_1_1backend_1_1_command_buffer_m_t_l.html#a4ac5f93b0e8905b62882ba296a64a252">CommandBufferMTL</a></li>
+<li>drawInRect()&#160;:&#160;<a class="el" href="d3/dd4/classax_1_1_texture2_d.html#af7c84e4c97d9cfc998690ba3e4c76e72">Texture2D</a></li>
+<li>drawLine()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#ab0724b546a848d7ee2ccf5a8ebba4d58">DrawNode</a></li>
+<li>drawPoint()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a4e7271373edcfa78b8c51567b6aa48d9">DrawNode</a></li>
+<li>drawPoints()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a88ac50bc30d4f17646e88dc90206b96e">DrawNode</a></li>
+<li>drawPoly()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a350774b8afe9d6017da4f948550c8521">DrawNode</a></li>
+<li>drawPolygon()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a795009a7cab3816fcd23687523835725">DrawNode</a></li>
+<li>drawQuadBezier()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a80b7c4de999b1ed2da377d8fc87852f4">DrawNode</a></li>
+<li>drawRect()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#aa6d2264f433aacf5fee20ea66a011f85">DrawNode</a></li>
+<li>drawScene()&#160;:&#160;<a class="el" href="d4/d72/classax_1_1_director.html#a1dad859c998887477cd90323a027b8c6">Director</a></li>
+<li>drawSegment()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#af6c2914a181c81d6e155493e14e77975">DrawNode</a></li>
+<li>drawSolidCircle()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#ad0576b117468c2368c6d65df746dda8e">DrawNode</a></li>
+<li>drawSolidPoly()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a02a4a918274925107c05bfa9f2f9fbd7">DrawNode</a></li>
+<li>drawSolidRect()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#a9e824007a2e19d1586fb69654862f76b">DrawNode</a></li>
+<li>drawTriangle()&#160;:&#160;<a class="el" href="dc/da6/classax_1_1_draw_node.html#aba1d30ea3f19118f64da6956839dded9">DrawNode</a></li>
+<li>dump()&#160;:&#160;<a class="el" href="dd/dab/classax_1_1_autorelease_pool.html#accd2600060dbaee3a3b41aed4034c63c">AutoreleasePool</a></li>
+<li>dumpExtensions()&#160;:&#160;<a class="el" href="de/d6a/classax_1_1backend_1_1_device_info.html#a0cbe20dd13dd1b1c35805bb8c16259df">DeviceInfo</a>, <a class="el" href="d9/d46/classax_1_1backend_1_1_device_info_g_l.html#a9ab87251223b4008009a486bb4de62ff">DeviceInfoGL</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:39 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Bone3D Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.1.5</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d1/da6/classax_1_1_bone3_d.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d0/d61/classax_1_1_bone3_d-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Bone3D Class Reference<div class="ingroups"><a class="el" href="../../da/d35/group____3d.html">3D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Defines a basic hierarchical structure of transformation spaces.  
+ <a href="../../d1/da6/classax_1_1_bone3_d.html#details">More...</a></p>
+
+<p><code>#include &lt;Skeleton3D.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1b1f422ed0964a5fbe8154b408515c50"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html#a1b1f422ed0964a5fbe8154b408515c50">getInverseBindPose</a> ()</td></tr>
+<tr class="memdesc:a1b1f422ed0964a5fbe8154b408515c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse bind pose matrix for this joint.  <br /></td></tr>
+<tr class="separator:a1b1f422ed0964a5fbe8154b408515c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848d03081815a1facbbac9c7c2bf8e23"><td class="memItemLeft" align="right" valign="top"><a id="a848d03081815a1facbbac9c7c2bf8e23" name="a848d03081815a1facbbac9c7c2bf8e23"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateWorldMat</b> ()</td></tr>
+<tr class="memdesc:a848d03081815a1facbbac9c7c2bf8e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">update own world matrix and children's <br /></td></tr>
+<tr class="separator:a848d03081815a1facbbac9c7c2bf8e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36923acbd08ca2a4bd2408805a1489ba"><td class="memItemLeft" align="right" valign="top"><a id="a36923acbd08ca2a4bd2408805a1489ba" name="a36923acbd08ca2a4bd2408805a1489ba"></a>
+const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getWorldMat</b> ()</td></tr>
+<tr class="memdesc:a36923acbd08ca2a4bd2408805a1489ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">get world matrix <br /></td></tr>
+<tr class="separator:a36923acbd08ca2a4bd2408805a1489ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203f430922eced47a7c344c20bb9d945"><td class="memItemLeft" align="right" valign="top"><a id="a203f430922eced47a7c344c20bb9d945" name="a203f430922eced47a7c344c20bb9d945"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
+<tr class="memdesc:a203f430922eced47a7c344c20bb9d945"><td class="mdescLeft">&#160;</td><td class="mdescRight">get bone name <br /></td></tr>
+<tr class="separator:a203f430922eced47a7c344c20bb9d945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54da00ffd1d0bdb83c9261647adef5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html#aa54da00ffd1d0bdb83c9261647adef5a">setAnimationValue</a> (float *trans, float *rot, float *scale, void *tag=nullptr, float weight=1.0f)</td></tr>
+<tr class="memdesc:aa54da00ffd1d0bdb83c9261647adef5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set animation value  <br /></td></tr>
+<tr class="separator:aa54da00ffd1d0bdb83c9261647adef5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e0149a7d3b1bfa800ab1367352332c"><td class="memItemLeft" align="right" valign="top"><a id="a60e0149a7d3b1bfa800ab1367352332c" name="a60e0149a7d3b1bfa800ab1367352332c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearBoneBlendState</b> ()</td></tr>
+<tr class="memdesc:a60e0149a7d3b1bfa800ab1367352332c"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear bone blend states <br /></td></tr>
+<tr class="separator:a60e0149a7d3b1bfa800ab1367352332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b76e3580a611e2c7b4ae9b47a2e69ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html#a3b76e3580a611e2c7b4ae9b47a2e69ce">setInverseBindPose</a> (const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;m)</td></tr>
+<tr class="memdesc:a3b76e3580a611e2c7b4ae9b47a2e69ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the inverse bind pose matrix.  <br /></td></tr>
+<tr class="separator:a3b76e3580a611e2c7b4ae9b47a2e69ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eca74730d7fd2a0dfe317a5ca259aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html#a7eca74730d7fd2a0dfe317a5ca259aa5">setOriPose</a> (const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;m)</td></tr>
+<tr class="memdesc:a7eca74730d7fd2a0dfe317a5ca259aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bone's original pose.  <br /></td></tr>
+<tr class="separator:a7eca74730d7fd2a0dfe317a5ca259aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b28cfa7f0c691309dec169540e4dbd"><td class="memItemLeft" align="right" valign="top"><a id="a33b28cfa7f0c691309dec169540e4dbd" name="a33b28cfa7f0c691309dec169540e4dbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetPose</b> ()</td></tr>
+<tr class="memdesc:a33b28cfa7f0c691309dec169540e4dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset pose to origin <br /></td></tr>
+<tr class="separator:a33b28cfa7f0c691309dec169540e4dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a0a63cc05220618a5e40c9c51dc344"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html#a25a0a63cc05220618a5e40c9c51dc344">updateJointMatrix</a> (<a class="el" href="../../da/dfc/classax_1_1_vec4.html">Vec4</a> *matrixPalette)</td></tr>
+<tr class="memdesc:a25a0a63cc05220618a5e40c9c51dc344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the joint matrix.  <br /></td></tr>
+<tr class="separator:a25a0a63cc05220618a5e40c9c51dc344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebfcf7442836d4d56d99c62550f54e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html#a8ebfcf7442836d4d56d99c62550f54e7">getParentBone</a> ()</td></tr>
+<tr class="memdesc:a8ebfcf7442836d4d56d99c62550f54e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">bone tree, we do not inherit from <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a>, <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> has too many properties that we do not need.  <br /></td></tr>
+<tr class="separator:a8ebfcf7442836d4d56d99c62550f54e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b9468f692176646164b44299882a91"><td class="memItemLeft" align="right" valign="top"><a id="a38b9468f692176646164b44299882a91" name="a38b9468f692176646164b44299882a91"></a>
+ssize_t&#160;</td><td class="memItemRight" valign="bottom"><b>getChildBoneCount</b> () const</td></tr>
+<tr class="memdesc:a38b9468f692176646164b44299882a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">get child bone count <br /></td></tr>
+<tr class="separator:a38b9468f692176646164b44299882a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a36b92170e32ae273b5b7d83596d5b4"><td class="memItemLeft" align="right" valign="top"><a id="a4a36b92170e32ae273b5b7d83596d5b4" name="a4a36b92170e32ae273b5b7d83596d5b4"></a>
+<a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getChildBoneByIndex</b> (int index) const</td></tr>
+<tr class="memdesc:a4a36b92170e32ae273b5b7d83596d5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get child bone by index <br /></td></tr>
+<tr class="separator:a4a36b92170e32ae273b5b7d83596d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd39ae618f5cac84c5308989de26ba3"><td class="memItemLeft" align="right" valign="top"><a id="a6bd39ae618f5cac84c5308989de26ba3" name="a6bd39ae618f5cac84c5308989de26ba3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addChildBone</b> (<a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a> *bone)</td></tr>
+<tr class="memdesc:a6bd39ae618f5cac84c5308989de26ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">add child bone <br /></td></tr>
+<tr class="separator:a6bd39ae618f5cac84c5308989de26ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85bb3f7500a47aa1fb60c9ad264ac87d"><td class="memItemLeft" align="right" valign="top"><a id="a85bb3f7500a47aa1fb60c9ad264ac87d" name="a85bb3f7500a47aa1fb60c9ad264ac87d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeChildBoneByIndex</b> (int index)</td></tr>
+<tr class="memdesc:a85bb3f7500a47aa1fb60c9ad264ac87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove child bone by index <br /></td></tr>
+<tr class="separator:a85bb3f7500a47aa1fb60c9ad264ac87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada74d27bc45a5b66a46b0a9fc080c3a1"><td class="memItemLeft" align="right" valign="top"><a id="ada74d27bc45a5b66a46b0a9fc080c3a1" name="ada74d27bc45a5b66a46b0a9fc080c3a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeChildBone</b> (<a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a> *bone)</td></tr>
+<tr class="memdesc:ada74d27bc45a5b66a46b0a9fc080c3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove child bone <br /></td></tr>
+<tr class="separator:ada74d27bc45a5b66a46b0a9fc080c3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21acef15295031c122719bc048a60ca"><td class="memItemLeft" align="right" valign="top"><a id="ae21acef15295031c122719bc048a60ca" name="ae21acef15295031c122719bc048a60ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllChildBone</b> ()</td></tr>
+<tr class="memdesc:ae21acef15295031c122719bc048a60ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove all child bone <br /></td></tr>
+<tr class="separator:ae21acef15295031c122719bc048a60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae6764b2658c196c48838a8b2b4497990"><td class="memItemLeft" align="right" valign="top"><a id="ae6764b2658c196c48838a8b2b4497990" name="ae6764b2658c196c48838a8b2b4497990"></a>
+static <a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (std::string_view id)</td></tr>
+<tr class="memdesc:ae6764b2658c196c48838a8b2b4497990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates C3DBone. <br /></td></tr>
+<tr class="separator:ae6764b2658c196c48838a8b2b4497990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines a basic hierarchical structure of transformation spaces. </p>
+<p>@lua NA </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1b1f422ed0964a5fbe8154b408515c50" name="a1b1f422ed0964a5fbe8154b408515c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1f422ed0964a5fbe8154b408515c50">&#9670;&#160;</a></span>getInverseBindPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp; getInverseBindPose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the inverse bind pose matrix for this joint. </p>
+<dl class="section return"><dt>Returns</dt><dd>Inverse bind pose matrix. </dd></dl>
+
+</div>
+</div>
+<a id="aa54da00ffd1d0bdb83c9261647adef5a" name="aa54da00ffd1d0bdb83c9261647adef5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54da00ffd1d0bdb83c9261647adef5a">&#9670;&#160;</a></span>setAnimationValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAnimationValue </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>rot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>tag</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set animation value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trans</td><td>translate vec3 </td></tr>
+    <tr><td class="paramname">rot</td><td>rotation quaternion </td></tr>
+    <tr><td class="paramname">scale</td><td>scale vec3 </td></tr>
+    <tr><td class="paramname">tag</td><td>unique tag, only blend animation between different tags </td></tr>
+    <tr><td class="paramname">weight</td><td>blend weight </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b76e3580a611e2c7b4ae9b47a2e69ce" name="a3b76e3580a611e2c7b4ae9b47a2e69ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b76e3580a611e2c7b4ae9b47a2e69ce">&#9670;&#160;</a></span>setInverseBindPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setInverseBindPose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the inverse bind pose matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td><a class="el" href="../../d8/d6e/classax_1_1_mat4.html" title="Defines a 4 x 4 floating point matrix representing a 3D transformation.">Mat4</a> representing the inverse bind pose for this Bone. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7eca74730d7fd2a0dfe317a5ca259aa5" name="a7eca74730d7fd2a0dfe317a5ca259aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eca74730d7fd2a0dfe317a5ca259aa5">&#9670;&#160;</a></span>setOriPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOriPose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the bone's original pose. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td><a class="el" href="../../d8/d6e/classax_1_1_mat4.html" title="Defines a 4 x 4 floating point matrix representing a 3D transformation.">Mat4</a> representing the original pose for this Bone. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25a0a63cc05220618a5e40c9c51dc344" name="a25a0a63cc05220618a5e40c9c51dc344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a0a63cc05220618a5e40c9c51dc344">&#9670;&#160;</a></span>updateJointMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateJointMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/dfc/classax_1_1_vec4.html">Vec4</a> *&#160;</td>
+          <td class="paramname"><em>matrixPalette</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the joint matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrixPalette</td><td>The matrix palette to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ebfcf7442836d4d56d99c62550f54e7" name="a8ebfcf7442836d4d56d99c62550f54e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebfcf7442836d4d56d99c62550f54e7">&#9670;&#160;</a></span>getParentBone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a> * getParentBone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bone tree, we do not inherit from <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a>, <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> has too many properties that we do not need. </p>
+<p>A clean <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> is needed. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Skeleton3D.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d1/da6/classax_1_1_bone3_d.html">Bone3D</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:42 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: PolygonInfo Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d6/d78/classax_1_1_polygon_info.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d5/dc1/classax_1_1_polygon_info-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">PolygonInfo Class Reference<div class="ingroups"><a class="el" href="../../d0/dc7/group____2d.html">2D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d6/d78/classax_1_1_polygon_info.html" title="PolygonInfo is an object holding the required data to display Sprites.">PolygonInfo</a> is an object holding the required data to display Sprites.  
+ <a href="../../d6/d78/classax_1_1_polygon_info.html#details">More...</a></p>
+
+<p><code>#include &lt;AutoPolygon.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ga79b6110c2403e7492f3245b4f70d0645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#ga79b6110c2403e7492f3245b4f70d0645">operator=</a> (const <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp;other)</td></tr>
+<tr class="memdesc:ga79b6110c2403e7492f3245b4f70d0645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the member of the other <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html" title="PolygonInfo is an object holding the required data to display Sprites.">PolygonInfo</a>.  <br /></td></tr>
+<tr class="separator:ga79b6110c2403e7492f3245b4f70d0645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c7ede0e17b341158d5a23396fcc927b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#ga6c7ede0e17b341158d5a23396fcc927b">setQuad</a> (<a class="el" href="../../d8/dcb/structax_1_1_v3_f___c4_b___t2_f___quad.html">V3F_C4B_T2F_Quad</a> *quad)</td></tr>
+<tr class="memdesc:ga6c7ede0e17b341158d5a23396fcc927b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the data to be a pointer to a quad the member verts will not be released when this <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html" title="PolygonInfo is an object holding the required data to display Sprites.">PolygonInfo</a> destructs as the verts memory are managed by other objects  <br /></td></tr>
+<tr class="separator:ga6c7ede0e17b341158d5a23396fcc927b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcf882c171a255c20549ca684dd0da7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#gafcf882c171a255c20549ca684dd0da7f">setQuads</a> (<a class="el" href="../../d8/dcb/structax_1_1_v3_f___c4_b___t2_f___quad.html">V3F_C4B_T2F_Quad</a> *quads, int numberOfQuads)</td></tr>
+<tr class="memdesc:gafcf882c171a255c20549ca684dd0da7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the data to be a pointer to a number of Quads the member verts will not be released when this <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html" title="PolygonInfo is an object holding the required data to display Sprites.">PolygonInfo</a> destructs as the verts memory are managed by other objects  <br /></td></tr>
+<tr class="separator:gafcf882c171a255c20549ca684dd0da7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabb47984d34bc228140b5dc43d922a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#gaabb47984d34bc228140b5dc43d922a8b">setTriangles</a> (const <a class="el" href="../../d5/db3/structax_1_1_triangles_command_1_1_triangles.html">TrianglesCommand::Triangles</a> &amp;triangles)</td></tr>
+<tr class="memdesc:gaabb47984d34bc228140b5dc43d922a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the data to be a pointer to a triangles the member verts will not be released when this <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html" title="PolygonInfo is an object holding the required data to display Sprites.">PolygonInfo</a> destructs as the verts memory are managed by other objects  <br /></td></tr>
+<tr class="separator:gaabb47984d34bc228140b5dc43d922a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga181c66e341eb447763b4d911d20b8efc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#ga181c66e341eb447763b4d911d20b8efc">getVertCount</a> () const</td></tr>
+<tr class="memdesc:ga181c66e341eb447763b4d911d20b8efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">get vertex count  <br /></td></tr>
+<tr class="separator:ga181c66e341eb447763b4d911d20b8efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbef80be9b4d1059f62d6b61e2b560c3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#gabbef80be9b4d1059f62d6b61e2b560c3">getTrianglesCount</a> () const</td></tr>
+<tr class="memdesc:gabbef80be9b4d1059f62d6b61e2b560c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get triangles count  <br /></td></tr>
+<tr class="separator:gabbef80be9b4d1059f62d6b61e2b560c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9079b59edfaa4516b8302144e4987d3d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#ga9079b59edfaa4516b8302144e4987d3d">getArea</a> () const</td></tr>
+<tr class="memdesc:ga9079b59edfaa4516b8302144e4987d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get sum of all triangle area size  <br /></td></tr>
+<tr class="separator:ga9079b59edfaa4516b8302144e4987d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Creators</div></td></tr>
+<tr class="memitem:gaa16f2ca161c794ad637d7cccd249d69b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#gaa16f2ca161c794ad637d7cccd249d69b">PolygonInfo</a> ()</td></tr>
+<tr class="memdesc:gaa16f2ca161c794ad637d7cccd249d69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty Polygon info.  <br /></td></tr>
+<tr class="separator:gaa16f2ca161c794ad637d7cccd249d69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7011dc5e46c39b3b0a2dd0d264c2ebb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc7/group____2d.html#ga7011dc5e46c39b3b0a2dd0d264c2ebb5">PolygonInfo</a> (const <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp;other)</td></tr>
+<tr class="memdesc:ga7011dc5e46c39b3b0a2dd0d264c2ebb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an polygoninfo from the data of another Polygoninfo.  <br /></td></tr>
+<tr class="separator:ga7011dc5e46c39b3b0a2dd0d264c2ebb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d6/d78/classax_1_1_polygon_info.html" title="PolygonInfo is an object holding the required data to display Sprites.">PolygonInfo</a> is an object holding the required data to display Sprites. </p>
+<p>It can be a simple as a triangle, or as complex as a whole 3D mesh </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>AutoPolygon.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:38 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

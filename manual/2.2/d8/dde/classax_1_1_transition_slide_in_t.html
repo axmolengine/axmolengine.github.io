@@ -1,0 +1,919 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: TransitionSlideInT Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d8/dde/classax_1_1_transition_slide_in_t.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d4/de6/classax_1_1_transition_slide_in_t-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TransitionSlideInT Class Reference<div class="ingroups"><a class="el" href="../../d0/dc7/group____2d.html">2D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html" title="TransitionSlideInT: Slide in the incoming scene from the top border.">TransitionSlideInT</a>: Slide in the incoming scene from the top border.  
+ <a href="../../d8/dde/classax_1_1_transition_slide_in_t.html#details">More...</a></p>
+
+<p><code>#include &lt;Transition.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html">TransitionSlideInL</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a57619bfdbc4a94786ddac8e21bac26"><td class="memItemLeft" align="right" valign="top"><a id="a3a57619bfdbc4a94786ddac8e21bac26" name="a3a57619bfdbc4a94786ddac8e21bac26"></a>
+virtual <a class="el" href="../../d4/dc0/classax_1_1_action_interval.html">ActionInterval</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> () override</td></tr>
+<tr class="memdesc:a3a57619bfdbc4a94786ddac8e21bac26"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the action that will be performed by the incoming and outgoing scene <br /></td></tr>
+<tr class="separator:a3a57619bfdbc4a94786ddac8e21bac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_transition_slide_in_l"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_transition_slide_in_l')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html">TransitionSlideInL</a></td></tr>
+<tr class="memitem:a09b9efe6fb8f4e09cb46842735da3435 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/dc0/classax_1_1_action_interval.html">ActionInterval</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html#a09b9efe6fb8f4e09cb46842735da3435">easeActionWithAction</a> (<a class="el" href="../../d4/dc0/classax_1_1_action_interval.html">ActionInterval</a> *<a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html#a1c5ef138969f1169dea3fd92c1c909c8">action</a>) override</td></tr>
+<tr class="memdesc:a09b9efe6fb8f4e09cb46842735da3435 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Ease action that will be performed on a linear action.  <br /></td></tr>
+<tr class="separator:a09b9efe6fb8f4e09cb46842735da3435 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5ef138969f1169dea3fd92c1c909c8 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/dc0/classax_1_1_action_interval.html">ActionInterval</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html#a1c5ef138969f1169dea3fd92c1c909c8">action</a> ()</td></tr>
+<tr class="memdesc:a1c5ef138969f1169dea3fd92c1c909c8 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the action that will be performed by the incoming and outgoing scene.  <br /></td></tr>
+<tr class="separator:a1c5ef138969f1169dea3fd92c1c909c8 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7cfcc21d71b281894ff0800f4a9081 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html#afc7cfcc21d71b281894ff0800f4a9081">onEnter</a> () override</td></tr>
+<tr class="memdesc:afc7cfcc21d71b281894ff0800f4a9081 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/db6/classax_1_1_event.html" title="Base class of all kinds of events.">Event</a> callback that is invoked every time when <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> enters the 'stage'.  <br /></td></tr>
+<tr class="separator:afc7cfcc21d71b281894ff0800f4a9081 inherit pub_methods_classax_1_1_transition_slide_in_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_transition_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_transition_scene')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../da/d04/classax_1_1_transition_scene.html">TransitionScene</a></td></tr>
+<tr class="memitem:a6dfe1abe0d1eb3ddc1ca081de98b5342 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>finish</b> ()</td></tr>
+<tr class="memdesc:a6dfe1abe0d1eb3ddc1ca081de98b5342 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after a transition finishes. <br /></td></tr>
+<tr class="separator:a6dfe1abe0d1eb3ddc1ca081de98b5342 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bc78896b64ff3b919f281b2298bff4 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hideOutShowIn</b> ()</td></tr>
+<tr class="memdesc:a76bc78896b64ff3b919f281b2298bff4 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by some transitions to hide the outer scene. <br /></td></tr>
+<tr class="separator:a76bc78896b64ff3b919f281b2298bff4 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f59730fa0bd109f318e0a18bb4f8945 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a0f59730fa0bd109f318e0a18bb4f8945">draw</a> (Renderer *renderer, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;transform, uint32_t flags) override</td></tr>
+<tr class="memdesc:a0f59730fa0bd109f318e0a18bb4f8945 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to draw your own node.  <br /></td></tr>
+<tr class="separator:a0f59730fa0bd109f318e0a18bb4f8945 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7cfcc21d71b281894ff0800f4a9081 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d04/classax_1_1_transition_scene.html#afc7cfcc21d71b281894ff0800f4a9081">onEnter</a> () override</td></tr>
+<tr class="memdesc:afc7cfcc21d71b281894ff0800f4a9081 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/db6/classax_1_1_event.html" title="Base class of all kinds of events.">Event</a> callback that is invoked every time when <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> enters the 'stage'.  <br /></td></tr>
+<tr class="separator:afc7cfcc21d71b281894ff0800f4a9081 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b425b901faa7243c70d90b09db89d15 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a9b425b901faa7243c70d90b09db89d15">onExit</a> () override</td></tr>
+<tr class="memdesc:a9b425b901faa7243c70d90b09db89d15 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/db6/classax_1_1_event.html" title="Base class of all kinds of events.">Event</a> callback that is invoked every time the <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> leaves the 'stage'.  <br /></td></tr>
+<tr class="separator:a9b425b901faa7243c70d90b09db89d15 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ceea46600afa9d4e6dc89255754de27 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup</b> () override</td></tr>
+<tr class="memdesc:a1ceea46600afa9d4e6dc89255754de27 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all running actions and schedulers. <br /></td></tr>
+<tr class="separator:a1ceea46600afa9d4e6dc89255754de27 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0444d492d91150c36368b13d927e2fe6 inherit pub_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initWithDuration</b> (float t, <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:a0444d492d91150c36368b13d927e2fe6 inherit pub_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes a transition with duration and incoming scene <br /></td></tr>
+<tr class="separator:a0444d492d91150c36368b13d927e2fe6 inherit pub_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_scene')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a></td></tr>
+<tr class="memitem:a52b7741f1ccd38d665e153882b7dc0dd inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a52b7741f1ccd38d665e153882b7dc0dd">getDescription</a> () const override</td></tr>
+<tr class="memdesc:a52b7741f1ccd38d665e153882b7dc0dd inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the description string.  <br /></td></tr>
+<tr class="separator:a52b7741f1ccd38d665e153882b7dc0dd inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b22198d6ae79118f5477233465017a2 inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d6/dca/classax_1_1_camera.html">Camera</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a2b22198d6ae79118f5477233465017a2">getCameras</a> ()</td></tr>
+<tr class="memdesc:a2b22198d6ae79118f5477233465017a2 inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all cameras.  <br /></td></tr>
+<tr class="separator:a2b22198d6ae79118f5477233465017a2 inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545869d22467d22a7a81d7b4a68723f1 inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dca/classax_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a545869d22467d22a7a81d7b4a68723f1">getDefaultCamera</a> () const</td></tr>
+<tr class="memdesc:a545869d22467d22a7a81d7b4a68723f1 inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default camera.  <br /></td></tr>
+<tr class="separator:a545869d22467d22a7a81d7b4a68723f1 inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5201437bc48a6f0e29e78ef0ef39fafa inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../dd/dbb/classax_1_1_base_light.html">BaseLight</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a5201437bc48a6f0e29e78ef0ef39fafa">getLights</a> () const</td></tr>
+<tr class="memdesc:a5201437bc48a6f0e29e78ef0ef39fafa inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get lights.  <br /></td></tr>
+<tr class="separator:a5201437bc48a6f0e29e78ef0ef39fafa inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc3612a3474ee79572b102792b9336f inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a7bc3612a3474ee79572b102792b9336f">render</a> (Renderer *renderer, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;eyeTransform, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> *eyeProjection=nullptr)</td></tr>
+<tr class="memdesc:a7bc3612a3474ee79572b102792b9336f inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the scene.  <br /></td></tr>
+<tr class="separator:a7bc3612a3474ee79572b102792b9336f inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6778dcb90f6f5f2df70f3ab51b1e3f inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#aea6778dcb90f6f5f2df70f3ab51b1e3f">visit</a> (Renderer *renderer, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;parentTransform, uint32_t parentFlags) override</td></tr>
+<tr class="memdesc:aea6778dcb90f6f5f2df70f3ab51b1e3f inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visits this node's children and draw them recursively.  <br /></td></tr>
+<tr class="separator:aea6778dcb90f6f5f2df70f3ab51b1e3f inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4871578f13601c557a73fe718a4443 inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllChildren</b> () override</td></tr>
+<tr class="memdesc:a5d4871578f13601c557a73fe718a4443 inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">override function <br /></td></tr>
+<tr class="separator:a5d4871578f13601c557a73fe718a4443 inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1f21f77c26adee1ce1444b31c69178 inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#aaa1f21f77c26adee1ce1444b31c69178">addChild</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *child)</td></tr>
+<tr class="memdesc:aaa1f21f77c26adee1ce1444b31c69178 inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child to the container with z-order as 0.  <br /></td></tr>
+<tr class="separator:aaa1f21f77c26adee1ce1444b31c69178 inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3ae9edda24b62e88cc6e76c4201b7a inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a8f3ae9edda24b62e88cc6e76c4201b7a">addChild</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *child, int localZOrder)</td></tr>
+<tr class="memdesc:a8f3ae9edda24b62e88cc6e76c4201b7a inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child to the container with a local z-order.  <br /></td></tr>
+<tr class="separator:a8f3ae9edda24b62e88cc6e76c4201b7a inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81750b6b1e67c0e99c71bae5ce5779bc inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#a81750b6b1e67c0e99c71bae5ce5779bc">addChild</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *child, int localZOrder, int tag)</td></tr>
+<tr class="memdesc:a81750b6b1e67c0e99c71bae5ce5779bc inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child to the container with z order and tag.  <br /></td></tr>
+<tr class="separator:a81750b6b1e67c0e99c71bae5ce5779bc inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4f157c6f3d4e9f3da98d05b53e061b inherit pub_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#abd4f157c6f3d4e9f3da98d05b53e061b">addChild</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *child, int localZOrder, std::string_view name)</td></tr>
+<tr class="memdesc:abd4f157c6f3d4e9f3da98d05b53e061b inherit pub_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child to the container with z order and tag.  <br /></td></tr>
+<tr class="separator:abd4f157c6f3d4e9f3da98d05b53e061b inherit pub_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_node')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a></td></tr>
+<tr class="memitem:a05ead6c4ed5f33502d94a26a3fdd8faa inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a05ead6c4ed5f33502d94a26a3fdd8faa">isRunning</a> () const</td></tr>
+<tr class="memdesc:a05ead6c4ed5f33502d94a26a3fdd8faa inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the node is "running".  <br /></td></tr>
+<tr class="separator:a05ead6c4ed5f33502d94a26a3fdd8faa inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bdb539db127cdcce7a90f3e716b628 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a94bdb539db127cdcce7a90f3e716b628">scheduleUpdateWithPriorityLua</a> (int handler, int priority)</td></tr>
+<tr class="memdesc:a94bdb539db127cdcce7a90f3e716b628 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules for lua script.  <br /></td></tr>
+<tr class="separator:a94bdb539db127cdcce7a90f3e716b628 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f4fe805fa9a54d4d68c5b29c1502e1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup</b> ()</td></tr>
+<tr class="memdesc:a09f4fe805fa9a54d4d68c5b29c1502e1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all running actions and schedulers. <br /></td></tr>
+<tr class="separator:a09f4fe805fa9a54d4d68c5b29c1502e1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf06584207d830ad5604f077667bbf4 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afbf06584207d830ad5604f077667bbf4">draw</a> (Renderer *renderer, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;transform, uint32_t flags)</td></tr>
+<tr class="memdesc:afbf06584207d830ad5604f077667bbf4 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to draw your own node.  <br /></td></tr>
+<tr class="separator:afbf06584207d830ad5604f077667bbf4 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669cab0ff9c3767eda88537d008f51fb inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a669cab0ff9c3767eda88537d008f51fb">visit</a> (Renderer *renderer, const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;parentTransform, uint32_t parentFlags)</td></tr>
+<tr class="memdesc:a669cab0ff9c3767eda88537d008f51fb inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visits this node's children and draw them recursively.  <br /></td></tr>
+<tr class="separator:a669cab0ff9c3767eda88537d008f51fb inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35b8528241663d3296bc0f7eb9997c2 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac35b8528241663d3296bc0f7eb9997c2">getScene</a> () const</td></tr>
+<tr class="memdesc:ac35b8528241663d3296bc0f7eb9997c2 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../de/db8/classax_1_1_scene.html" title="Scene is a subclass of Node that is used only as an abstract concept.">Scene</a> that contains the <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a>.  <br /></td></tr>
+<tr class="separator:ac35b8528241663d3296bc0f7eb9997c2 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5487629f67c73c88055b3effc663ad1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aa5487629f67c73c88055b3effc663ad1">getBoundingBox</a> () const</td></tr>
+<tr class="memdesc:aa5487629f67c73c88055b3effc663ad1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <a class="el" href="../../da/d87/classax_1_1_a_a_b_b.html" title="Axis Aligned Bounding Box (AABB), usually calculate some rough but fast collision detection.">AABB</a> (axis-aligned bounding-box) in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:aa5487629f67c73c88055b3effc663ad1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab575ee12c0e87e97ff131c0be7eee48f inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab575ee12c0e87e97ff131c0be7eee48f">setEventDispatcher</a> (<a class="el" href="../../de/d23/classax_1_1_event_dispatcher.html">EventDispatcher</a> *dispatcher)</td></tr>
+<tr class="memdesc:ab575ee12c0e87e97ff131c0be7eee48f inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event dispatcher for scene.  <br /></td></tr>
+<tr class="separator:ab575ee12c0e87e97ff131c0be7eee48f inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18c471314f5ba4f5bc79ac457c77e5b inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/d23/classax_1_1_event_dispatcher.html">EventDispatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab18c471314f5ba4f5bc79ac457c77e5b">getEventDispatcher</a> () const</td></tr>
+<tr class="memdesc:ab18c471314f5ba4f5bc79ac457c77e5b inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the event dispatcher of scene.  <br /></td></tr>
+<tr class="separator:ab18c471314f5ba4f5bc79ac457c77e5b inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23673d834c4e353a68c5ee26491b4f1b inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a23673d834c4e353a68c5ee26491b4f1b">getOpacity</a> () const</td></tr>
+<tr class="memdesc:a23673d834c4e353a68c5ee26491b4f1b inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the node's opacity.  <br /></td></tr>
+<tr class="separator:a23673d834c4e353a68c5ee26491b4f1b inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9409c9971582e4899d8a32d11fb18d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#acd9409c9971582e4899d8a32d11fb18d">getDisplayedOpacity</a> () const</td></tr>
+<tr class="memdesc:acd9409c9971582e4899d8a32d11fb18d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the node's display opacity.  <br /></td></tr>
+<tr class="separator:acd9409c9971582e4899d8a32d11fb18d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0144be094b1369f634a4e576fb8898e0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a0144be094b1369f634a4e576fb8898e0">setOpacity</a> (uint8_t opacity)</td></tr>
+<tr class="memdesc:a0144be094b1369f634a4e576fb8898e0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change node opacity.  <br /></td></tr>
+<tr class="separator:a0144be094b1369f634a4e576fb8898e0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7a28aaf1c30580446c2f69addb214d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9e7a28aaf1c30580446c2f69addb214d">updateDisplayedOpacity</a> (uint8_t parentOpacity)</td></tr>
+<tr class="memdesc:a9e7a28aaf1c30580446c2f69addb214d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the displayed opacity of node with it's parent opacity;.  <br /></td></tr>
+<tr class="separator:a9e7a28aaf1c30580446c2f69addb214d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b6992d288d6ecfec4dc1efd3486565 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a53b6992d288d6ecfec4dc1efd3486565">isCascadeOpacityEnabled</a> () const</td></tr>
+<tr class="memdesc:a53b6992d288d6ecfec4dc1efd3486565 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether cascadeOpacity is enabled or not.  <br /></td></tr>
+<tr class="separator:a53b6992d288d6ecfec4dc1efd3486565 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040b0cd067148c0c9c4adf9b528ae6f1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a040b0cd067148c0c9c4adf9b528ae6f1">setCascadeOpacityEnabled</a> (bool cascadeOpacityEnabled)</td></tr>
+<tr class="memdesc:a040b0cd067148c0c9c4adf9b528ae6f1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change node's cascadeOpacity property.  <br /></td></tr>
+<tr class="separator:a040b0cd067148c0c9c4adf9b528ae6f1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd5b8f81f9e95039f6f8d2682548c6e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d7/d07/structax_1_1_color3_b.html">Color3B</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afbd5b8f81f9e95039f6f8d2682548c6e">getColor</a> () const</td></tr>
+<tr class="memdesc:afbd5b8f81f9e95039f6f8d2682548c6e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query node's color value.  <br /></td></tr>
+<tr class="separator:afbd5b8f81f9e95039f6f8d2682548c6e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f9c0480b9d2e7c1a33ab4af4056208 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d7/d07/structax_1_1_color3_b.html">Color3B</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a80f9c0480b9d2e7c1a33ab4af4056208">getDisplayedColor</a> () const</td></tr>
+<tr class="memdesc:a80f9c0480b9d2e7c1a33ab4af4056208 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query node's displayed color.  <br /></td></tr>
+<tr class="separator:a80f9c0480b9d2e7c1a33ab4af4056208 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48b9e1e9d18827fd07163594dc3ed84 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae48b9e1e9d18827fd07163594dc3ed84">setColor</a> (const <a class="el" href="../../d7/d07/structax_1_1_color3_b.html">Color3B</a> &amp;color)</td></tr>
+<tr class="memdesc:ae48b9e1e9d18827fd07163594dc3ed84 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the color of node.  <br /></td></tr>
+<tr class="separator:ae48b9e1e9d18827fd07163594dc3ed84 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac516fb10ad56f38c08570434d1e8f9f6 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac516fb10ad56f38c08570434d1e8f9f6">updateDisplayedColor</a> (const <a class="el" href="../../d7/d07/structax_1_1_color3_b.html">Color3B</a> &amp;parentColor)</td></tr>
+<tr class="memdesc:ac516fb10ad56f38c08570434d1e8f9f6 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update node's displayed color with its parent color.  <br /></td></tr>
+<tr class="separator:ac516fb10ad56f38c08570434d1e8f9f6 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a5bb1ed7dfb9236ae1030dd2de1d5f inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae0a5bb1ed7dfb9236ae1030dd2de1d5f">isCascadeColorEnabled</a> () const</td></tr>
+<tr class="memdesc:ae0a5bb1ed7dfb9236ae1030dd2de1d5f inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether cascadeColor is enabled or not.  <br /></td></tr>
+<tr class="separator:ae0a5bb1ed7dfb9236ae1030dd2de1d5f inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f5bdbe8da1c4a48753114c9c6bd9ec inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a05f5bdbe8da1c4a48753114c9c6bd9ec">setCascadeColorEnabled</a> (bool cascadeColorEnabled)</td></tr>
+<tr class="memdesc:a05f5bdbe8da1c4a48753114c9c6bd9ec inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you want node's color affect the children node's color, then set it to true.  <br /></td></tr>
+<tr class="separator:a05f5bdbe8da1c4a48753114c9c6bd9ec inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6463289cc9eeb21a62835f961be61b12 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a6463289cc9eeb21a62835f961be61b12">setOpacityModifyRGB</a> (bool value)</td></tr>
+<tr class="memdesc:a6463289cc9eeb21a62835f961be61b12 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you want the opacity affect the color property, then set to true.  <br /></td></tr>
+<tr class="separator:a6463289cc9eeb21a62835f961be61b12 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9991c954066be613624f4692d6146988 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9991c954066be613624f4692d6146988">isOpacityModifyRGB</a> () const</td></tr>
+<tr class="memdesc:a9991c954066be613624f4692d6146988 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">If node opacity will modify the RGB color value, then you should override this method and return true.  <br /></td></tr>
+<tr class="separator:a9991c954066be613624f4692d6146988 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd291a10cb6ade77eefd96a366ed4d16 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#acd291a10cb6ade77eefd96a366ed4d16">setOnEnterCallback</a> (const std::function&lt; void()&gt; &amp;callback)</td></tr>
+<tr class="memdesc:acd291a10cb6ade77eefd96a366ed4d16 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback of event onEnter.  <br /></td></tr>
+<tr class="separator:acd291a10cb6ade77eefd96a366ed4d16 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68dbc9cbb7c7ff9871d0131554d9f4a8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">const std::function&lt; void()&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a68dbc9cbb7c7ff9871d0131554d9f4a8">getOnEnterCallback</a> () const</td></tr>
+<tr class="memdesc:a68dbc9cbb7c7ff9871d0131554d9f4a8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback of event onEnter.  <br /></td></tr>
+<tr class="separator:a68dbc9cbb7c7ff9871d0131554d9f4a8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c2aac96becc8765d136768c99887b2 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a36c2aac96becc8765d136768c99887b2">setOnExitCallback</a> (const std::function&lt; void()&gt; &amp;callback)</td></tr>
+<tr class="memdesc:a36c2aac96becc8765d136768c99887b2 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback of event onExit.  <br /></td></tr>
+<tr class="separator:a36c2aac96becc8765d136768c99887b2 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88174da63a44caba5d7097b44e13a67b inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">const std::function&lt; void()&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a88174da63a44caba5d7097b44e13a67b">getOnExitCallback</a> () const</td></tr>
+<tr class="memdesc:a88174da63a44caba5d7097b44e13a67b inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback of event onExit.  <br /></td></tr>
+<tr class="separator:a88174da63a44caba5d7097b44e13a67b inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3622c5ab30baddf262262950ab04a5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a3e3622c5ab30baddf262262950ab04a5">setOnEnterTransitionDidFinishCallback</a> (const std::function&lt; void()&gt; &amp;callback)</td></tr>
+<tr class="memdesc:a3e3622c5ab30baddf262262950ab04a5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback of event EnterTransitionDidFinish.  <br /></td></tr>
+<tr class="separator:a3e3622c5ab30baddf262262950ab04a5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac935bd3f3c7ae80e7ffef78ab92a696e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">const std::function&lt; void()&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac935bd3f3c7ae80e7ffef78ab92a696e">getOnEnterTransitionDidFinishCallback</a> () const</td></tr>
+<tr class="memdesc:ac935bd3f3c7ae80e7ffef78ab92a696e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback of event EnterTransitionDidFinish.  <br /></td></tr>
+<tr class="separator:ac935bd3f3c7ae80e7ffef78ab92a696e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493b56ca2e501911ee3f16810c564216 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a493b56ca2e501911ee3f16810c564216">setOnExitTransitionDidStartCallback</a> (const std::function&lt; void()&gt; &amp;callback)</td></tr>
+<tr class="memdesc:a493b56ca2e501911ee3f16810c564216 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback of event ExitTransitionDidStart.  <br /></td></tr>
+<tr class="separator:a493b56ca2e501911ee3f16810c564216 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd288c2e9827c4fe4e4eb7e73d411d6c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">const std::function&lt; void()&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#acd288c2e9827c4fe4e4eb7e73d411d6c">getOnExitTransitionDidStartCallback</a> () const</td></tr>
+<tr class="memdesc:acd288c2e9827c4fe4e4eb7e73d411d6c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback of event ExitTransitionDidStart.  <br /></td></tr>
+<tr class="separator:acd288c2e9827c4fe4e4eb7e73d411d6c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf29c73b2112b4d3e9231f0d94fa2101 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraMask</b> () const</td></tr>
+<tr class="memdesc:adf29c73b2112b4d3e9231f0d94fa2101 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">get &amp; set camera mask, the node is visible by the camera whose camera flag &amp; node's camera mask is true <br /></td></tr>
+<tr class="separator:adf29c73b2112b4d3e9231f0d94fa2101 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f6f9d8c9350dbae9852ea97f0c9a82 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a74f6f9d8c9350dbae9852ea97f0c9a82">setCameraMask</a> (unsigned short mask, bool applyChildren=true)</td></tr>
+<tr class="memdesc:a74f6f9d8c9350dbae9852ea97f0c9a82 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the camera mask for current node.  <br /></td></tr>
+<tr class="separator:a74f6f9d8c9350dbae9852ea97f0c9a82 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c100ee1c82f83bccc2ae3b75bf325fe inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4c100ee1c82f83bccc2ae3b75bf325fe">applyMaskOnEnter</a> (bool applyChildren)</td></tr>
+<tr class="memdesc:a4c100ee1c82f83bccc2ae3b75bf325fe inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should <a class="el" href="../../df/da2/classax_1_1_node.html#aaa1f21f77c26adee1ce1444b31c69178" title="Adds a child to the container with z-order as 0.">addChild()</a> make the child follow it's parent's mask? If applyChildren is true, then it will modify the camera mask of its children recursively when a child is added.  <br /></td></tr>
+<tr class="separator:a4c100ee1c82f83bccc2ae3b75bf325fe inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9c73506155c89a1a785cf2f7718f0d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5f9c73506155c89a1a785cf2f7718f0d">setProgramState</a> (backend::ProgramState *programState, bool ownPS=false)</td></tr>
+<tr class="memdesc:a5f9c73506155c89a1a785cf2f7718f0d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets ProgramState with retain.  <br /></td></tr>
+<tr class="separator:a5f9c73506155c89a1a785cf2f7718f0d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ffc75d55abdc1c3a65150e4dc2b32ff inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">backend::ProgramState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a2ffc75d55abdc1c3a65150e4dc2b32ff">setProgramStateByProgramId</a> (uint64_t progId)</td></tr>
+<tr class="memdesc:a2ffc75d55abdc1c3a65150e4dc2b32ff inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets ProgramState by programId.  <br /></td></tr>
+<tr class="separator:a2ffc75d55abdc1c3a65150e4dc2b32ff inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30da2e2f84bf5dab27e7bf850ad80ec1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a30da2e2f84bf5dab27e7bf850ad80ec1">setLocalZOrder</a> (int localZOrder)</td></tr>
+<tr class="memdesc:a30da2e2f84bf5dab27e7bf850ad80ec1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">LocalZOrder is the 'key' used to sort the node relative to its siblings.  <br /></td></tr>
+<tr class="separator:a30da2e2f84bf5dab27e7bf850ad80ec1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac704060aed4cd2ecd7089b386b82cf0a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac704060aed4cd2ecd7089b386b82cf0a">updateOrderOfArrival</a> ()</td></tr>
+<tr class="memdesc:ac704060aed4cd2ecd7089b386b82cf0a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">!!! ONLY FOR INTERNAL USE Sets the arrival order when this node has a same ZOrder with other children.  <br /></td></tr>
+<tr class="separator:ac704060aed4cd2ecd7089b386b82cf0a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ee3e2f46780f87ecbce0a11870f7c0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a47ee3e2f46780f87ecbce0a11870f7c0">getLocalZOrder</a> () const</td></tr>
+<tr class="memdesc:a47ee3e2f46780f87ecbce0a11870f7c0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local Z order of this node.  <br /></td></tr>
+<tr class="separator:a47ee3e2f46780f87ecbce0a11870f7c0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7800c6b2895e122954582bf624fb85b3 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a7800c6b2895e122954582bf624fb85b3">setGlobalZOrder</a> (float globalZOrder)</td></tr>
+<tr class="memdesc:a7800c6b2895e122954582bf624fb85b3 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the order in which the nodes are renderer.  <br /></td></tr>
+<tr class="separator:a7800c6b2895e122954582bf624fb85b3 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0725e8c04e4fd8779fc66c29c5fd01ca inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a0725e8c04e4fd8779fc66c29c5fd01ca">getGlobalZOrder</a> () const</td></tr>
+<tr class="memdesc:a0725e8c04e4fd8779fc66c29c5fd01ca inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a>'s Global Z Order.  <br /></td></tr>
+<tr class="separator:a0725e8c04e4fd8779fc66c29c5fd01ca inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0ec67a2bb5ae4d2049abf37c76be81 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aed0ec67a2bb5ae4d2049abf37c76be81">setScaleX</a> (float scaleX)</td></tr>
+<tr class="memdesc:aed0ec67a2bb5ae4d2049abf37c76be81 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scale (x) of the node.  <br /></td></tr>
+<tr class="separator:aed0ec67a2bb5ae4d2049abf37c76be81 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7295c2bdcac8b28b2f333b83eb1e678 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab7295c2bdcac8b28b2f333b83eb1e678">getScaleX</a> () const</td></tr>
+<tr class="memdesc:ab7295c2bdcac8b28b2f333b83eb1e678 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scale factor on X axis of this node.  <br /></td></tr>
+<tr class="separator:ab7295c2bdcac8b28b2f333b83eb1e678 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db8536a9f45dd467512e55bb18403ad inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4db8536a9f45dd467512e55bb18403ad">setScaleY</a> (float scaleY)</td></tr>
+<tr class="memdesc:a4db8536a9f45dd467512e55bb18403ad inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scale (y) of the node.  <br /></td></tr>
+<tr class="separator:a4db8536a9f45dd467512e55bb18403ad inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e6602898f2d25d02abc1da4ff400a5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a00e6602898f2d25d02abc1da4ff400a5">getScaleY</a> () const</td></tr>
+<tr class="memdesc:a00e6602898f2d25d02abc1da4ff400a5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scale factor on Y axis of this node.  <br /></td></tr>
+<tr class="separator:a00e6602898f2d25d02abc1da4ff400a5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc0be8e3eb46148f9f4d06b0baa2c7c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a7cc0be8e3eb46148f9f4d06b0baa2c7c">setScaleZ</a> (float scaleZ)</td></tr>
+<tr class="memdesc:a7cc0be8e3eb46148f9f4d06b0baa2c7c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the scale factor on Z axis of this node.  <br /></td></tr>
+<tr class="separator:a7cc0be8e3eb46148f9f4d06b0baa2c7c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8de71d5321fb2b91088eca7230731c8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#af8de71d5321fb2b91088eca7230731c8">getScaleZ</a> () const</td></tr>
+<tr class="memdesc:af8de71d5321fb2b91088eca7230731c8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scale factor on Z axis of this node.  <br /></td></tr>
+<tr class="separator:af8de71d5321fb2b91088eca7230731c8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91c54136908f520b748be4a69ace0c0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac91c54136908f520b748be4a69ace0c0">setScale</a> (float scale)</td></tr>
+<tr class="memdesc:ac91c54136908f520b748be4a69ace0c0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scale (x,y,z) of the node.  <br /></td></tr>
+<tr class="separator:ac91c54136908f520b748be4a69ace0c0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c24eca5da61bda84619024cdcd1b9c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab0c24eca5da61bda84619024cdcd1b9c">getScale</a> () const</td></tr>
+<tr class="memdesc:ab0c24eca5da61bda84619024cdcd1b9c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the scale factor of the node, when X and Y have the same scale factor.  <br /></td></tr>
+<tr class="separator:ab0c24eca5da61bda84619024cdcd1b9c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad890743ea7159925d7a677da89bd94b6 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ad890743ea7159925d7a677da89bd94b6">setScale</a> (float scaleX, float scaleY)</td></tr>
+<tr class="memdesc:ad890743ea7159925d7a677da89bd94b6 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scale (x,y) of the node.  <br /></td></tr>
+<tr class="separator:ad890743ea7159925d7a677da89bd94b6 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818b0254d354593ea2319a2c28b32f2e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a818b0254d354593ea2319a2c28b32f2e">setPosition</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;position)</td></tr>
+<tr class="memdesc:a818b0254d354593ea2319a2c28b32f2e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position (x,y) of the node in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:a818b0254d354593ea2319a2c28b32f2e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6be2ddba6bb3ba59e29f6e43722268 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aef6be2ddba6bb3ba59e29f6e43722268">setPositionNormalized</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;position)</td></tr>
+<tr class="memdesc:aef6be2ddba6bb3ba59e29f6e43722268 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position (x,y) using values between 0 and 1.  <br /></td></tr>
+<tr class="separator:aef6be2ddba6bb3ba59e29f6e43722268 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e42bc88b88fd933c13ac2c0f11f558 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae6e42bc88b88fd933c13ac2c0f11f558">getPosition</a> () const</td></tr>
+<tr class="memdesc:ae6e42bc88b88fd933c13ac2c0f11f558 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position (x,y) of the node in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:ae6e42bc88b88fd933c13ac2c0f11f558 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad937b3deec2bc9f0986955395a1521ae inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ad937b3deec2bc9f0986955395a1521ae">getPositionNormalized</a> () const</td></tr>
+<tr class="memdesc:ad937b3deec2bc9f0986955395a1521ae inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the normalized position.  <br /></td></tr>
+<tr class="separator:ad937b3deec2bc9f0986955395a1521ae inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331195336739d9167f1e8ffd611bb325 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a331195336739d9167f1e8ffd611bb325">setPosition</a> (float x, float y)</td></tr>
+<tr class="memdesc:a331195336739d9167f1e8ffd611bb325 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position (x,y) of the node in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:a331195336739d9167f1e8ffd611bb325 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c81388ec2cedada0895e4e1543aefdc inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4c81388ec2cedada0895e4e1543aefdc">getPosition</a> (float *x, float *y) const</td></tr>
+<tr class="memdesc:a4c81388ec2cedada0895e4e1543aefdc inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets position in a more efficient way, returns two number instead of a <a class="el" href="../../d3/d6f/classax_1_1_vec2.html" title="Defines a 2-element floating point vector.">Vec2</a> object.  <br /></td></tr>
+<tr class="separator:a4c81388ec2cedada0895e4e1543aefdc inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcb14b683855bac1f966fb9cda7263c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#abdcb14b683855bac1f966fb9cda7263c">setPositionX</a> (float x)</td></tr>
+<tr class="memdesc:abdcb14b683855bac1f966fb9cda7263c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets x or y coordinate individually for position.  <br /></td></tr>
+<tr class="separator:abdcb14b683855bac1f966fb9cda7263c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af5c1f88c6ac000e2503c25cf0d74f4 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5af5c1f88c6ac000e2503c25cf0d74f4">getPositionX</a> () const</td></tr>
+<tr class="memdesc:a5af5c1f88c6ac000e2503c25cf0d74f4 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the x coordinate of the node in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:a5af5c1f88c6ac000e2503c25cf0d74f4 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce0171b2b65ff4b339fc5188c3f31d5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5ce0171b2b65ff4b339fc5188c3f31d5">setPositionY</a> (float y)</td></tr>
+<tr class="memdesc:a5ce0171b2b65ff4b339fc5188c3f31d5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the y coordinate of the node in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:a5ce0171b2b65ff4b339fc5188c3f31d5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f654365d487e1b0a067faba70915284 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4f654365d487e1b0a067faba70915284">getPositionY</a> () const</td></tr>
+<tr class="memdesc:a4f654365d487e1b0a067faba70915284 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the y coordinate of the node in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:a4f654365d487e1b0a067faba70915284 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb95e8faaa333a1cae953a330598ca6e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#adb95e8faaa333a1cae953a330598ca6e">setPosition3D</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;position)</td></tr>
+<tr class="memdesc:adb95e8faaa333a1cae953a330598ca6e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position (X, Y, and Z) in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:adb95e8faaa333a1cae953a330598ca6e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c7eafd20f6c73be30f439500f30bd1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae3c7eafd20f6c73be30f439500f30bd1">getPosition3D</a> () const</td></tr>
+<tr class="memdesc:ae3c7eafd20f6c73be30f439500f30bd1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position (X,Y,Z) in its parent's coordinate system.  <br /></td></tr>
+<tr class="separator:ae3c7eafd20f6c73be30f439500f30bd1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36332c25df9b0c9f0197a645658d1581 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a36332c25df9b0c9f0197a645658d1581">setPositionZ</a> (float positionZ)</td></tr>
+<tr class="memdesc:a36332c25df9b0c9f0197a645658d1581 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the 'z' coordinate in the position.  <br /></td></tr>
+<tr class="separator:a36332c25df9b0c9f0197a645658d1581 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534468c827750bd6aba7f51bca3b4611 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a534468c827750bd6aba7f51bca3b4611">getPositionZ</a> () const</td></tr>
+<tr class="memdesc:a534468c827750bd6aba7f51bca3b4611 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets position Z coordinate of this node.  <br /></td></tr>
+<tr class="separator:a534468c827750bd6aba7f51bca3b4611 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1086d6be1498e0db8a4cacbd3ebded48 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a1086d6be1498e0db8a4cacbd3ebded48">setSkewX</a> (float skewX)</td></tr>
+<tr class="memdesc:a1086d6be1498e0db8a4cacbd3ebded48 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the X skew angle of the node in degrees.  <br /></td></tr>
+<tr class="separator:a1086d6be1498e0db8a4cacbd3ebded48 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd49bb2749cf00d8e1ea29f786af1bbe inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afd49bb2749cf00d8e1ea29f786af1bbe">getSkewX</a> () const</td></tr>
+<tr class="memdesc:afd49bb2749cf00d8e1ea29f786af1bbe inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the X skew angle of the node in degrees.  <br /></td></tr>
+<tr class="separator:afd49bb2749cf00d8e1ea29f786af1bbe inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b0dd476af42d56ecf7994283286664 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae8b0dd476af42d56ecf7994283286664">setSkewY</a> (float skewY)</td></tr>
+<tr class="memdesc:ae8b0dd476af42d56ecf7994283286664 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the Y skew angle of the node in degrees.  <br /></td></tr>
+<tr class="separator:ae8b0dd476af42d56ecf7994283286664 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e8649908e6ca456d52fe217f2a3ad8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ad6e8649908e6ca456d52fe217f2a3ad8">getSkewY</a> () const</td></tr>
+<tr class="memdesc:ad6e8649908e6ca456d52fe217f2a3ad8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Y skew angle of the node in degrees.  <br /></td></tr>
+<tr class="separator:ad6e8649908e6ca456d52fe217f2a3ad8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf77210f31f01d0f564600c94c90e2be inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#abf77210f31f01d0f564600c94c90e2be">setAnchorPoint</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;anchorPoint)</td></tr>
+<tr class="memdesc:abf77210f31f01d0f564600c94c90e2be inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the anchor point in percent.  <br /></td></tr>
+<tr class="separator:abf77210f31f01d0f564600c94c90e2be inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857c313c68300e49447c478744a18a80 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a857c313c68300e49447c478744a18a80">getAnchorPoint</a> () const</td></tr>
+<tr class="memdesc:a857c313c68300e49447c478744a18a80 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the anchor point in percent.  <br /></td></tr>
+<tr class="separator:a857c313c68300e49447c478744a18a80 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd9fefa842340dfc0b29e62789be537 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aefd9fefa842340dfc0b29e62789be537">getAnchorPointInPoints</a> () const</td></tr>
+<tr class="memdesc:aefd9fefa842340dfc0b29e62789be537 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the anchorPoint in absolute pixels.  <br /></td></tr>
+<tr class="separator:aefd9fefa842340dfc0b29e62789be537 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442d24bed031dc53d7bac7dea36c7c53 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a442d24bed031dc53d7bac7dea36c7c53">setContentSize</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;contentSize)</td></tr>
+<tr class="memdesc:a442d24bed031dc53d7bac7dea36c7c53 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the untransformed size of the node.  <br /></td></tr>
+<tr class="separator:a442d24bed031dc53d7bac7dea36c7c53 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b07714220524441c0443c8edc43400 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a48b07714220524441c0443c8edc43400">getContentSize</a> () const</td></tr>
+<tr class="memdesc:a48b07714220524441c0443c8edc43400 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the untransformed size of the node.  <br /></td></tr>
+<tr class="separator:a48b07714220524441c0443c8edc43400 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f14510179b750ebf5fc388661c2a0a6 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a6f14510179b750ebf5fc388661c2a0a6">hitTest</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;worldPoint) const</td></tr>
+<tr class="memdesc:a6f14510179b750ebf5fc388661c2a0a6 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basic node hit test, since axmol-1.0.  <br /></td></tr>
+<tr class="separator:a6f14510179b750ebf5fc388661c2a0a6 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6547edc5bdc358ad27566775035b3c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aff6547edc5bdc358ad27566775035b3c">setVisible</a> (bool visible)</td></tr>
+<tr class="memdesc:aff6547edc5bdc358ad27566775035b3c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the node is visible.  <br /></td></tr>
+<tr class="separator:aff6547edc5bdc358ad27566775035b3c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9e092d80ed0c3995187866bb1b12e2 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aaf9e092d80ed0c3995187866bb1b12e2">isVisible</a> () const</td></tr>
+<tr class="memdesc:aaf9e092d80ed0c3995187866bb1b12e2 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the node is visible.  <br /></td></tr>
+<tr class="separator:aaf9e092d80ed0c3995187866bb1b12e2 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adababeeaed26db2306df84e337b4ea37 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#adababeeaed26db2306df84e337b4ea37">setRotation</a> (float rotation)</td></tr>
+<tr class="memdesc:adababeeaed26db2306df84e337b4ea37 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rotation (angle) of the node in degrees.  <br /></td></tr>
+<tr class="separator:adababeeaed26db2306df84e337b4ea37 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b492a42beb4eb220c270b180e45d7a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a77b492a42beb4eb220c270b180e45d7a">getRotation</a> () const</td></tr>
+<tr class="memdesc:a77b492a42beb4eb220c270b180e45d7a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation of the node in degrees.  <br /></td></tr>
+<tr class="separator:a77b492a42beb4eb220c270b180e45d7a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1b199afbb075836f043345648a8309 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a0e1b199afbb075836f043345648a8309">setRotation3D</a> (const <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a> &amp;rotation)</td></tr>
+<tr class="memdesc:a0e1b199afbb075836f043345648a8309 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rotation (X,Y,Z) in degrees.  <br /></td></tr>
+<tr class="separator:a0e1b199afbb075836f043345648a8309 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5972c29144add8df05b85cdf74a33f5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/de0/classax_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac5972c29144add8df05b85cdf74a33f5">getRotation3D</a> () const</td></tr>
+<tr class="memdesc:ac5972c29144add8df05b85cdf74a33f5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation (X,Y,Z) in degrees.  <br /></td></tr>
+<tr class="separator:ac5972c29144add8df05b85cdf74a33f5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16071ecbd0c17d865e4dddcd76b5427a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a16071ecbd0c17d865e4dddcd76b5427a">setRotationQuat</a> (const <a class="el" href="../../d7/da5/classax_1_1_quaternion.html">Quaternion</a> &amp;quat)</td></tr>
+<tr class="memdesc:a16071ecbd0c17d865e4dddcd76b5427a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation by quaternion.  <br /></td></tr>
+<tr class="separator:a16071ecbd0c17d865e4dddcd76b5427a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c81eeb7eed877af0a368e226bca0ff1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/da5/classax_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a8c81eeb7eed877af0a368e226bca0ff1">getRotationQuat</a> () const</td></tr>
+<tr class="memdesc:a8c81eeb7eed877af0a368e226bca0ff1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the rotation by quaternion, Note that when _rotationZ_X == _rotationZ_Y, the returned quaternion equals to RotationZ_X * RotationY * RotationX, it equals to RotationY * RotationX otherwise.  <br /></td></tr>
+<tr class="separator:a8c81eeb7eed877af0a368e226bca0ff1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274823dc85882e933932f4a24c24eec8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a274823dc85882e933932f4a24c24eec8">setRotationSkewX</a> (float rotationX)</td></tr>
+<tr class="memdesc:a274823dc85882e933932f4a24c24eec8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the X rotation (angle) of the node in degrees which performs a horizontal rotational skew.  <br /></td></tr>
+<tr class="separator:a274823dc85882e933932f4a24c24eec8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776fe02f7b38e35da0dd22ef311feab0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a776fe02f7b38e35da0dd22ef311feab0">getRotationSkewX</a> () const</td></tr>
+<tr class="memdesc:a776fe02f7b38e35da0dd22ef311feab0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the X rotation (angle) of the node in degrees which performs a horizontal rotation skew.  <br /></td></tr>
+<tr class="separator:a776fe02f7b38e35da0dd22ef311feab0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5ee7b3580ff634d02e172be8351e4c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4a5ee7b3580ff634d02e172be8351e4c">setRotationSkewY</a> (float rotationY)</td></tr>
+<tr class="memdesc:a4a5ee7b3580ff634d02e172be8351e4c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Y rotation (angle) of the node in degrees which performs a vertical rotational skew.  <br /></td></tr>
+<tr class="separator:a4a5ee7b3580ff634d02e172be8351e4c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352dc55f4b91b55260a9de1c17a9125c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a352dc55f4b91b55260a9de1c17a9125c">getRotationSkewY</a> () const</td></tr>
+<tr class="memdesc:a352dc55f4b91b55260a9de1c17a9125c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Y rotation (angle) of the node in degrees which performs a vertical rotational skew.  <br /></td></tr>
+<tr class="separator:a352dc55f4b91b55260a9de1c17a9125c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5362a3d059b50f6165f5edbeaa83199f inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5362a3d059b50f6165f5edbeaa83199f">setIgnoreAnchorPointForPosition</a> (bool ignore)</td></tr>
+<tr class="memdesc:a5362a3d059b50f6165f5edbeaa83199f inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the anchor point will be (0,0) when you position this node.  <br /></td></tr>
+<tr class="separator:a5362a3d059b50f6165f5edbeaa83199f inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4de468e77603062ca4663f7ffa5a8c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a6c4de468e77603062ca4663f7ffa5a8c">isIgnoreAnchorPointForPosition</a> () const</td></tr>
+<tr class="memdesc:a6c4de468e77603062ca4663f7ffa5a8c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the anchor point will be (0,0) when you position this node.  <br /></td></tr>
+<tr class="separator:a6c4de468e77603062ca4663f7ffa5a8c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adc3b1348beeb5762a3a08fbddd17d0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9adc3b1348beeb5762a3a08fbddd17d0">getTag</a> () const</td></tr>
+<tr class="memdesc:a9adc3b1348beeb5762a3a08fbddd17d0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a tag that is used to identify the node easily.  <br /></td></tr>
+<tr class="separator:a9adc3b1348beeb5762a3a08fbddd17d0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af833eb63c35974aff52d336565fd89cd inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#af833eb63c35974aff52d336565fd89cd">setTag</a> (int tag)</td></tr>
+<tr class="memdesc:af833eb63c35974aff52d336565fd89cd inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the tag that is used to identify the node easily.  <br /></td></tr>
+<tr class="separator:af833eb63c35974aff52d336565fd89cd inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2acfacf92a6e138399926ee7be705360 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a2acfacf92a6e138399926ee7be705360">getName</a> () const</td></tr>
+<tr class="memdesc:a2acfacf92a6e138399926ee7be705360 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that is used to identify the node.  <br /></td></tr>
+<tr class="separator:a2acfacf92a6e138399926ee7be705360 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520e50fff1b4409212df8624a2640e39 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a520e50fff1b4409212df8624a2640e39">setName</a> (std::string_view name)</td></tr>
+<tr class="memdesc:a520e50fff1b4409212df8624a2640e39 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the name that is used to identify the node easily.  <br /></td></tr>
+<tr class="separator:a520e50fff1b4409212df8624a2640e39 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df40ff931bfdfac2b9af3c103fa21c1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5df40ff931bfdfac2b9af3c103fa21c1">getUserData</a> ()</td></tr>
+<tr class="memdesc:a5df40ff931bfdfac2b9af3c103fa21c1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a custom user data pointer.  <br /></td></tr>
+<tr class="separator:a5df40ff931bfdfac2b9af3c103fa21c1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811ec2dc4ef84b6ed7c86058795779de inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+virtual const void *&#160;</td><td class="memItemRight" valign="bottom"><b>getUserData</b> () const</td></tr>
+<tr class="memdesc:a811ec2dc4ef84b6ed7c86058795779de inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">@lua NA <br /></td></tr>
+<tr class="separator:a811ec2dc4ef84b6ed7c86058795779de inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a0a018529a356b1a20ccc5d3508a1a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a38a0a018529a356b1a20ccc5d3508a1a">setUserData</a> (void *userData)</td></tr>
+<tr class="memdesc:a38a0a018529a356b1a20ccc5d3508a1a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a custom user data pointer.  <br /></td></tr>
+<tr class="separator:a38a0a018529a356b1a20ccc5d3508a1a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fa0bec7180926be1a3a57a4a6db8f0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a18fa0bec7180926be1a3a57a4a6db8f0">getUserObject</a> ()</td></tr>
+<tr class="memdesc:a18fa0bec7180926be1a3a57a4a6db8f0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a user assigned <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>.  <br /></td></tr>
+<tr class="separator:a18fa0bec7180926be1a3a57a4a6db8f0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5a04d9231e7cee71bdc2a7ef125a54 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+virtual const <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getUserObject</b> () const</td></tr>
+<tr class="memdesc:a4d5a04d9231e7cee71bdc2a7ef125a54 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">@lua NA <br /></td></tr>
+<tr class="separator:a4d5a04d9231e7cee71bdc2a7ef125a54 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7508cd6b74bde129fc290e74867824 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a8b7508cd6b74bde129fc290e74867824">setUserObject</a> (<a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *userObject)</td></tr>
+<tr class="memdesc:a8b7508cd6b74bde129fc290e74867824 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a user assigned <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>.  <br /></td></tr>
+<tr class="separator:a8b7508cd6b74bde129fc290e74867824 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecc243090bd42aa514f0df65848f588 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9ecc243090bd42aa514f0df65848f588">onEnterTransitionDidFinish</a> ()</td></tr>
+<tr class="memdesc:a9ecc243090bd42aa514f0df65848f588 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/db6/classax_1_1_event.html" title="Base class of all kinds of events.">Event</a> callback that is invoked when the <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> enters in the 'stage'.  <br /></td></tr>
+<tr class="separator:a9ecc243090bd42aa514f0df65848f588 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33cb6888a2cb30ccf3164e3def6e1ad inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab33cb6888a2cb30ccf3164e3def6e1ad">onExitTransitionDidStart</a> ()</td></tr>
+<tr class="memdesc:ab33cb6888a2cb30ccf3164e3def6e1ad inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/db6/classax_1_1_event.html" title="Base class of all kinds of events.">Event</a> callback that is called every time the <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> leaves the 'stage'.  <br /></td></tr>
+<tr class="separator:ab33cb6888a2cb30ccf3164e3def6e1ad inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef7f2a387dbcc4f024247a8c916979f inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4ef7f2a387dbcc4f024247a8c916979f">setActionManager</a> (<a class="el" href="../../d0/d21/classax_1_1_action_manager.html">ActionManager</a> *actionManager)</td></tr>
+<tr class="memdesc:a4ef7f2a387dbcc4f024247a8c916979f inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="../../d0/d21/classax_1_1_action_manager.html" title="ActionManager is a singleton that manages all the actions.">ActionManager</a> object that is used by all actions.  <br /></td></tr>
+<tr class="separator:a4ef7f2a387dbcc4f024247a8c916979f inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54b0914fe02ad97a21a77c343a42458 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d21/classax_1_1_action_manager.html">ActionManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac54b0914fe02ad97a21a77c343a42458">getActionManager</a> ()</td></tr>
+<tr class="memdesc:ac54b0914fe02ad97a21a77c343a42458 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="../../d0/d21/classax_1_1_action_manager.html" title="ActionManager is a singleton that manages all the actions.">ActionManager</a> object that is used by all actions.  <br /></td></tr>
+<tr class="separator:ac54b0914fe02ad97a21a77c343a42458 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cea1d09f1eab385ec4afca3eb96253b inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/db7/classax_1_1_action.html">Action</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a2cea1d09f1eab385ec4afca3eb96253b">runAction</a> (<a class="el" href="../../d2/db7/classax_1_1_action.html">Action</a> *action)</td></tr>
+<tr class="memdesc:a2cea1d09f1eab385ec4afca3eb96253b inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an action, and returns the action that is executed.  <br /></td></tr>
+<tr class="separator:a2cea1d09f1eab385ec4afca3eb96253b inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac933485f6cc2b262dcd8b13baa020a34 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stopAllActions</b> ()</td></tr>
+<tr class="memdesc:ac933485f6cc2b262dcd8b13baa020a34 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops and removes all actions from the running action list . <br /></td></tr>
+<tr class="separator:ac933485f6cc2b262dcd8b13baa020a34 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba6d673bdcca61f9be9b5bae0f13bfb inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aeba6d673bdcca61f9be9b5bae0f13bfb">stopAction</a> (<a class="el" href="../../d2/db7/classax_1_1_action.html">Action</a> *action)</td></tr>
+<tr class="memdesc:aeba6d673bdcca61f9be9b5bae0f13bfb inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops and removes an action from the running action list.  <br /></td></tr>
+<tr class="separator:aeba6d673bdcca61f9be9b5bae0f13bfb inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2ba3025a3844622fbb9aed476b4e01 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4b2ba3025a3844622fbb9aed476b4e01">stopActionByTag</a> (int tag)</td></tr>
+<tr class="memdesc:a4b2ba3025a3844622fbb9aed476b4e01 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an action from the running action list by its tag.  <br /></td></tr>
+<tr class="separator:a4b2ba3025a3844622fbb9aed476b4e01 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34a372fdd29ad6b530f272af9bad346 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aa34a372fdd29ad6b530f272af9bad346">stopAllActionsByTag</a> (int tag)</td></tr>
+<tr class="memdesc:aa34a372fdd29ad6b530f272af9bad346 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all actions from the running action list by its tag.  <br /></td></tr>
+<tr class="separator:aa34a372fdd29ad6b530f272af9bad346 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4cc19eb687d35b3401affc87afb97c inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4a4cc19eb687d35b3401affc87afb97c">stopActionsByFlags</a> (unsigned int flags)</td></tr>
+<tr class="memdesc:a4a4cc19eb687d35b3401affc87afb97c inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all actions from the running action list by its flags.  <br /></td></tr>
+<tr class="separator:a4a4cc19eb687d35b3401affc87afb97c inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b69e05519e283bdfb0eb3b1e555f8ac inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/classax_1_1_action.html">Action</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a3b69e05519e283bdfb0eb3b1e555f8ac">getActionByTag</a> (int tag)</td></tr>
+<tr class="memdesc:a3b69e05519e283bdfb0eb3b1e555f8ac inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action from the running action list by its tag.  <br /></td></tr>
+<tr class="separator:a3b69e05519e283bdfb0eb3b1e555f8ac inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2fa7a17161bf3a4e84a1beb7edc90d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a3d2fa7a17161bf3a4e84a1beb7edc90d">getNumberOfRunningActions</a> () const</td></tr>
+<tr class="memdesc:a3d2fa7a17161bf3a4e84a1beb7edc90d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the numbers of actions that are running plus the ones that are schedule to run (actions in actionsToAdd and actions arrays).  <br /></td></tr>
+<tr class="separator:a3d2fa7a17161bf3a4e84a1beb7edc90d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b44cd9e8246893ac10df563dfd66ee0 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a2b44cd9e8246893ac10df563dfd66ee0">getNumberOfRunningActionsByTag</a> (int tag) const</td></tr>
+<tr class="memdesc:a2b44cd9e8246893ac10df563dfd66ee0 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the numbers of actions that are running plus the ones that are schedule to run (actions in actionsToAdd and actions arrays) with a specific tag.  <br /></td></tr>
+<tr class="separator:a2b44cd9e8246893ac10df563dfd66ee0 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0d68d26ea0218be678e7e5ffee935d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afa0d68d26ea0218be678e7e5ffee935d">setScheduler</a> (<a class="el" href="../../db/dfa/classax_1_1_scheduler.html">Scheduler</a> *scheduler)</td></tr>
+<tr class="memdesc:afa0d68d26ea0218be678e7e5ffee935d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a <a class="el" href="../../db/dfa/classax_1_1_scheduler.html" title="Scheduler is responsible for triggering the scheduled callbacks.">Scheduler</a> object that is used to schedule all "updates" and timers.  <br /></td></tr>
+<tr class="separator:afa0d68d26ea0218be678e7e5ffee935d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f05f8b649d5d8ceaf5fec28146a417 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dfa/classax_1_1_scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac8f05f8b649d5d8ceaf5fec28146a417">getScheduler</a> ()</td></tr>
+<tr class="memdesc:ac8f05f8b649d5d8ceaf5fec28146a417 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="../../db/dfa/classax_1_1_scheduler.html" title="Scheduler is responsible for triggering the scheduled callbacks.">Scheduler</a> object.  <br /></td></tr>
+<tr class="separator:ac8f05f8b649d5d8ceaf5fec28146a417 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbf901c0f92f490742728d0b839f1b5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#affbf901c0f92f490742728d0b839f1b5">isScheduled</a> (SEL_SCHEDULE selector) const</td></tr>
+<tr class="memdesc:affbf901c0f92f490742728d0b839f1b5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a selector is scheduled.  <br /></td></tr>
+<tr class="separator:affbf901c0f92f490742728d0b839f1b5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917d3fc92121d1a666287e803ab393ea inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a917d3fc92121d1a666287e803ab393ea">isScheduled</a> (std::string_view key) const</td></tr>
+<tr class="memdesc:a917d3fc92121d1a666287e803ab393ea inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a lambda function is scheduled.  <br /></td></tr>
+<tr class="separator:a917d3fc92121d1a666287e803ab393ea inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f246760e234fcdb5b3916fed9ec3943 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a2f246760e234fcdb5b3916fed9ec3943">scheduleUpdate</a> ()</td></tr>
+<tr class="memdesc:a2f246760e234fcdb5b3916fed9ec3943 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules the "update" method.  <br /></td></tr>
+<tr class="separator:a2f246760e234fcdb5b3916fed9ec3943 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0644b10a42366b9ef4efc24c71e1bd22 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a0644b10a42366b9ef4efc24c71e1bd22">scheduleUpdateWithPriority</a> (int priority)</td></tr>
+<tr class="memdesc:a0644b10a42366b9ef4efc24c71e1bd22 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules the "update" method with a custom priority.  <br /></td></tr>
+<tr class="separator:a0644b10a42366b9ef4efc24c71e1bd22 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa0df52e790f26ad723af12229dbd8e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a1fa0df52e790f26ad723af12229dbd8e">schedule</a> (SEL_SCHEDULE selector, float interval, unsigned int repeat, float delay)</td></tr>
+<tr class="memdesc:a1fa0df52e790f26ad723af12229dbd8e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a custom selector.  <br /></td></tr>
+<tr class="separator:a1fa0df52e790f26ad723af12229dbd8e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6ad4371d8577656e7fd2c5a23316f5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a8f6ad4371d8577656e7fd2c5a23316f5">schedule</a> (SEL_SCHEDULE selector, float interval)</td></tr>
+<tr class="memdesc:a8f6ad4371d8577656e7fd2c5a23316f5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a custom selector with an interval time in seconds.  <br /></td></tr>
+<tr class="separator:a8f6ad4371d8577656e7fd2c5a23316f5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c289b99af0683cc84b3ce96cdcd876 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aa5c289b99af0683cc84b3ce96cdcd876">scheduleOnce</a> (SEL_SCHEDULE selector, float delay)</td></tr>
+<tr class="memdesc:aa5c289b99af0683cc84b3ce96cdcd876 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a selector that runs only once, with a delay of 0 or larger.  <br /></td></tr>
+<tr class="separator:aa5c289b99af0683cc84b3ce96cdcd876 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278b88299147018b723d3a8c12639c5f inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a278b88299147018b723d3a8c12639c5f">scheduleOnce</a> (const std::function&lt; void(float)&gt; &amp;callback, float delay, std::string_view key)</td></tr>
+<tr class="memdesc:a278b88299147018b723d3a8c12639c5f inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a lambda function that runs only once, with a delay of 0 or larger.  <br /></td></tr>
+<tr class="separator:a278b88299147018b723d3a8c12639c5f inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201de3de18ef592a3dd7564bbe449117 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a201de3de18ef592a3dd7564bbe449117">schedule</a> (SEL_SCHEDULE selector)</td></tr>
+<tr class="memdesc:a201de3de18ef592a3dd7564bbe449117 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a custom selector, the scheduled selector will be ticked every frame.  <br /></td></tr>
+<tr class="separator:a201de3de18ef592a3dd7564bbe449117 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14aba14256ea4237e8c6a3f5e67f8310 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a14aba14256ea4237e8c6a3f5e67f8310">schedule</a> (const std::function&lt; void(float)&gt; &amp;callback, std::string_view key)</td></tr>
+<tr class="memdesc:a14aba14256ea4237e8c6a3f5e67f8310 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a lambda function.  <br /></td></tr>
+<tr class="separator:a14aba14256ea4237e8c6a3f5e67f8310 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630320d8e255e6a1fb41cde4b08f5622 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a630320d8e255e6a1fb41cde4b08f5622">schedule</a> (const std::function&lt; void(float)&gt; &amp;callback, float interval, std::string_view key)</td></tr>
+<tr class="memdesc:a630320d8e255e6a1fb41cde4b08f5622 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a lambda function.  <br /></td></tr>
+<tr class="separator:a630320d8e255e6a1fb41cde4b08f5622 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944496e4a34c99416426b594d043f745 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a944496e4a34c99416426b594d043f745">schedule</a> (const std::function&lt; void(float)&gt; &amp;callback, float interval, unsigned int repeat, float delay, std::string_view key)</td></tr>
+<tr class="memdesc:a944496e4a34c99416426b594d043f745 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a lambda function.  <br /></td></tr>
+<tr class="separator:a944496e4a34c99416426b594d043f745 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fa7db85e4ba9f95633a348daf70c98 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae3fa7db85e4ba9f95633a348daf70c98">unschedule</a> (SEL_SCHEDULE selector)</td></tr>
+<tr class="memdesc:ae3fa7db85e4ba9f95633a348daf70c98 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unschedules a custom selector.  <br /></td></tr>
+<tr class="separator:ae3fa7db85e4ba9f95633a348daf70c98 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad95e7a42ebcdb3a55a74c94132d8e5 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5ad95e7a42ebcdb3a55a74c94132d8e5">unschedule</a> (std::string_view key)</td></tr>
+<tr class="memdesc:a5ad95e7a42ebcdb3a55a74c94132d8e5 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unschedules a lambda function.  <br /></td></tr>
+<tr class="separator:a5ad95e7a42ebcdb3a55a74c94132d8e5 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1689d5f38348260cf8731ae8157c1b2b inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a1689d5f38348260cf8731ae8157c1b2b">unscheduleAllCallbacks</a> ()</td></tr>
+<tr class="memdesc:a1689d5f38348260cf8731ae8157c1b2b inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unschedule all scheduled selectors and lambda functions: custom selectors, and the 'update' selector and lambda functions.  <br /></td></tr>
+<tr class="separator:a1689d5f38348260cf8731ae8157c1b2b inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8750549de4ce3be3cc5608b423204283 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a8750549de4ce3be3cc5608b423204283">resume</a> ()</td></tr>
+<tr class="memdesc:a8750549de4ce3be3cc5608b423204283 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes all scheduled selectors, actions and event listeners.  <br /></td></tr>
+<tr class="separator:a8750549de4ce3be3cc5608b423204283 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468fe2136e366509514bb38fed9d0102 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a468fe2136e366509514bb38fed9d0102">pause</a> ()</td></tr>
+<tr class="memdesc:a468fe2136e366509514bb38fed9d0102 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses all scheduled selectors, actions and event listeners.  <br /></td></tr>
+<tr class="separator:a468fe2136e366509514bb38fed9d0102 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b92c144ab3892e02e4d084fcf55e0e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab2b92c144ab3892e02e4d084fcf55e0e">update</a> (float delta)</td></tr>
+<tr class="memdesc:ab2b92c144ab3892e02e4d084fcf55e0e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update method will be called automatically every frame if "scheduleUpdate" is called, and the node is "live".  <br /></td></tr>
+<tr class="separator:ab2b92c144ab3892e02e4d084fcf55e0e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512fb3ef56081b3878dc78ee3b1261a1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a512fb3ef56081b3878dc78ee3b1261a1">updateTransform</a> ()</td></tr>
+<tr class="memdesc:a512fb3ef56081b3878dc78ee3b1261a1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls children's <a class="el" href="../../df/da2/classax_1_1_node.html#a512fb3ef56081b3878dc78ee3b1261a1" title="Calls children&#39;s updateTransform() method recursively.">updateTransform()</a> method recursively.  <br /></td></tr>
+<tr class="separator:a512fb3ef56081b3878dc78ee3b1261a1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44c8295955d1ea2c140c8d93dae08b8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac44c8295955d1ea2c140c8d93dae08b8">getNodeToParentTransform</a> () const</td></tr>
+<tr class="memdesc:ac44c8295955d1ea2c140c8d93dae08b8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the matrix that transform the node's (local) space coordinates into the parent's space coordinates.  <br /></td></tr>
+<tr class="separator:ac44c8295955d1ea2c140c8d93dae08b8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30416b59d4fef6a91fbdde2f8c94a1a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aa30416b59d4fef6a91fbdde2f8c94a1a">getNodeToParentTransform</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *ancestor) const</td></tr>
+<tr class="memdesc:aa30416b59d4fef6a91fbdde2f8c94a1a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the matrix that transform the node's (local) space coordinates into the parent's space coordinates.  <br /></td></tr>
+<tr class="separator:aa30416b59d4fef6a91fbdde2f8c94a1a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5533728ba6611986a0c946bfa297a5c4 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/ddd/structax_1_1_affine_transform.html">AffineTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5533728ba6611986a0c946bfa297a5c4">getNodeToParentAffineTransform</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *ancestor) const</td></tr>
+<tr class="memdesc:a5533728ba6611986a0c946bfa297a5c4 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the affine transform matrix that transform the node's (local) space coordinates into the parent's space coordinates.  <br /></td></tr>
+<tr class="separator:a5533728ba6611986a0c946bfa297a5c4 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c64ad7818c97e01c38a431535da9a9 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a93c64ad7818c97e01c38a431535da9a9">setNodeToParentTransform</a> (const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;transform)</td></tr>
+<tr class="memdesc:a93c64ad7818c97e01c38a431535da9a9 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transformation matrix manually.  <br /></td></tr>
+<tr class="separator:a93c64ad7818c97e01c38a431535da9a9 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c5d594d657d3f51e87e07f66822589 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a88c5d594d657d3f51e87e07f66822589">getParentToNodeTransform</a> () const</td></tr>
+<tr class="memdesc:a88c5d594d657d3f51e87e07f66822589 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the matrix that transform parent's space coordinates to the node's (local) space coordinates.  <br /></td></tr>
+<tr class="separator:a88c5d594d657d3f51e87e07f66822589 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90981c4ab35d17ed5a64b0961e50d244 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a90981c4ab35d17ed5a64b0961e50d244">getNodeToWorldTransform</a> () const</td></tr>
+<tr class="memdesc:a90981c4ab35d17ed5a64b0961e50d244 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the world affine transform matrix.  <br /></td></tr>
+<tr class="separator:a90981c4ab35d17ed5a64b0961e50d244 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306ea92593928ff39952d9772b9c072e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a306ea92593928ff39952d9772b9c072e">getWorldToNodeTransform</a> () const</td></tr>
+<tr class="memdesc:a306ea92593928ff39952d9772b9c072e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse world affine transform matrix.  <br /></td></tr>
+<tr class="separator:a306ea92593928ff39952d9772b9c072e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87ae74d97bcf82d7e963d52848c7b0d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aa87ae74d97bcf82d7e963d52848c7b0d">convertToNodeSpace</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;worldPoint) const</td></tr>
+<tr class="memdesc:aa87ae74d97bcf82d7e963d52848c7b0d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d3/d6f/classax_1_1_vec2.html" title="Defines a 2-element floating point vector.">Vec2</a> to node (local) space coordinates.  <br /></td></tr>
+<tr class="separator:aa87ae74d97bcf82d7e963d52848c7b0d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc9bd4bfa3a632666054886fe4fefc1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afcc9bd4bfa3a632666054886fe4fefc1">convertToWorldSpace</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;nodePoint) const</td></tr>
+<tr class="memdesc:afcc9bd4bfa3a632666054886fe4fefc1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d3/d6f/classax_1_1_vec2.html" title="Defines a 2-element floating point vector.">Vec2</a> to world space coordinates.  <br /></td></tr>
+<tr class="separator:afcc9bd4bfa3a632666054886fe4fefc1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2052ebb81d0817ed656dbb1aff86f84 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae2052ebb81d0817ed656dbb1aff86f84">convertToNodeSpaceAR</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;worldPoint) const</td></tr>
+<tr class="memdesc:ae2052ebb81d0817ed656dbb1aff86f84 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../d3/d6f/classax_1_1_vec2.html" title="Defines a 2-element floating point vector.">Vec2</a> to node (local) space coordinates.  <br /></td></tr>
+<tr class="separator:ae2052ebb81d0817ed656dbb1aff86f84 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a39009611aebe70f3def7acd63d4382 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a7a39009611aebe70f3def7acd63d4382">convertToWorldSpaceAR</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;nodePoint) const</td></tr>
+<tr class="memdesc:a7a39009611aebe70f3def7acd63d4382 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a local <a class="el" href="../../d3/d6f/classax_1_1_vec2.html" title="Defines a 2-element floating point vector.">Vec2</a> to world space coordinates.The result is in Points.  <br /></td></tr>
+<tr class="separator:a7a39009611aebe70f3def7acd63d4382 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace01164ec8da1fcc5c213d6fca2eb238 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ace01164ec8da1fcc5c213d6fca2eb238">convertTouchToNodeSpace</a> (<a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a> *touch) const</td></tr>
+<tr class="memdesc:ace01164ec8da1fcc5c213d6fca2eb238 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience methods which take a <a class="el" href="../../d8/de9/classax_1_1_touch.html" title="Encapsulates the Touch information, such as touch point, id and so on, and provides the methods that ...">Touch</a> instead of <a class="el" href="../../d3/d6f/classax_1_1_vec2.html" title="Defines a 2-element floating point vector.">Vec2</a>.  <br /></td></tr>
+<tr class="separator:ace01164ec8da1fcc5c213d6fca2eb238 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67a73976e1e01e4ccd523933258d94a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ab67a73976e1e01e4ccd523933258d94a">convertTouchToNodeSpaceAR</a> (<a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a> *touch) const</td></tr>
+<tr class="memdesc:ab67a73976e1e01e4ccd523933258d94a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts a <a class="el" href="../../d8/de9/classax_1_1_touch.html" title="Encapsulates the Touch information, such as touch point, id and so on, and provides the methods that ...">Touch</a> (world coordinates) into a local coordinate.  <br /></td></tr>
+<tr class="separator:ab67a73976e1e01e4ccd523933258d94a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79a7bc936ca1ac376870d35f666a97d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac79a7bc936ca1ac376870d35f666a97d">getWorldPosition</a> () const</td></tr>
+<tr class="memdesc:ac79a7bc936ca1ac376870d35f666a97d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets position of node in world space.  <br /></td></tr>
+<tr class="separator:ac79a7bc936ca1ac376870d35f666a97d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3f15321aaa839d161b922e89b2b71a inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afb3f15321aaa839d161b922e89b2b71a">setWorldPosition</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;position)</td></tr>
+<tr class="memdesc:afb3f15321aaa839d161b922e89b2b71a inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets position of node in world space.  <br /></td></tr>
+<tr class="separator:afb3f15321aaa839d161b922e89b2b71a inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeebed7f1a9a6e6e52af4acf7c814fc8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aeeebed7f1a9a6e6e52af4acf7c814fc8">setAdditionalTransform</a> (const <a class="el" href="../../d8/d6e/classax_1_1_mat4.html">Mat4</a> *additionalTransform)</td></tr>
+<tr class="memdesc:aeeebed7f1a9a6e6e52af4acf7c814fc8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an additional transform matrix to the node.  <br /></td></tr>
+<tr class="separator:aeeebed7f1a9a6e6e52af4acf7c814fc8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab894481a7f0e2a1efc7e5f3a9db990 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">Component *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aaab894481a7f0e2a1efc7e5f3a9db990">getComponent</a> (std::string_view name)</td></tr>
+<tr class="memdesc:aaab894481a7f0e2a1efc7e5f3a9db990 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a component by its name.  <br /></td></tr>
+<tr class="separator:aaab894481a7f0e2a1efc7e5f3a9db990 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e214dc65caae92b3111e6d31007fd8 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a78e214dc65caae92b3111e6d31007fd8">addComponent</a> (Component *component)</td></tr>
+<tr class="memdesc:a78e214dc65caae92b3111e6d31007fd8 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a component.  <br /></td></tr>
+<tr class="separator:a78e214dc65caae92b3111e6d31007fd8 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30419c10c56fd3a0bb7e2444ff9c8509 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a30419c10c56fd3a0bb7e2444ff9c8509">removeComponent</a> (std::string_view name)</td></tr>
+<tr class="memdesc:a30419c10c56fd3a0bb7e2444ff9c8509 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a component by its name.  <br /></td></tr>
+<tr class="separator:a30419c10c56fd3a0bb7e2444ff9c8509 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9efa26b9c27a1468d36024dd115a0d inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#abc9efa26b9c27a1468d36024dd115a0d">removeComponent</a> (Component *component)</td></tr>
+<tr class="memdesc:abc9efa26b9c27a1468d36024dd115a0d inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a component by its pointer.  <br /></td></tr>
+<tr class="separator:abc9efa26b9c27a1468d36024dd115a0d inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd5e64b59ec1d9059433f96144ea521 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllComponents</b> ()</td></tr>
+<tr class="memdesc:a4fd5e64b59ec1d9059433f96144ea521 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all components. <br /></td></tr>
+<tr class="separator:a4fd5e64b59ec1d9059433f96144ea521 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff42952b85c92c805f063d3fc0a951c7 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aff42952b85c92c805f063d3fc0a951c7">getChildByTag</a> (int tag) const</td></tr>
+<tr class="memdesc:aff42952b85c92c805f063d3fc0a951c7 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a child from the container with its tag.  <br /></td></tr>
+<tr class="separator:aff42952b85c92c805f063d3fc0a951c7 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e30c4c73e674eb66c8312a36f0cb11 inherit pub_methods_classax_1_1_node"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae7e30c4c73e674eb66c8312a36f0cb11 inherit pub_methods_classax_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ae7e30c4c73e674eb66c8312a36f0cb11">getChildByTag</a> (int tag) const</td></tr>
+<tr class="memdesc:ae7e30c4c73e674eb66c8312a36f0cb11 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a child from the container with its tag that can be cast to Type T.  <br /></td></tr>
+<tr class="separator:ae7e30c4c73e674eb66c8312a36f0cb11 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d41b791d0a744d6398b125adb609dec inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a6d41b791d0a744d6398b125adb609dec">getChildByName</a> (std::string_view name) const</td></tr>
+<tr class="memdesc:a6d41b791d0a744d6398b125adb609dec inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a child from the container with its name.  <br /></td></tr>
+<tr class="separator:a6d41b791d0a744d6398b125adb609dec inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9352370894640681ea717c8e826f2262 inherit pub_methods_classax_1_1_node"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9352370894640681ea717c8e826f2262 inherit pub_methods_classax_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9352370894640681ea717c8e826f2262">getChildByName</a> (std::string_view name) const</td></tr>
+<tr class="memdesc:a9352370894640681ea717c8e826f2262 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a child from the container with its name that can be cast to Type T.  <br /></td></tr>
+<tr class="separator:a9352370894640681ea717c8e826f2262 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fea623c9a70653e0f136a3267657bbb inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a4fea623c9a70653e0f136a3267657bbb">enumerateChildren</a> (std::string_view name, std::function&lt; bool(<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *node)&gt; callback) const</td></tr>
+<tr class="memdesc:a4fea623c9a70653e0f136a3267657bbb inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search the children of the receiving node to perform processing for nodes which share a name.  <br /></td></tr>
+<tr class="separator:a4fea623c9a70653e0f136a3267657bbb inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc94d482e860ca954666d86de1584995 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual Vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#afc94d482e860ca954666d86de1584995">getChildren</a> ()</td></tr>
+<tr class="memdesc:afc94d482e860ca954666d86de1584995 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the array of the node's children.  <br /></td></tr>
+<tr class="separator:afc94d482e860ca954666d86de1584995 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a226eb84553ed6a443553529a748142 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9a226eb84553ed6a443553529a748142">getChildrenCount</a> () const</td></tr>
+<tr class="memdesc:a9a226eb84553ed6a443553529a748142 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of children.  <br /></td></tr>
+<tr class="separator:a9a226eb84553ed6a443553529a748142 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422bea9e2906683166604ca29884285e inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a422bea9e2906683166604ca29884285e">setParent</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *parent)</td></tr>
+<tr class="memdesc:a422bea9e2906683166604ca29884285e inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent node.  <br /></td></tr>
+<tr class="separator:a422bea9e2906683166604ca29884285e inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9482308943ac550d8992e1746b29c0a1 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a9482308943ac550d8992e1746b29c0a1">getParent</a> ()</td></tr>
+<tr class="memdesc:a9482308943ac550d8992e1746b29c0a1 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the parent node.  <br /></td></tr>
+<tr class="separator:a9482308943ac550d8992e1746b29c0a1 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ae8e6cfb617d66b934e10dfc6f2bdc inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a56ae8e6cfb617d66b934e10dfc6f2bdc">removeFromParent</a> ()</td></tr>
+<tr class="memdesc:a56ae8e6cfb617d66b934e10dfc6f2bdc inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes this node itself from its parent node with a cleanup.  <br /></td></tr>
+<tr class="separator:a56ae8e6cfb617d66b934e10dfc6f2bdc inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5889948f4c40933e93aaf70cb8846192 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a5889948f4c40933e93aaf70cb8846192">removeFromParentAndCleanup</a> (bool <a class="el" href="../../df/da2/classax_1_1_node.html#a09f4fe805fa9a54d4d68c5b29c1502e1">cleanup</a>)</td></tr>
+<tr class="memdesc:a5889948f4c40933e93aaf70cb8846192 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes this node itself from its parent node.  <br /></td></tr>
+<tr class="separator:a5889948f4c40933e93aaf70cb8846192 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4548a27e089986fad71fdc09220fd32 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ad4548a27e089986fad71fdc09220fd32">removeChild</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *child, bool <a class="el" href="../../df/da2/classax_1_1_node.html#a09f4fe805fa9a54d4d68c5b29c1502e1">cleanup</a>=true)</td></tr>
+<tr class="memdesc:ad4548a27e089986fad71fdc09220fd32 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a child from the container.  <br /></td></tr>
+<tr class="separator:ad4548a27e089986fad71fdc09220fd32 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace46997bf90559d3f21dbf4135a79e89 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ace46997bf90559d3f21dbf4135a79e89">removeChildByTag</a> (int tag, bool <a class="el" href="../../df/da2/classax_1_1_node.html#a09f4fe805fa9a54d4d68c5b29c1502e1">cleanup</a>=true)</td></tr>
+<tr class="memdesc:ace46997bf90559d3f21dbf4135a79e89 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a child from the container by tag value.  <br /></td></tr>
+<tr class="separator:ace46997bf90559d3f21dbf4135a79e89 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ae64193944f00edcc86c26f917f509 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a45ae64193944f00edcc86c26f917f509">removeChildByName</a> (std::string_view name, bool <a class="el" href="../../df/da2/classax_1_1_node.html#a09f4fe805fa9a54d4d68c5b29c1502e1">cleanup</a>=true)</td></tr>
+<tr class="memdesc:a45ae64193944f00edcc86c26f917f509 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a child from the container by tag value.  <br /></td></tr>
+<tr class="separator:a45ae64193944f00edcc86c26f917f509 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5b225479b416b6d9f701c5de7e7e63 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a0b5b225479b416b6d9f701c5de7e7e63">removeAllChildrenWithCleanup</a> (bool <a class="el" href="../../df/da2/classax_1_1_node.html#a09f4fe805fa9a54d4d68c5b29c1502e1">cleanup</a>)</td></tr>
+<tr class="memdesc:a0b5b225479b416b6d9f701c5de7e7e63 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all children from the container, and do a cleanup to all running actions depending on the cleanup parameter.  <br /></td></tr>
+<tr class="separator:a0b5b225479b416b6d9f701c5de7e7e63 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dac0681a42c82d993a06c364cfc615 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#aa0dac0681a42c82d993a06c364cfc615">reorderChild</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *child, int localZOrder)</td></tr>
+<tr class="memdesc:aa0dac0681a42c82d993a06c364cfc615 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reorders a child according to a new z value.  <br /></td></tr>
+<tr class="separator:aa0dac0681a42c82d993a06c364cfc615 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123d030d1b3aa3293d13252aa3bddf85 inherit pub_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#a123d030d1b3aa3293d13252aa3bddf85">sortAllChildren</a> ()</td></tr>
+<tr class="memdesc:a123d030d1b3aa3293d13252aa3bddf85 inherit pub_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the children array once before drawing, instead of every time when a child is added or reordered.  <br /></td></tr>
+<tr class="separator:a123d030d1b3aa3293d13252aa3bddf85 inherit pub_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_transition_ease_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_transition_ease_scene')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d7/d48/classax_1_1_transition_ease_scene.html">TransitionEaseScene</a></td></tr>
+<tr class="memitem:a4362cd9c6aecbdb746bb25696ea94791 inherit pub_methods_classax_1_1_transition_ease_scene"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~TransitionEaseScene</b> ()</td></tr>
+<tr class="memdesc:a4362cd9c6aecbdb746bb25696ea94791 inherit pub_methods_classax_1_1_transition_ease_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a4362cd9c6aecbdb746bb25696ea94791 inherit pub_methods_classax_1_1_transition_ease_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe8dd1dccefac0f743d802b51ab7760 inherit pub_methods_classax_1_1_transition_ease_scene"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/dc0/classax_1_1_action_interval.html">ActionInterval</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d48/classax_1_1_transition_ease_scene.html#aabe8dd1dccefac0f743d802b51ab7760">easeActionWithAction</a> (<a class="el" href="../../d4/dc0/classax_1_1_action_interval.html">ActionInterval</a> *action)=0</td></tr>
+<tr class="memdesc:aabe8dd1dccefac0f743d802b51ab7760 inherit pub_methods_classax_1_1_transition_ease_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Ease action that will be performed on a linear action.  <br /></td></tr>
+<tr class="separator:aabe8dd1dccefac0f743d802b51ab7760 inherit pub_methods_classax_1_1_transition_ease_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7f07152beec471ab0444e055942b0559"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html">TransitionSlideInT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html#a7f07152beec471ab0444e055942b0559">create</a> (float t, <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:a7f07152beec471ab0444e055942b0559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transition with duration and incoming scene.  <br /></td></tr>
+<tr class="separator:a7f07152beec471ab0444e055942b0559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1_transition_slide_in_l"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1_transition_slide_in_l')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html">TransitionSlideInL</a></td></tr>
+<tr class="memitem:a1e41704b0255f61254637d1a0ba26790 inherit pub_static_methods_classax_1_1_transition_slide_in_l"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html">TransitionSlideInL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/classax_1_1_transition_slide_in_l.html#a1e41704b0255f61254637d1a0ba26790">create</a> (float t, <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:a1e41704b0255f61254637d1a0ba26790 inherit pub_static_methods_classax_1_1_transition_slide_in_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transition with duration and incoming scene.  <br /></td></tr>
+<tr class="separator:a1e41704b0255f61254637d1a0ba26790 inherit pub_static_methods_classax_1_1_transition_slide_in_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1_transition_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1_transition_scene')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../da/d04/classax_1_1_transition_scene.html">TransitionScene</a></td></tr>
+<tr class="memitem:a4a4eb9e68c5a17b032a60c9550ae4e2d inherit pub_static_methods_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d04/classax_1_1_transition_scene.html">TransitionScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a4a4eb9e68c5a17b032a60c9550ae4e2d">create</a> (float t, <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:a4a4eb9e68c5a17b032a60c9550ae4e2d inherit pub_static_methods_classax_1_1_transition_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a base transition with duration and incoming scene.  <br /></td></tr>
+<tr class="separator:a4a4eb9e68c5a17b032a60c9550ae4e2d inherit pub_static_methods_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1_scene')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a></td></tr>
+<tr class="memitem:aed05815baff3854efae67f819c03f742 inherit pub_static_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#aed05815baff3854efae67f819c03f742">create</a> ()</td></tr>
+<tr class="memdesc:aed05815baff3854efae67f819c03f742 inherit pub_static_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="../../de/db8/classax_1_1_scene.html" title="Scene is a subclass of Node that is used only as an abstract concept.">Scene</a> object.  <br /></td></tr>
+<tr class="separator:aed05815baff3854efae67f819c03f742 inherit pub_static_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4722ae648a184215f0eabf7769250b1 inherit pub_static_methods_classax_1_1_scene"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classax_1_1_scene.html#ab4722ae648a184215f0eabf7769250b1">createWithSize</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;size)</td></tr>
+<tr class="memdesc:ab4722ae648a184215f0eabf7769250b1 inherit pub_static_methods_classax_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="../../de/db8/classax_1_1_scene.html" title="Scene is a subclass of Node that is used only as an abstract concept.">Scene</a> object with a predefined size.  <br /></td></tr>
+<tr class="separator:ab4722ae648a184215f0eabf7769250b1 inherit pub_static_methods_classax_1_1_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1_node')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a></td></tr>
+<tr class="memitem:ac7a724506cb799fdcb5971717c72db94 inherit pub_static_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#ac7a724506cb799fdcb5971717c72db94">create</a> ()</td></tr>
+<tr class="memdesc:ac7a724506cb799fdcb5971717c72db94 inherit pub_static_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes a node.  <br /></td></tr>
+<tr class="separator:ac7a724506cb799fdcb5971717c72db94 inherit pub_static_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fbf6dffb5e4aa88caa24229a364b51 inherit pub_static_methods_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>getAttachedNodeCount</b> ()</td></tr>
+<tr class="memdesc:a59fbf6dffb5e4aa88caa24229a364b51 inherit pub_static_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets count of nodes those are attached to scene graph. <br /></td></tr>
+<tr class="separator:a59fbf6dffb5e4aa88caa24229a364b51 inherit pub_static_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce3d41422fb5e7e3ead7a03f6e98cc1 inherit pub_static_methods_classax_1_1_node"><td class="memTemplParams" colspan="2">template&lt;typename _T &gt; </td></tr>
+<tr class="memitem:acce3d41422fb5e7e3ead7a03f6e98cc1 inherit pub_static_methods_classax_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da2/classax_1_1_node.html#acce3d41422fb5e7e3ead7a03f6e98cc1">sortNodes</a> (ax::Vector&lt; _T * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:acce3d41422fb5e7e3ead7a03f6e98cc1 inherit pub_static_methods_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts helper function.  <br /></td></tr>
+<tr class="separator:acce3d41422fb5e7e3ead7a03f6e98cc1 inherit pub_static_methods_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classax_1_1_transition_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classax_1_1_transition_scene')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../da/d04/classax_1_1_transition_scene.html">TransitionScene</a></td></tr>
+<tr class="memitem:a871118a09520247c78a71ecd7b0abd58 inherit pub_types_classax_1_1_transition_scene"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a871118a09520247c78a71ecd7b0abd58">Orientation</a> { <a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a871118a09520247c78a71ecd7b0abd58a839da9577687c48229e41e8fd12d12f2">LEFT_OVER</a> = 0
+, <a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a871118a09520247c78a71ecd7b0abd58a40645d58a8968385e751b7f694e95a7f">RIGHT_OVER</a> = 1
+, <a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a871118a09520247c78a71ecd7b0abd58ac7ad4d776e5cc4020b6e518cc6ce7b74">UP_OVER</a> = 0
+, <a class="el" href="../../da/d04/classax_1_1_transition_scene.html#a871118a09520247c78a71ecd7b0abd58a3591c0ef551a9e701b6d0a4b5fe6679c">DOWN_OVER</a> = 1
+ }</td></tr>
+<tr class="memdesc:a871118a09520247c78a71ecd7b0abd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation Type used by some transitions.  <a href="../../da/d04/classax_1_1_transition_scene.html#a871118a09520247c78a71ecd7b0abd58">More...</a><br /></td></tr>
+<tr class="separator:a871118a09520247c78a71ecd7b0abd58 inherit pub_types_classax_1_1_transition_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classax_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classax_1_1_node')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../df/da2/classax_1_1_node.html">Node</a></td></tr>
+<tr class="memitem:a54e05d30a332e9faa9e25e182c7cb5ed inherit pub_static_attribs_classax_1_1_node"><td class="memItemLeft" align="right" valign="top">
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_TAG</b> = -1</td></tr>
+<tr class="memdesc:a54e05d30a332e9faa9e25e182c7cb5ed inherit pub_static_attribs_classax_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default tag used for all the nodes. <br /></td></tr>
+<tr class="separator:a54e05d30a332e9faa9e25e182c7cb5ed inherit pub_static_attribs_classax_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html" title="TransitionSlideInT: Slide in the incoming scene from the top border.">TransitionSlideInT</a>: Slide in the incoming scene from the top border. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7f07152beec471ab0444e055942b0559" name="a7f07152beec471ab0444e055942b0559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f07152beec471ab0444e055942b0559">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html">TransitionSlideInT</a> * create </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/db8/classax_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a transition with duration and incoming scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Duration time, in seconds. </td></tr>
+    <tr><td class="paramname">scene</td><td>A given scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A autoreleased <a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html" title="TransitionSlideInT: Slide in the incoming scene from the top border.">TransitionSlideInT</a> object. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Transition.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d8/dde/classax_1_1_transition_slide_in_t.html">TransitionSlideInT</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:52 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

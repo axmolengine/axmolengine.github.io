@@ -1,0 +1,1098 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Texture2D Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d3/dd4/classax_1_1_texture2_d.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d5/d81/classax_1_1_texture2_d-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Texture2D Class Reference<div class="ingroups"><a class="el" href="../../d0/dc7/group____2d.html">2D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> class.  
+ <a href="../../d3/dd4/classax_1_1_texture2_d.html#details">More...</a></p>
+
+<p><code>#include &lt;Texture2D.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7aa943ee0815b18339f322eba074fe94"><td class="memItemLeft" align="right" valign="top"><a id="a7aa943ee0815b18339f322eba074fe94" name="a7aa943ee0815b18339f322eba074fe94"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TexParams</b> = backend::SamplerDescriptor</td></tr>
+<tr class="memdesc:a7aa943ee0815b18339f322eba074fe94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extension to set the Min / Mag filter. <br /></td></tr>
+<tr class="separator:a7aa943ee0815b18339f322eba074fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6ee82522b7dce39aa96e1e0f2af7eae9"><td class="memItemLeft" align="right" valign="top"><a id="a6ee82522b7dce39aa96e1e0f2af7eae9" name="a6ee82522b7dce39aa96e1e0f2af7eae9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Texture2D</b> ()</td></tr>
+<tr class="memdesc:a6ee82522b7dce39aa96e1e0f2af7eae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">@js ctor <br /></td></tr>
+<tr class="separator:a6ee82522b7dce39aa96e1e0f2af7eae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8ced3551b2a96eecc906c34a2b5cff"><td class="memItemLeft" align="right" valign="top"><a id="a6b8ced3551b2a96eecc906c34a2b5cff" name="a6b8ced3551b2a96eecc906c34a2b5cff"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Texture2D</b> ()</td></tr>
+<tr class="memdesc:a6b8ced3551b2a96eecc906c34a2b5cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">@js NA @lua NA <br /></td></tr>
+<tr class="separator:a6b8ced3551b2a96eecc906c34a2b5cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6973f54853c8e87308a078e3556bf837"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a6973f54853c8e87308a078e3556bf837">initWithData</a> (const void *data, ssize_t dataLen, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> pixelFormat, int pixelsWide, int pixelsHigh, bool preMultipliedAlpha=false)</td></tr>
+<tr class="memdesc:a6973f54853c8e87308a078e3556bf837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes with a texture2d with data.  <br /></td></tr>
+<tr class="separator:a6973f54853c8e87308a078e3556bf837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd781298a6f3ed5306fdadd0e15d38ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#acd781298a6f3ed5306fdadd0e15d38ee">initWithData</a> (const void *data, ssize_t dataLen, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> pixelFormat, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> renderFormat, int pixelsWide, int pixelsHigh, bool preMultipliedAlpha=false)</td></tr>
+<tr class="memdesc:acd781298a6f3ed5306fdadd0e15d38ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes with a texture2d with data.  <br /></td></tr>
+<tr class="separator:acd781298a6f3ed5306fdadd0e15d38ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b1a1e81570c7fc67e693623550dc74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a01b1a1e81570c7fc67e693623550dc74">initWithMipmaps</a> (<a class="el" href="../../d3/dfa/struct_mipmap_info.html">MipmapInfo</a> *mipmaps, int mipmapsNum, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> pixelFormat, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> renderFormat, int pixelsWide, int pixelsHigh, bool preMultipliedAlpha=false)</td></tr>
+<tr class="memdesc:a01b1a1e81570c7fc67e693623550dc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes with mipmaps.  <br /></td></tr>
+<tr class="separator:a01b1a1e81570c7fc67e693623550dc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a798b2c3ca8d88b51300bb51ab50f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#af1a798b2c3ca8d88b51300bb51ab50f0">updateWithImage</a> (<a class="el" href="../../d3/d5c/classax_1_1_image.html">Image</a> *image, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> format, int index=0)</td></tr>
+<tr class="memdesc:af1a798b2c3ca8d88b51300bb51ab50f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update with image.  <br /></td></tr>
+<tr class="separator:af1a798b2c3ca8d88b51300bb51ab50f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2317da7f26e83e6e7d00080138c27a48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a2317da7f26e83e6e7d00080138c27a48">updateWithSubData</a> (void *data, int offsetX, int offsetY, int width, int height, int index=0)</td></tr>
+<tr class="memdesc:a2317da7f26e83e6e7d00080138c27a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update with texture data.  <br /></td></tr>
+<tr class="separator:a2317da7f26e83e6e7d00080138c27a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811813904398b12da0c1e221f1235a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a811813904398b12da0c1e221f1235a90">drawAtPoint</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;point, float globalZOrder)</td></tr>
+<tr class="memdesc:a811813904398b12da0c1e221f1235a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawing extensions to make it easy to draw basic quads using a <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> object.  <br /></td></tr>
+<tr class="separator:a811813904398b12da0c1e221f1235a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c84e4c97d9cfc998690ba3e4c76e72"><td class="memItemLeft" align="right" valign="top"><a id="af7c84e4c97d9cfc998690ba3e4c76e72" name="af7c84e4c97d9cfc998690ba3e4c76e72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawInRect</b> (const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect, float globalZOrder)</td></tr>
+<tr class="memdesc:af7c84e4c97d9cfc998690ba3e4c76e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture inside a rect. <br /></td></tr>
+<tr class="separator:af7c84e4c97d9cfc998690ba3e4c76e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab8f3585b14e54fa565535be7412ac2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a7ab8f3585b14e54fa565535be7412ac2">initWithImage</a> (<a class="el" href="../../d3/d5c/classax_1_1_image.html">Image</a> *image)</td></tr>
+<tr class="memdesc:a7ab8f3585b14e54fa565535be7412ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extensions to make it easy to create a <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> object from an image file.  <br /></td></tr>
+<tr class="separator:a7ab8f3585b14e54fa565535be7412ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76008fb3b6cc3265a790349dfacb7dcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a76008fb3b6cc3265a790349dfacb7dcc">initWithImage</a> (<a class="el" href="../../d3/d5c/classax_1_1_image.html">Image</a> *image, <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> format)</td></tr>
+<tr class="memdesc:a76008fb3b6cc3265a790349dfacb7dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a texture from a UIImage object.  <br /></td></tr>
+<tr class="separator:a76008fb3b6cc3265a790349dfacb7dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1642075684338e68c72543008371e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a8d1642075684338e68c72543008371e8">initWithString</a> (std::string_view text, std::string_view fontName, float fontSize, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;dimensions=<a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>(0, 0), <a class="el" href="../../d3/d6b/namespaceax.html#a329d9bd927278567bf85aa36e94571bf">TextHAlignment</a> hAlignment=TextHAlignment::CENTER, <a class="el" href="../../d3/d6b/namespaceax.html#a5cbfbd781a7150c133f63a37742f1a48">TextVAlignment</a> vAlignment=TextVAlignment::TOP, bool enableWrap=true, int overflow=0)</td></tr>
+<tr class="memdesc:a8d1642075684338e68c72543008371e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a texture from a string with dimensions, alignment, font name and font size.  <br /></td></tr>
+<tr class="separator:a8d1642075684338e68c72543008371e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca74a254ff4039f81944a34c86158fad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#aca74a254ff4039f81944a34c86158fad">initWithString</a> (std::string_view text, const <a class="el" href="../../d2/d0c/structax_1_1_font_definition.html">FontDefinition</a> &amp;textDefinition)</td></tr>
+<tr class="memdesc:aca74a254ff4039f81944a34c86158fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a texture from a string using a text definition.  <br /></td></tr>
+<tr class="separator:aca74a254ff4039f81944a34c86158fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d88cb33cab9f8171688845fc5133c27"><td class="memItemLeft" align="right" valign="top"><a id="a3d88cb33cab9f8171688845fc5133c27" name="a3d88cb33cab9f8171688845fc5133c27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTextureDescriptor</b> (const <a class="el" href="../../d6/dbd/structax_1_1backend_1_1_texture_descriptor.html">backend::TextureDescriptor</a> &amp;descriptor, bool preMultipliedAlpha=false)</td></tr>
+<tr class="memdesc:a3d88cb33cab9f8171688845fc5133c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">!Used for render buffer, such depth stencil attachment <br /></td></tr>
+<tr class="separator:a3d88cb33cab9f8171688845fc5133c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fdec18a6bf7a7b47a2ac76504a7e808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a1fdec18a6bf7a7b47a2ac76504a7e808">generateMipmap</a> ()</td></tr>
+<tr class="memdesc:a1fdec18a6bf7a7b47a2ac76504a7e808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates mipmap images for the texture.  <br /></td></tr>
+<tr class="separator:a1fdec18a6bf7a7b47a2ac76504a7e808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c9bba6d49b335816b36b60a6fcbc36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#aa2c9bba6d49b335816b36b60a6fcbc36">setAntiAliasTexParameters</a> ()</td></tr>
+<tr class="memdesc:aa2c9bba6d49b335816b36b60a6fcbc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets antialias texture parameters:  <br /></td></tr>
+<tr class="separator:aa2c9bba6d49b335816b36b60a6fcbc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0eedff71e551f089727923a8c23513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#ada0eedff71e551f089727923a8c23513">setAliasTexParameters</a> ()</td></tr>
+<tr class="memdesc:ada0eedff71e551f089727923a8c23513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets alias texture parameters:  <br /></td></tr>
+<tr class="separator:ada0eedff71e551f089727923a8c23513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bfdf26ee1f747e4a0761d87599fae2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a82bfdf26ee1f747e4a0761d87599fae2">getStringForFormat</a> () const</td></tr>
+<tr class="memdesc:a82bfdf26ee1f747e4a0761d87599fae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pixel format.  <br /></td></tr>
+<tr class="separator:a82bfdf26ee1f747e4a0761d87599fae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8201ee0dffb5f01aae0d597ebacbef1b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a8201ee0dffb5f01aae0d597ebacbef1b">getBitsPerPixelForFormat</a> () const</td></tr>
+<tr class="memdesc:a8201ee0dffb5f01aae0d597ebacbef1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bits-per-pixel of the in-memory OpenGL texture.  <br /></td></tr>
+<tr class="separator:a8201ee0dffb5f01aae0d597ebacbef1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f5465c687fa244bba429aa386030ce"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a98f5465c687fa244bba429aa386030ce">getBitsPerPixelForFormat</a> (<a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> format) const</td></tr>
+<tr class="memdesc:a98f5465c687fa244bba429aa386030ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper functions that returns bits per pixels for a given format.  <br /></td></tr>
+<tr class="separator:a98f5465c687fa244bba429aa386030ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6485ebf6fbc01e1163f86d7919dfb915"><td class="memItemLeft" align="right" valign="top"><a id="a6485ebf6fbc01e1163f86d7919dfb915" name="a6485ebf6fbc01e1163f86d7919dfb915"></a>
+const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getContentSizeInPixels</b> ()</td></tr>
+<tr class="memdesc:a6485ebf6fbc01e1163f86d7919dfb915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get content size. <br /></td></tr>
+<tr class="separator:a6485ebf6fbc01e1163f86d7919dfb915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7dbaaf5705729392bcef9f5078e737b"><td class="memItemLeft" align="right" valign="top"><a id="ad7dbaaf5705729392bcef9f5078e737b" name="ad7dbaaf5705729392bcef9f5078e737b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasPremultipliedAlpha</b> () const</td></tr>
+<tr class="memdesc:ad7dbaaf5705729392bcef9f5078e737b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the texture has their Alpha premultiplied. <br /></td></tr>
+<tr class="separator:ad7dbaaf5705729392bcef9f5078e737b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46416c18b84a3536b983225175f154a1"><td class="memItemLeft" align="right" valign="top"><a id="a46416c18b84a3536b983225175f154a1" name="a46416c18b84a3536b983225175f154a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasMipmaps</b> () const</td></tr>
+<tr class="memdesc:a46416c18b84a3536b983225175f154a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the texture has mip maps. <br /></td></tr>
+<tr class="separator:a46416c18b84a3536b983225175f154a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42054025a98041314ff9c348d8b2f1de"><td class="memItemLeft" align="right" valign="top"><a id="a42054025a98041314ff9c348d8b2f1de" name="a42054025a98041314ff9c348d8b2f1de"></a>
+<a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPixelFormat</b> () const</td></tr>
+<tr class="memdesc:a42054025a98041314ff9c348d8b2f1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pixel format of the texture. <br /></td></tr>
+<tr class="separator:a42054025a98041314ff9c348d8b2f1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7e515ac4dc8c0f3af6f3a99bef562e"><td class="memItemLeft" align="right" valign="top"><a id="a8d7e515ac4dc8c0f3af6f3a99bef562e" name="a8d7e515ac4dc8c0f3af6f3a99bef562e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPixelsWide</b> () const</td></tr>
+<tr class="memdesc:a8d7e515ac4dc8c0f3af6f3a99bef562e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the width of the texture in pixels. <br /></td></tr>
+<tr class="separator:a8d7e515ac4dc8c0f3af6f3a99bef562e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fbecbdc657917ae3dec915018249da"><td class="memItemLeft" align="right" valign="top"><a id="af0fbecbdc657917ae3dec915018249da" name="af0fbecbdc657917ae3dec915018249da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPixelsHigh</b> () const</td></tr>
+<tr class="memdesc:af0fbecbdc657917ae3dec915018249da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the height of the texture in pixels. <br /></td></tr>
+<tr class="separator:af0fbecbdc657917ae3dec915018249da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f05e63aced25d74e8a7455307191ff"><td class="memItemLeft" align="right" valign="top"><a id="a87f05e63aced25d74e8a7455307191ff" name="a87f05e63aced25d74e8a7455307191ff"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxS</b> () const</td></tr>
+<tr class="memdesc:a87f05e63aced25d74e8a7455307191ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets max S. <br /></td></tr>
+<tr class="separator:a87f05e63aced25d74e8a7455307191ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ed1cffe95a7c7b6807ce3350711e89"><td class="memItemLeft" align="right" valign="top"><a id="ab1ed1cffe95a7c7b6807ce3350711e89" name="ab1ed1cffe95a7c7b6807ce3350711e89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxS</b> (float maxS)</td></tr>
+<tr class="memdesc:ab1ed1cffe95a7c7b6807ce3350711e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets max S. <br /></td></tr>
+<tr class="separator:ab1ed1cffe95a7c7b6807ce3350711e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc66a0bec711b6cc62bf0102a650a88e"><td class="memItemLeft" align="right" valign="top"><a id="abc66a0bec711b6cc62bf0102a650a88e" name="abc66a0bec711b6cc62bf0102a650a88e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxT</b> () const</td></tr>
+<tr class="memdesc:abc66a0bec711b6cc62bf0102a650a88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets max T. <br /></td></tr>
+<tr class="separator:abc66a0bec711b6cc62bf0102a650a88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f22620f3838d686c9048de251e2e804"><td class="memItemLeft" align="right" valign="top"><a id="a3f22620f3838d686c9048de251e2e804" name="a3f22620f3838d686c9048de251e2e804"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxT</b> (float maxT)</td></tr>
+<tr class="memdesc:a3f22620f3838d686c9048de251e2e804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets max T. <br /></td></tr>
+<tr class="separator:a3f22620f3838d686c9048de251e2e804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eace857e8fa431f5bf5ad786f8d1d7d"><td class="memItemLeft" align="right" valign="top"><a id="a9eace857e8fa431f5bf5ad786f8d1d7d" name="a9eace857e8fa431f5bf5ad786f8d1d7d"></a>
+<a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getContentSize</b> () const</td></tr>
+<tr class="memdesc:a9eace857e8fa431f5bf5ad786f8d1d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the texture content size. <br /></td></tr>
+<tr class="separator:a9eace857e8fa431f5bf5ad786f8d1d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a88c959b9acbffc2176dd38b836d60c12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a88c959b9acbffc2176dd38b836d60c12">setDefaultAlphaPixelFormat</a> (<a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> format)</td></tr>
+<tr class="memdesc:a88c959b9acbffc2176dd38b836d60c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the default pixel format for UIImagescontains alpha channel.  <br /></td></tr>
+<tr class="separator:a88c959b9acbffc2176dd38b836d60c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbdf7f710a61a6ea013a050c270fb40"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html#a7cbdf7f710a61a6ea013a050c270fb40">getDefaultAlphaPixelFormat</a> ()</td></tr>
+<tr class="memdesc:a7cbdf7f710a61a6ea013a050c270fb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the alpha pixel format.  <br /></td></tr>
+<tr class="separator:a7cbdf7f710a61a6ea013a050c270fb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> class. </p>
+<p>This class allows to easily create OpenGL 2D textures from images, text or raw data. The created <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> object will always have power-of-two dimensions. Depending on how you create the <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> object, the actual image area of the texture might be smaller than the texture dimensions i.e. "contentSize" != (pixelsWide, pixelsHigh) and (maxS, maxT) != (1.0, 1.0). Be aware that the content of the generated textures will be upside-down! </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88c959b9acbffc2176dd38b836d60c12" name="a88c959b9acbffc2176dd38b836d60c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c959b9acbffc2176dd38b836d60c12">&#9670;&#160;</a></span>setDefaultAlphaPixelFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setDefaultAlphaPixelFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the default pixel format for UIImagescontains alpha channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>If the UIImage contains alpha channel, then the options are:<ul>
+<li>generate 32-bit textures: backend::PixelFormat::RGBA8 (default one)</li>
+<li>generate 24-bit textures: backend::PixelFormat::RGB8</li>
+<li>generate 16-bit textures: backend::PixelFormat::RGBA4</li>
+<li>generate 16-bit textures: backend::PixelFormat::RGB5A1</li>
+<li>generate 16-bit textures: backend::PixelFormat::RGB565</li>
+<li>generate 8-bit textures: backend::PixelFormat::R8 (only use it if you use just 1 color)</li>
+<li>generate 16-bit textures: backend::PixelFormat::RG8 (only use it if you use just 2 color)</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>How does it work ?</p><ul>
+<li>If the image is an RGBA (with Alpha) then the default pixel format will be used (it can be a 8-bit, 16-bit or 32-bit texture)</li>
+<li>If the image is an RGB (without Alpha) then: If the default pixel format is RGBA8888 then a RGBA8888 (32-bit) will be used. Otherwise a RGB565 (16-bit texture) will be used.</li>
+</ul>
+<p>This parameter is not valid for PVR / PVR.CCZ images.</p>
+<dl class="section since"><dt>Since</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a id="a7cbdf7f710a61a6ea013a050c270fb40" name="a7cbdf7f710a61a6ea013a050c270fb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cbdf7f710a61a6ea013a050c270fb40">&#9670;&#160;</a></span>getDefaultAlphaPixelFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a> getDefaultAlphaPixelFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the alpha pixel format. </p>
+<dl class="section since"><dt>Since</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a id="a6973f54853c8e87308a078e3556bf837" name="a6973f54853c8e87308a078e3556bf837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6973f54853c8e87308a078e3556bf837">&#9670;&#160;</a></span>initWithData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithData </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>pixelFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelsWide</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelsHigh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>preMultipliedAlpha</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes with a texture2d with data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">dataLen</td><td>The image data length. </td></tr>
+    <tr><td class="paramname">pixelFormat</td><td>The image pixelFormat. </td></tr>
+    <tr><td class="paramname">pixelsWide</td><td>The image width. </td></tr>
+    <tr><td class="paramname">pixelsHigh</td><td>The image height. </td></tr>
+    <tr><td class="paramname">contentSize</td><td>The image content size. </td></tr>
+    <tr><td class="paramname">preMultipliedAlpha</td><td>The texture has premultiplied alpha @js NA @lua NA </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd781298a6f3ed5306fdadd0e15d38ee" name="acd781298a6f3ed5306fdadd0e15d38ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd781298a6f3ed5306fdadd0e15d38ee">&#9670;&#160;</a></span>initWithData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithData </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>pixelFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>renderFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelsWide</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelsHigh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>preMultipliedAlpha</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes with a texture2d with data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">dataLen</td><td>The image data length. </td></tr>
+    <tr><td class="paramname">pixelFormat</td><td>The image pixelFormat. </td></tr>
+    <tr><td class="paramname">renderFormat</td><td>The format converted to. </td></tr>
+    <tr><td class="paramname">pixelsWide</td><td>The image width. </td></tr>
+    <tr><td class="paramname">pixelsHigh</td><td>The image height. </td></tr>
+    <tr><td class="paramname">contentSize</td><td>The image content size. </td></tr>
+    <tr><td class="paramname">preMultipliedAlpha</td><td>The texture has premultiplied alpha @js NA @lua NA </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01b1a1e81570c7fc67e693623550dc74" name="a01b1a1e81570c7fc67e693623550dc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b1a1e81570c7fc67e693623550dc74">&#9670;&#160;</a></span>initWithMipmaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithMipmaps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dfa/struct_mipmap_info.html">MipmapInfo</a> *&#160;</td>
+          <td class="paramname"><em>mipmaps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mipmapsNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>pixelFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>renderFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelsWide</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelsHigh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>preMultipliedAlpha</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes with mipmaps. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mipmaps</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">mipmapsNum</td><td>The mipmaps number. </td></tr>
+    <tr><td class="paramname">pixelFormat</td><td>The image pixelFormat. </td></tr>
+    <tr><td class="paramname">pixelsWide</td><td>The image width. </td></tr>
+    <tr><td class="paramname">pixelsHigh</td><td>The image height. </td></tr>
+    <tr><td class="paramname">preMultipliedAlpha</td><td>The texture has premultiplied alpha </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1a798b2c3ca8d88b51300bb51ab50f0" name="af1a798b2c3ca8d88b51300bb51ab50f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a798b2c3ca8d88b51300bb51ab50f0">&#9670;&#160;</a></span>updateWithImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool updateWithImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d5c/classax_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update with image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">offsetX</td><td>Specifies a texel offset in the x direction within the texture array. </td></tr>
+    <tr><td class="paramname">offsetY</td><td>Specifies a texel offset in the y direction within the texture array. </td></tr>
+    <tr><td class="paramname">width</td><td>Specifies the width of the texture subimage. </td></tr>
+    <tr><td class="paramname">height</td><td>Specifies the height of the texture subimage. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2317da7f26e83e6e7d00080138c27a48" name="a2317da7f26e83e6e7d00080138c27a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2317da7f26e83e6e7d00080138c27a48">&#9670;&#160;</a></span>updateWithSubData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool updateWithSubData </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offsetX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offsetY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update with texture data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">offsetX</td><td>Specifies a texel offset in the x direction within the texture array. </td></tr>
+    <tr><td class="paramname">offsetY</td><td>Specifies a texel offset in the y direction within the texture array. </td></tr>
+    <tr><td class="paramname">width</td><td>Specifies the width of the texture subimage. </td></tr>
+    <tr><td class="paramname">height</td><td>Specifies the height of the texture subimage. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a811813904398b12da0c1e221f1235a90" name="a811813904398b12da0c1e221f1235a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811813904398b12da0c1e221f1235a90">&#9670;&#160;</a></span>drawAtPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>globalZOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drawing extensions to make it easy to draw basic quads using a <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> object. </p>
+<p>These functions require GL_TEXTURE_2D and both GL_VERTEX_ARRAY and GL_TEXTURE_COORD_ARRAY client states to be enabled. Draws a texture at a given point. </p>
+
+</div>
+</div>
+<a id="a7ab8f3585b14e54fa565535be7412ac2" name="a7ab8f3585b14e54fa565535be7412ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab8f3585b14e54fa565535be7412ac2">&#9670;&#160;</a></span>initWithImage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d5c/classax_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extensions to make it easy to create a <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> object from an image file. </p>
+<p>Initializes a texture from a UIImage object.</p>
+<p>We will use the format you specified with setDefaultAlphaPixelFormat to convert the image for texture. NOTE: It will not convert the pvr image file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>An UIImage object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a76008fb3b6cc3265a790349dfacb7dcc" name="a76008fb3b6cc3265a790349dfacb7dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76008fb3b6cc3265a790349dfacb7dcc">&#9670;&#160;</a></span>initWithImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d5c/classax_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a texture from a UIImage object. </p>
+<p>We will use the format you passed to the function to convert the image format to the texture format. If you pass PixelFormat::NONE, we will auto detect the image render type and use that type for texture to render. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>An UIImage object. </td></tr>
+    <tr><td class="paramname">format</td><td>Texture pixel formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d1642075684338e68c72543008371e8" name="a8d1642075684338e68c72543008371e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1642075684338e68c72543008371e8">&#9670;&#160;</a></span>initWithString() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithString </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>fontName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>dimensions</em> = <code><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>(0,&#160;0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d6b/namespaceax.html#a329d9bd927278567bf85aa36e94571bf">TextHAlignment</a>&#160;</td>
+          <td class="paramname"><em>hAlignment</em> = <code>TextHAlignment::CENTER</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d6b/namespaceax.html#a5cbfbd781a7150c133f63a37742f1a48">TextVAlignment</a>&#160;</td>
+          <td class="paramname"><em>vAlignment</em> = <code>TextVAlignment::TOP</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enableWrap</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>overflow</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a texture from a string with dimensions, alignment, font name and font size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>A null terminated string. </td></tr>
+    <tr><td class="paramname">fontName</td><td>The font name. </td></tr>
+    <tr><td class="paramname">fontSize</td><td>The font size. </td></tr>
+    <tr><td class="paramname">dimensions</td><td>The font dimension. </td></tr>
+    <tr><td class="paramname">hAlignment</td><td>The font horizontal text alignment type. </td></tr>
+    <tr><td class="paramname">vAlignment</td><td>The font vertical text alignment type. </td></tr>
+    <tr><td class="paramname">enableWrap</td><td>Whether enable text wrap or not. </td></tr>
+    <tr><td class="paramname">overflow</td><td>Whether shrink font size when content larger than the dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca74a254ff4039f81944a34c86158fad" name="aca74a254ff4039f81944a34c86158fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca74a254ff4039f81944a34c86158fad">&#9670;&#160;</a></span>initWithString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithString </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d0c/structax_1_1_font_definition.html">FontDefinition</a> &amp;&#160;</td>
+          <td class="paramname"><em>textDefinition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a texture from a string using a text definition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>A null terminated string. </td></tr>
+    <tr><td class="paramname">textDefinition</td><td>A <a class="el" href="../../d2/d0c/structax_1_1_font_definition.html" title="Font attributes.">FontDefinition</a> object contains font attributes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fdec18a6bf7a7b47a2ac76504a7e808" name="a1fdec18a6bf7a7b47a2ac76504a7e808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fdec18a6bf7a7b47a2ac76504a7e808">&#9670;&#160;</a></span>generateMipmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generateMipmap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates mipmap images for the texture. </p>
+<p>It only works if the texture size is POT (power of 2). </p><dl class="section since"><dt>Since</dt><dd>v0.99.0 </dd></dl>
+
+</div>
+</div>
+<a id="aa2c9bba6d49b335816b36b60a6fcbc36" name="aa2c9bba6d49b335816b36b60a6fcbc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c9bba6d49b335816b36b60a6fcbc36">&#9670;&#160;</a></span>setAntiAliasTexParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAntiAliasTexParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets antialias texture parameters: </p>
+<ul>
+<li>GL_TEXTURE_MIN_FILTER = GL_LINEAR</li>
+<li>GL_TEXTURE_MAG_FILTER = GL_LINEAR</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd>Calling this method could allocate additional texture memory.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a id="ada0eedff71e551f089727923a8c23513" name="ada0eedff71e551f089727923a8c23513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada0eedff71e551f089727923a8c23513">&#9670;&#160;</a></span>setAliasTexParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAliasTexParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets alias texture parameters: </p>
+<ul>
+<li>GL_TEXTURE_MIN_FILTER = GL_NEAREST</li>
+<li>GL_TEXTURE_MAG_FILTER = GL_NEAREST</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd>Calling this method could allocate additional texture memory.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a id="a82bfdf26ee1f747e4a0761d87599fae2" name="a82bfdf26ee1f747e4a0761d87599fae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bfdf26ee1f747e4a0761d87599fae2">&#9670;&#160;</a></span>getStringForFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * getStringForFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the pixel format. </p>
+<dl class="section since"><dt>Since</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a id="a8201ee0dffb5f01aae0d597ebacbef1b" name="a8201ee0dffb5f01aae0d597ebacbef1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8201ee0dffb5f01aae0d597ebacbef1b">&#9670;&#160;</a></span>getBitsPerPixelForFormat() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int getBitsPerPixelForFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the bits-per-pixel of the in-memory OpenGL texture. </p>
+<dl class="section since"><dt>Since</dt><dd>v1.0 </dd></dl>
+
+</div>
+</div>
+<a id="a98f5465c687fa244bba429aa386030ce" name="a98f5465c687fa244bba429aa386030ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f5465c687fa244bba429aa386030ce">&#9670;&#160;</a></span>getBitsPerPixelForFormat() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int getBitsPerPixelForFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html#a60883d4958a60b91661e97027a85072a">backend::PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper functions that returns bits per pixels for a given format. </p>
+<dl class="section since"><dt>Since</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Texture2D.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:51 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

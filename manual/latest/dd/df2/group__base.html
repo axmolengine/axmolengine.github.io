@@ -1,0 +1,343 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Base</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;2.2.1-044cc87</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dd/df2/group__base.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Base</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>@js NA @lua NA  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d3/d6b/namespaceax"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></td></tr>
+<tr class="memdesc:d3/d6b/namespaceax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright 2013 BlackBerry Inc. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dab/classax_1_1_autorelease_pool.html">AutoreleasePool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pool for managing autorelease objects.  <a href="../../dd/dab/classax_1_1_autorelease_pool.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d72/classax_1_1_director.html">Director</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that creates and handles the main Window and manages how and when to execute the Scenes.  <a href="../../d4/d72/classax_1_1_director.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5a/classax_1_1_padded_string.html">PaddedString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dedicated class for easy load padded string for simdjson parser.  <a href="../../d4/d5a/classax_1_1_padded_string.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classax_1_1_scheduler.html">Scheduler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/dfa/classax_1_1_scheduler.html" title="Scheduler is responsible for triggering the scheduled callbacks.">Scheduler</a> is responsible for triggering the scheduled callbacks.  <a href="../../db/dfa/classax_1_1_scheduler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/classax_1_1_touch.html">Touch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates the <a class="el" href="../../d8/de9/classax_1_1_touch.html" title="Encapsulates the Touch information, such as touch point, id and so on, and provides the methods that ...">Touch</a> information, such as touch point, id and so on, and provides the methods that commonly used.  <a href="../../d8/de9/classax_1_1_touch.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/structax_1_1_affine_transform.html">AffineTransform</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gae2eab65745e7f093a97fbd4421261c84"><td class="memItemLeft" align="right" valign="top"><a id="gae2eab65745e7f093a97fbd4421261c84" name="gae2eab65745e7f093a97fbd4421261c84"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_DEG_TO_RAD</b>(x)&#160;&#160;&#160;((x) * 0.0174532925f)</td></tr>
+<tr class="memdesc:gae2eab65745e7f093a97fbd4421261c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Util macro for conversion from degrees to radians. <br /></td></tr>
+<tr class="separator:gae2eab65745e7f093a97fbd4421261c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7144cae826260514e7a61f405c77e848"><td class="memItemLeft" align="right" valign="top"><a id="ga7144cae826260514e7a61f405c77e848" name="ga7144cae826260514e7a61f405c77e848"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_RAD_TO_DEG</b>(x)&#160;&#160;&#160;((x) * 57.29577951f)</td></tr>
+<tr class="memdesc:ga7144cae826260514e7a61f405c77e848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Util macro for conversion from radians to degrees. <br /></td></tr>
+<tr class="separator:ga7144cae826260514e7a61f405c77e848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga499e0366d9c47cd99a81536194f94b69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df2/group__base.html#ga499e0366d9c47cd99a81536194f94b69">RectFromString</a> (std::string_view str)</td></tr>
+<tr class="memdesc:ga499e0366d9c47cd99a81536194f94b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Core Graphics rectangle structure corresponding to the data in a given string.  <br /></td></tr>
+<tr class="separator:ga499e0366d9c47cd99a81536194f94b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff8ed1444fe6675f195ead75c3c9ac7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df2/group__base.html#gaff8ed1444fe6675f195ead75c3c9ac7a">PointFromString</a> (std::string_view str)</td></tr>
+<tr class="memdesc:gaff8ed1444fe6675f195ead75c3c9ac7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Core Graphics point structure corresponding to the data in a given string.  <br /></td></tr>
+<tr class="separator:gaff8ed1444fe6675f195ead75c3c9ac7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8f88f9adc8723a9a3d3d1bc8176425e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df2/group__base.html#gab8f88f9adc8723a9a3d3d1bc8176425e">SizeFromString</a> (std::string_view str)</td></tr>
+<tr class="memdesc:gab8f88f9adc8723a9a3d3d1bc8176425e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Core Graphics size structure corresponding to the data in a given string.  <br /></td></tr>
+<tr class="separator:gab8f88f9adc8723a9a3d3d1bc8176425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>@js NA @lua NA </p>
+<p>Copyright 2013 BlackBerry Inc.</p>
+<p>Copyright (c) 2014-2017 Chukong Technologies Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd. Copyright (c) 2019-present Axmol Engine contributors (see AUTHORS.md).</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Original file from GamePlay3D: <a href="http://gameplay3d.org">http://gameplay3d.org</a></p>
+<p>This file was modified to fit the axmol project</p>
+<p>Copyright (c) 2014-2017 Chukong Technologies Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Original file from GamePlay3D: <a href="http://gameplay3d.org">http://gameplay3d.org</a></p>
+<p>This file was modified to fit the cocos2d-x project</p>
+<p>Copyright (c) 2014-2017 Chukong Technologies Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd. Copyright (c) 2019-present Axmol Engine contributors (see AUTHORS.md).</p>
+<p><a href="https://axmol.dev/">https://axmol.dev/</a></p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Original file from GamePlay3D: <a href="http://gameplay3d.org">http://gameplay3d.org</a></p>
+<p>This file was modified to fit the cocos2d-x project</p>
+<p>Copyright (c) 2014-2017 Chukong Technologies Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd. Copyright (c) 2019-present Axmol Engine contributors (see AUTHORS.md).</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Original file from GamePlay3D: <a href="http://gameplay3d.org">http://gameplay3d.org</a></p>
+<p>This file was modified to fit the cocos2d-x project </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga499e0366d9c47cd99a81536194f94b69" name="ga499e0366d9c47cd99a81536194f94b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga499e0366d9c47cd99a81536194f94b69">&#9670;&#160;</a></span>RectFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> RectFromString </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a Core Graphics rectangle structure corresponding to the data in a given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>A string object whose contents are of the form "{{x,y},{w, h}}", where x is the x coordinate, y is the y coordinate, w is the width, and h is the height. These components can represent integer or float values. An example of a valid string is "{{3,2},{4,5}}". The string is not localized, so items are always separated with a comma. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Core Graphics structure that represents a rectangle. If the string is not well-formed, the function returns <a class="el" href="../../df/dc5/classax_1_1_rect.html#a60d6b3929a88025cdc25ff4afd73f523" title="An empty Rect.">Rect::ZERO</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gaff8ed1444fe6675f195ead75c3c9ac7a" name="gaff8ed1444fe6675f195ead75c3c9ac7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff8ed1444fe6675f195ead75c3c9ac7a">&#9670;&#160;</a></span>PointFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> PointFromString </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a Core Graphics point structure corresponding to the data in a given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>A string object whose contents are of the form "{x,y}", where x is the x coordinate and y is the y coordinate. The x and y values can represent integer or float values. An example of a valid string is "{3.0,2.5}". The string is not localized, so items are always separated with a comma. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Core Graphics structure that represents a point. If the string is not well-formed, the function returns <a class="el" href="../../d3/d6f/classax_1_1_vec2.html#ad4d657335df54712ed5190bc1a80c6e6" title="equals to Vec2(0,0)">Vec2::ZERO</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gab8f88f9adc8723a9a3d3d1bc8176425e" name="gab8f88f9adc8723a9a3d3d1bc8176425e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8f88f9adc8723a9a3d3d1bc8176425e">&#9670;&#160;</a></span>SizeFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> SizeFromString </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a Core Graphics size structure corresponding to the data in a given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>A string object whose contents are of the form "{w, h}", where w is the width and h is the height. The w and h values can be integer or float values. An example of a valid string is "{3.0,2.5}". The string is not localized, so items are always separated with a comma. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Core Graphics structure that represents a size. If the string is not well-formed, the function returns <a class="el" href="../../d3/d6f/classax_1_1_vec2.html#ad4d657335df54712ed5190bc1a80c6e6" title="equals to Vec2(0,0)">Vec2::ZERO</a>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:46 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

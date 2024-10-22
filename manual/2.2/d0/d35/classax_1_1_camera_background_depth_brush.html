@@ -1,0 +1,368 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: CameraBackgroundDepthBrush Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d0/d35/classax_1_1_camera_background_depth_brush.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../db/d0e/classax_1_1_camera_background_depth_brush-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">CameraBackgroundDepthBrush Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Depth brush clear depth buffer with given depth.  
+ <a href="../../d0/d35/classax_1_1_camera_background_depth_brush.html#details">More...</a></p>
+
+<p><code>#include &lt;CameraBackgroundBrush.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html">CameraBackgroundBrush</a>.</p>
+
+<p>Inherited by <a class="el" href="../../db/d68/classax_1_1_camera_background_color_brush.html">CameraBackgroundColorBrush</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5ff7773c52dc73a244ffd701c0744db4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#aebd9ad52462d5f4c5f54280321d18bf2">BrushType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html#a5ff7773c52dc73a244ffd701c0744db4">getBrushType</a> () const override</td></tr>
+<tr class="memdesc:a5ff7773c52dc73a244ffd701c0744db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get brush type.  <br /></td></tr>
+<tr class="separator:a5ff7773c52dc73a244ffd701c0744db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48666ee10682dd42dc16d1318406b0f"><td class="memItemLeft" align="right" valign="top"><a id="ad48666ee10682dd42dc16d1318406b0f" name="ad48666ee10682dd42dc16d1318406b0f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>drawBackground</b> (<a class="el" href="../../d6/dca/classax_1_1_camera.html">Camera</a> *camera) override</td></tr>
+<tr class="memdesc:ad48666ee10682dd42dc16d1318406b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw background. <br /></td></tr>
+<tr class="separator:ad48666ee10682dd42dc16d1318406b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395762825de1e2eddcd94887f4f2abf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html#a395762825de1e2eddcd94887f4f2abf3">setDepth</a> (float depth)</td></tr>
+<tr class="memdesc:a395762825de1e2eddcd94887f4f2abf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set depth.  <br /></td></tr>
+<tr class="separator:a395762825de1e2eddcd94887f4f2abf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab751fd524debf85fd7856b083133f15c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#aebd9ad52462d5f4c5f54280321d18bf2">BrushType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#ab751fd524debf85fd7856b083133f15c">getBrushType</a> () const</td></tr>
+<tr class="memdesc:ab751fd524debf85fd7856b083133f15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get brush type  <br /></td></tr>
+<tr class="separator:ab751fd524debf85fd7856b083133f15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4736dae5ba8dd2408be19b4d886cfb44"><td class="memItemLeft" align="right" valign="top"><a id="a4736dae5ba8dd2408be19b4d886cfb44" name="a4736dae5ba8dd2408be19b4d886cfb44"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>drawBackground</b> (<a class="el" href="../../d6/dca/classax_1_1_camera.html">Camera</a> *)</td></tr>
+<tr class="memdesc:a4736dae5ba8dd2408be19b4d886cfb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw the background <br /></td></tr>
+<tr class="separator:a4736dae5ba8dd2408be19b4d886cfb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5602134dd6e61cf7dde2ebb9154cc9be"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html">CameraBackgroundDepthBrush</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html#a5602134dd6e61cf7dde2ebb9154cc9be">create</a> (float depth)</td></tr>
+<tr class="memdesc:a5602134dd6e61cf7dde2ebb9154cc9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a depth brush.  <br /></td></tr>
+<tr class="separator:a5602134dd6e61cf7dde2ebb9154cc9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1_camera_background_brush"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1_camera_background_brush')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html">CameraBackgroundBrush</a></td></tr>
+<tr class="memitem:ac148de23afc76bd5fbabc5eebbadefa2 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html">CameraBackgroundBrush</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#ac148de23afc76bd5fbabc5eebbadefa2">createNoneBrush</a> ()</td></tr>
+<tr class="memdesc:ac148de23afc76bd5fbabc5eebbadefa2 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a none brush, it does nothing when clear the background.  <br /></td></tr>
+<tr class="separator:ac148de23afc76bd5fbabc5eebbadefa2 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ed7f4f48f4ab260e6371fce0051d60 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html">CameraBackgroundDepthBrush</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#aa6ed7f4f48f4ab260e6371fce0051d60">createDepthBrush</a> (float depth=1.f)</td></tr>
+<tr class="memdesc:aa6ed7f4f48f4ab260e6371fce0051d60 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a depth brush, which clears depth buffer with a given depth.  <br /></td></tr>
+<tr class="separator:aa6ed7f4f48f4ab260e6371fce0051d60 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167ef0541b3d06ead6b907b5336b6614 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d68/classax_1_1_camera_background_color_brush.html">CameraBackgroundColorBrush</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#a167ef0541b3d06ead6b907b5336b6614">createColorBrush</a> (const <a class="el" href="../../d1/daf/structax_1_1_color4_f.html">Color4F</a> &amp;color, float depth)</td></tr>
+<tr class="memdesc:a167ef0541b3d06ead6b907b5336b6614 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a color brush.  <br /></td></tr>
+<tr class="separator:a167ef0541b3d06ead6b907b5336b6614 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf7ffe85a555880dea7a34fad94cd87 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d40/classax_1_1_camera_background_sky_box_brush.html">CameraBackgroundSkyBoxBrush</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#abaf7ffe85a555880dea7a34fad94cd87">createSkyboxBrush</a> (std::string_view positive_x, std::string_view negative_x, std::string_view positive_y, std::string_view negative_y, std::string_view positive_z, std::string_view negative_z)</td></tr>
+<tr class="memdesc:abaf7ffe85a555880dea7a34fad94cd87 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../de/d88/classax_1_1_skybox.html" title="Sky box technology is usually used to simulate infinity sky, mountains and other phenomena.">Skybox</a> brush with 6 textures.  <br /></td></tr>
+<tr class="separator:abaf7ffe85a555880dea7a34fad94cd87 inherit pub_static_methods_classax_1_1_camera_background_brush"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classax_1_1_camera_background_brush"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classax_1_1_camera_background_brush')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html">CameraBackgroundBrush</a></td></tr>
+<tr class="memitem:aebd9ad52462d5f4c5f54280321d18bf2 inherit pub_types_classax_1_1_camera_background_brush"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#aebd9ad52462d5f4c5f54280321d18bf2">BrushType</a> </td></tr>
+<tr class="memdesc:aebd9ad52462d5f4c5f54280321d18bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brush types.  <a href="../../d9/d4a/classax_1_1_camera_background_brush.html#aebd9ad52462d5f4c5f54280321d18bf2">More...</a><br /></td></tr>
+<tr class="separator:aebd9ad52462d5f4c5f54280321d18bf2 inherit pub_types_classax_1_1_camera_background_brush"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Depth brush clear depth buffer with given depth. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5602134dd6e61cf7dde2ebb9154cc9be" name="a5602134dd6e61cf7dde2ebb9154cc9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5602134dd6e61cf7dde2ebb9154cc9be">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html">CameraBackgroundDepthBrush</a> * create </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a depth brush. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depth</td><td>Depth used to clear the depth buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Created brush </dd></dl>
+
+</div>
+</div>
+<a id="a5ff7773c52dc73a244ffd701c0744db4" name="a5ff7773c52dc73a244ffd701c0744db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff7773c52dc73a244ffd701c0744db4">&#9670;&#160;</a></span>getBrushType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#aebd9ad52462d5f4c5f54280321d18bf2">BrushType</a> getBrushType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get brush type. </p>
+<p>Should be BrushType::DEPTH </p><dl class="section return"><dt>Returns</dt><dd>brush type </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d9/d4a/classax_1_1_camera_background_brush.html#ab751fd524debf85fd7856b083133f15c">CameraBackgroundBrush</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../db/d68/classax_1_1_camera_background_color_brush.html#a5ff7773c52dc73a244ffd701c0744db4">CameraBackgroundColorBrush</a>.</p>
+
+</div>
+</div>
+<a id="a395762825de1e2eddcd94887f4f2abf3" name="a395762825de1e2eddcd94887f4f2abf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395762825de1e2eddcd94887f4f2abf3">&#9670;&#160;</a></span>setDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDepth </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set depth. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depth</td><td>Depth used to clear depth buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>CameraBackgroundBrush.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d0/d35/classax_1_1_camera_background_depth_brush.html">CameraBackgroundDepthBrush</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:51 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

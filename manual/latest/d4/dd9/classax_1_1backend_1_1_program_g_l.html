@@ -1,0 +1,705 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: ProgramGL Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;2.2.1-044cc87</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d4/dd9/classax_1_1backend_1_1_program_g_l.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../dc/da4/classax_1_1backend_1_1_program_g_l-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">ProgramGL Class Reference<div class="ingroups"><a class="el" href="../../d3/d92/group____opengl.html">_opengl</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>An OpenGL program.  
+ <a href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#details">More...</a></p>
+
+<p><code>#include &lt;ProgramGL.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html">Program</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa2b784a6e10558bae1868c07f3bb1833"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#aa2b784a6e10558bae1868c07f3bb1833">ProgramGL</a> (std::string_view vertexShader, std::string_view fragmentShader)</td></tr>
+<tr class="separator:aa2b784a6e10558bae1868c07f3bb1833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6faae3783546f08ca508c5d6c65fb6ee"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d9/d05/structax_1_1backend_1_1_attribute_info.html">AttributeInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a6faae3783546f08ca508c5d6c65fb6ee">getAttributeInfos</a> () const</td></tr>
+<tr class="memdesc:a6faae3783546f08ca508c5d6c65fb6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute informations.  <br /></td></tr>
+<tr class="separator:a6faae3783546f08ca508c5d6c65fb6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5947535170d55bfc1db3b7d239c6f8"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a8d5947535170d55bfc1db3b7d239c6f8">getHandler</a> () const</td></tr>
+<tr class="memdesc:a8d5947535170d55bfc1db3b7d239c6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get program object.  <br /></td></tr>
+<tr class="separator:a8d5947535170d55bfc1db3b7d239c6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba2b2f841133ade67d9608bed6ba434"><td class="memItemLeft" align="right" valign="top">virtual UniformLocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a9ba2b2f841133ade67d9608bed6ba434">getUniformLocation</a> (std::string_view uniform) const override</td></tr>
+<tr class="memdesc:a9ba2b2f841133ade67d9608bed6ba434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform location by name.  <br /></td></tr>
+<tr class="separator:a9ba2b2f841133ade67d9608bed6ba434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5380b55850ecc2ccd5dc19428aca4b9a"><td class="memItemLeft" align="right" valign="top">virtual UniformLocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a5380b55850ecc2ccd5dc19428aca4b9a">getUniformLocation</a> (backend::Uniform name) const override</td></tr>
+<tr class="memdesc:a5380b55850ecc2ccd5dc19428aca4b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform location by engine built-in uniform enum name.  <br /></td></tr>
+<tr class="separator:a5380b55850ecc2ccd5dc19428aca4b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665a0fc6d2f5b54d900a12b509061923"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a665a0fc6d2f5b54d900a12b509061923">getAttributeLocation</a> (std::string_view name) const override</td></tr>
+<tr class="memdesc:a665a0fc6d2f5b54d900a12b509061923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute location by attribute name.  <br /></td></tr>
+<tr class="separator:a665a0fc6d2f5b54d900a12b509061923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e466b207568d59b3dd84e7ad015da9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#af8e466b207568d59b3dd84e7ad015da9">getAttributeLocation</a> (Attribute name) const override</td></tr>
+<tr class="memdesc:af8e466b207568d59b3dd84e7ad015da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute location by engine built-in attribute enum name.  <br /></td></tr>
+<tr class="separator:af8e466b207568d59b3dd84e7ad015da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b19196cc398a629ae6da36770402bdd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a7b19196cc398a629ae6da36770402bdd">getMaxVertexLocation</a> () const override</td></tr>
+<tr class="memdesc:a7b19196cc398a629ae6da36770402bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum vertex location.  <br /></td></tr>
+<tr class="separator:a7b19196cc398a629ae6da36770402bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb97ce26fb46f9a6d31093147fa4322"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a2fb97ce26fb46f9a6d31093147fa4322">getMaxFragmentLocation</a> () const override</td></tr>
+<tr class="memdesc:a2fb97ce26fb46f9a6d31093147fa4322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum fragment location.  <br /></td></tr>
+<tr class="separator:a2fb97ce26fb46f9a6d31093147fa4322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75243cff73e49b74de7095ce2ff6880f"><td class="memItemLeft" align="right" valign="top">virtual const hlookup::string_map&lt; AttributeBindInfo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a75243cff73e49b74de7095ce2ff6880f">getActiveAttributes</a> () const override</td></tr>
+<tr class="memdesc:a75243cff73e49b74de7095ce2ff6880f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active vertex attributes.  <br /></td></tr>
+<tr class="separator:a75243cff73e49b74de7095ce2ff6880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758ab062237c56c49a042ce4109f7d68"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a758ab062237c56c49a042ce4109f7d68">getUniformBufferSize</a> (ShaderStage stage) const override</td></tr>
+<tr class="memdesc:a758ab062237c56c49a042ce4109f7d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform buffer size in bytes that can hold all the uniforms.  <br /></td></tr>
+<tr class="separator:a758ab062237c56c49a042ce4109f7d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da6b04d60718a561c6f1e54e5a3e1b9"><td class="memItemLeft" align="right" valign="top">virtual const hlookup::string_map&lt; UniformInfo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html#a5da6b04d60718a561c6f1e54e5a3e1b9">getAllActiveUniformInfo</a> (ShaderStage stage) const override</td></tr>
+<tr class="memdesc:a5da6b04d60718a561c6f1e54e5a3e1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all uniformInfos.  <br /></td></tr>
+<tr class="separator:a5da6b04d60718a561c6f1e54e5a3e1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1backend_1_1_program"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1backend_1_1_program')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html">Program</a></td></tr>
+<tr class="memitem:gaecabb9ebd8546a3dcb2e30c740f30477 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual UniformLocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#gaecabb9ebd8546a3dcb2e30c740f30477">getUniformLocation</a> (std::string_view uniform) const =0</td></tr>
+<tr class="memdesc:gaecabb9ebd8546a3dcb2e30c740f30477 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform location by name.  <br /></td></tr>
+<tr class="separator:gaecabb9ebd8546a3dcb2e30c740f30477 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86633c3dd4b3ea52dfa98d9bada88912 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual UniformLocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga86633c3dd4b3ea52dfa98d9bada88912">getUniformLocation</a> (backend::Uniform name) const =0</td></tr>
+<tr class="memdesc:ga86633c3dd4b3ea52dfa98d9bada88912 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform location by engine built-in uniform enum name.  <br /></td></tr>
+<tr class="separator:ga86633c3dd4b3ea52dfa98d9bada88912 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga477b3695c0b33029b5c2e5dd595ddc0f inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga477b3695c0b33029b5c2e5dd595ddc0f">getAttributeLocation</a> (std::string_view name) const =0</td></tr>
+<tr class="memdesc:ga477b3695c0b33029b5c2e5dd595ddc0f inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute location by attribute name.  <br /></td></tr>
+<tr class="separator:ga477b3695c0b33029b5c2e5dd595ddc0f inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69cc1a68248badb8d6775ad6dd80acce inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga69cc1a68248badb8d6775ad6dd80acce">getAttributeLocation</a> (backend::Attribute name) const =0</td></tr>
+<tr class="memdesc:ga69cc1a68248badb8d6775ad6dd80acce inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute location by engine built-in attribute enum name.  <br /></td></tr>
+<tr class="separator:ga69cc1a68248badb8d6775ad6dd80acce inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga897b8067206ba27198e1116fe235ad90 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga897b8067206ba27198e1116fe235ad90">getMaxVertexLocation</a> () const =0</td></tr>
+<tr class="memdesc:ga897b8067206ba27198e1116fe235ad90 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum vertex location.  <br /></td></tr>
+<tr class="separator:ga897b8067206ba27198e1116fe235ad90 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga879d111796ebbfc964bb37caf0d1c0e1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga879d111796ebbfc964bb37caf0d1c0e1">getMaxFragmentLocation</a> () const =0</td></tr>
+<tr class="memdesc:ga879d111796ebbfc964bb37caf0d1c0e1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum fragment location.  <br /></td></tr>
+<tr class="separator:ga879d111796ebbfc964bb37caf0d1c0e1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga395c833c35f38534e05fe5582c900a41 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual const hlookup::string_map&lt; AttributeBindInfo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga395c833c35f38534e05fe5582c900a41">getActiveAttributes</a> () const =0</td></tr>
+<tr class="memdesc:ga395c833c35f38534e05fe5582c900a41 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active vertex attributes.  <br /></td></tr>
+<tr class="separator:ga395c833c35f38534e05fe5582c900a41 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e0ce6144761b69c7d9636ad2cd03af1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga3e0ce6144761b69c7d9636ad2cd03af1">getVertexShader</a> () const</td></tr>
+<tr class="memdesc:ga3e0ce6144761b69c7d9636ad2cd03af1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vertex shader.  <br /></td></tr>
+<tr class="separator:ga3e0ce6144761b69c7d9636ad2cd03af1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b634b1abdd8180a17ebc2eb1781c09d inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga9b634b1abdd8180a17ebc2eb1781c09d">getFragmentShader</a> () const</td></tr>
+<tr class="memdesc:ga9b634b1abdd8180a17ebc2eb1781c09d inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fragment shader.  <br /></td></tr>
+<tr class="separator:ga9b634b1abdd8180a17ebc2eb1781c09d inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga187a76cf567c800275317fd91e9889e1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupVertexLayout</b> (VertexLayoutType vlt)</td></tr>
+<tr class="memdesc:ga187a76cf567c800275317fd91e9889e1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the program shared vertex layout type, see: VertexLayoutType. <br /></td></tr>
+<tr class="separator:ga187a76cf567c800275317fd91e9889e1 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga659f09615bce57f4735f696e817d6207 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga659f09615bce57f4735f696e817d6207">getProgramType</a> () const</td></tr>
+<tr class="memdesc:ga659f09615bce57f4735f696e817d6207 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get engine built-in program type.  <br /></td></tr>
+<tr class="separator:ga659f09615bce57f4735f696e817d6207 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63dd9bac225b4106ead60b0e0fc71d31 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga63dd9bac225b4106ead60b0e0fc71d31">getProgramId</a> () const</td></tr>
+<tr class="memdesc:ga63dd9bac225b4106ead60b0e0fc71d31 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get program id.  <br /></td></tr>
+<tr class="separator:ga63dd9bac225b4106ead60b0e0fc71d31 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d84d25efb732df3647e0e1a28aeaedc inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga0d84d25efb732df3647e0e1a28aeaedc">getUniformBufferSize</a> (ShaderStage stage) const =0</td></tr>
+<tr class="memdesc:ga0d84d25efb732df3647e0e1a28aeaedc inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get uniform buffer size in bytes that can hold all the uniforms.  <br /></td></tr>
+<tr class="separator:ga0d84d25efb732df3647e0e1a28aeaedc inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1267095ede8ceb43d49086929e3ca58 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">virtual const hlookup::string_map&lt; UniformInfo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#gab1267095ede8ceb43d49086929e3ca58">getAllActiveUniformInfo</a> (ShaderStage stage) const =0</td></tr>
+<tr class="memdesc:gab1267095ede8ceb43d49086929e3ca58 inherit pub_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all uniformInfos.  <br /></td></tr>
+<tr class="separator:gab1267095ede8ceb43d49086929e3ca58 inherit pub_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classax_1_1backend_1_1_program"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classax_1_1backend_1_1_program')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html">Program</a></td></tr>
+<tr class="memitem:ga88f0d716ad287244a1475c3c1cb46818 inherit pub_static_methods_classax_1_1backend_1_1_program"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d73/group____backend.html#ga88f0d716ad287244a1475c3c1cb46818">getBuiltinProgram</a> (uint32_t type)</td></tr>
+<tr class="memdesc:ga88f0d716ad287244a1475c3c1cb46818 inherit pub_static_methods_classax_1_1backend_1_1_program"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get engine built-in program.  <br /></td></tr>
+<tr class="separator:ga88f0d716ad287244a1475c3c1cb46818 inherit pub_static_methods_classax_1_1backend_1_1_program"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An OpenGL program. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa2b784a6e10558bae1868c07f3bb1833" name="aa2b784a6e10558bae1868c07f3bb1833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b784a6e10558bae1868c07f3bb1833">&#9670;&#160;</a></span>ProgramGL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html">ProgramGL</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>vertexShader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>fragmentShader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertexShader</td><td>Specifes the vertex shader source. </td></tr>
+    <tr><td class="paramname">fragmentShader</td><td>Specifes the fragment shader source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6faae3783546f08ca508c5d6c65fb6ee" name="a6faae3783546f08ca508c5d6c65fb6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6faae3783546f08ca508c5d6c65fb6ee">&#9670;&#160;</a></span>getAttributeInfos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="../../d9/d05/structax_1_1backend_1_1_attribute_info.html">AttributeInfo</a> &gt; &amp; getAttributeInfos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get attribute informations. </p>
+<dl class="section return"><dt>Returns</dt><dd>Attribute informations. </dd></dl>
+
+</div>
+</div>
+<a id="a8d5947535170d55bfc1db3b7d239c6f8" name="a8d5947535170d55bfc1db3b7d239c6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d5947535170d55bfc1db3b7d239c6f8">&#9670;&#160;</a></span>getHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint getHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get program object. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d6/da1/classax_1_1backend_1_1_program.html" title="A program.">Program</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="a9ba2b2f841133ade67d9608bed6ba434" name="a9ba2b2f841133ade67d9608bed6ba434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba2b2f841133ade67d9608bed6ba434">&#9670;&#160;</a></span>getUniformLocation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual UniformLocation getUniformLocation </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>uniform</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get uniform location by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uniform</td><td>Specifies the uniform name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uniform location. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#gaecabb9ebd8546a3dcb2e30c740f30477">Program</a>.</p>
+
+</div>
+</div>
+<a id="a5380b55850ecc2ccd5dc19428aca4b9a" name="a5380b55850ecc2ccd5dc19428aca4b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5380b55850ecc2ccd5dc19428aca4b9a">&#9670;&#160;</a></span>getUniformLocation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual UniformLocation getUniformLocation </td>
+          <td>(</td>
+          <td class="paramtype">backend::Uniform&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get uniform location by engine built-in uniform enum name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Specifies the engine built-in uniform enum name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uniform location. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga86633c3dd4b3ea52dfa98d9bada88912">Program</a>.</p>
+
+</div>
+</div>
+<a id="a665a0fc6d2f5b54d900a12b509061923" name="a665a0fc6d2f5b54d900a12b509061923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a665a0fc6d2f5b54d900a12b509061923">&#9670;&#160;</a></span>getAttributeLocation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int getAttributeLocation </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get attribute location by attribute name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Specifies the attribute name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute location. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga477b3695c0b33029b5c2e5dd595ddc0f">Program</a>.</p>
+
+</div>
+</div>
+<a id="af8e466b207568d59b3dd84e7ad015da9" name="af8e466b207568d59b3dd84e7ad015da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e466b207568d59b3dd84e7ad015da9">&#9670;&#160;</a></span>getAttributeLocation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int getAttributeLocation </td>
+          <td>(</td>
+          <td class="paramtype">Attribute&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get attribute location by engine built-in attribute enum name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Specifies the engine built-in attribute enum name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute location. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga69cc1a68248badb8d6775ad6dd80acce">Program</a>.</p>
+
+</div>
+</div>
+<a id="a7b19196cc398a629ae6da36770402bdd" name="a7b19196cc398a629ae6da36770402bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b19196cc398a629ae6da36770402bdd">&#9670;&#160;</a></span>getMaxVertexLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int getMaxVertexLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get maximum vertex location. </p>
+<dl class="section return"><dt>Returns</dt><dd>Maximum vertex locaiton. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga897b8067206ba27198e1116fe235ad90">Program</a>.</p>
+
+</div>
+</div>
+<a id="a2fb97ce26fb46f9a6d31093147fa4322" name="a2fb97ce26fb46f9a6d31093147fa4322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb97ce26fb46f9a6d31093147fa4322">&#9670;&#160;</a></span>getMaxFragmentLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int getMaxFragmentLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get maximum fragment location. </p>
+<dl class="section return"><dt>Returns</dt><dd>Maximum fragment location. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga879d111796ebbfc964bb37caf0d1c0e1">Program</a>.</p>
+
+</div>
+</div>
+<a id="a75243cff73e49b74de7095ce2ff6880f" name="a75243cff73e49b74de7095ce2ff6880f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75243cff73e49b74de7095ce2ff6880f">&#9670;&#160;</a></span>getActiveAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const hlookup::string_map&lt; AttributeBindInfo &gt; &amp; getActiveAttributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get active vertex attributes. </p>
+<dl class="section return"><dt>Returns</dt><dd>Active vertex attributes. key is active attribute name, Value is corresponding attribute info. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga395c833c35f38534e05fe5582c900a41">Program</a>.</p>
+
+</div>
+</div>
+<a id="a758ab062237c56c49a042ce4109f7d68" name="a758ab062237c56c49a042ce4109f7d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758ab062237c56c49a042ce4109f7d68">&#9670;&#160;</a></span>getUniformBufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::size_t getUniformBufferSize </td>
+          <td>(</td>
+          <td class="paramtype">ShaderStage&#160;</td>
+          <td class="paramname"><em>stage</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get uniform buffer size in bytes that can hold all the uniforms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stage</td><td>Specifies the shader stage. The symbolic constant can be either VERTEX or FRAGMENT. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uniform buffer size in bytes. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#ga0d84d25efb732df3647e0e1a28aeaedc">Program</a>.</p>
+
+</div>
+</div>
+<a id="a5da6b04d60718a561c6f1e54e5a3e1b9" name="a5da6b04d60718a561c6f1e54e5a3e1b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da6b04d60718a561c6f1e54e5a3e1b9">&#9670;&#160;</a></span>getAllActiveUniformInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const hlookup::string_map&lt; UniformInfo &gt; &amp; getAllActiveUniformInfo </td>
+          <td>(</td>
+          <td class="paramtype">ShaderStage&#160;</td>
+          <td class="paramname"><em>stage</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all uniformInfos. </p>
+<dl class="section return"><dt>Returns</dt><dd>The uniformInfos. </dd></dl>
+
+<p>Implements <a class="el" href="../../dc/d73/group____backend.html#gab1267095ede8ceb43d49086929e3ca58">Program</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>ProgramGL.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html">backend</a></li><li class="navelem"><a class="el" href="../../d4/dd9/classax_1_1backend_1_1_program_g_l.html">ProgramGL</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:48 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: CommandBufferGLES2 Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d4/dc6/classax_1_1backend_1_1_command_buffer_g_l_e_s2.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../de/dab/classax_1_1backend_1_1_command_buffer_g_l_e_s2-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">CommandBufferGLES2 Class Reference<div class="ingroups"><a class="el" href="../../d3/d92/group____opengl.html">_opengl</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Store encoded commands for the GPU to execute.  
+ <a href="../../d4/dc6/classax_1_1backend_1_1_command_buffer_g_l_e_s2.html#details">More...</a></p>
+
+<p><code>#include &lt;CommandBufferGLES2.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html">CommandBufferGL</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ac5f93b0e8905b62882ba296a64a252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc6/classax_1_1backend_1_1_command_buffer_g_l_e_s2.html#a4ac5f93b0e8905b62882ba296a64a252">drawElementsInstanced</a> (PrimitiveType primitiveType, IndexFormat indexType, std::size_t count, std::size_t offset, int instanceCount, bool wireframe=false) override</td></tr>
+<tr class="memdesc:a4ac5f93b0e8905b62882ba296a64a252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw primitives with an index list instanced.  <br /></td></tr>
+<tr class="separator:a4ac5f93b0e8905b62882ba296a64a252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1backend_1_1_command_buffer_g_l')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html">CommandBufferGL</a></td></tr>
+<tr class="memitem:aef4396b046fe25735741c60503ef8f1f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#aef4396b046fe25735741c60503ef8f1f">setDepthStencilState</a> (<a class="el" href="../../d7/ddf/classax_1_1backend_1_1_depth_stencil_state.html">DepthStencilState</a> *depthStencilState) override</td></tr>
+<tr class="memdesc:aef4396b046fe25735741c60503ef8f1f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set depthStencil status once.  <br /></td></tr>
+<tr class="separator:aef4396b046fe25735741c60503ef8f1f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2871e868d5832217aafc22a8d3c4bc3 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#ad2871e868d5832217aafc22a8d3c4bc3">setRenderPipeline</a> (<a class="el" href="../../d7/dc1/classax_1_1backend_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline) override</td></tr>
+<tr class="memdesc:ad2871e868d5832217aafc22a8d3c4bc3 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current render pipeline state object once.  <br /></td></tr>
+<tr class="separator:ad2871e868d5832217aafc22a8d3c4bc3 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5745b6da75a2423b4840e6688729fbf inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>beginFrame</b> () override</td></tr>
+<tr class="memdesc:ab5745b6da75a2423b4840e6688729fbf inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate the begining of a frame. <br /></td></tr>
+<tr class="separator:ab5745b6da75a2423b4840e6688729fbf inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4850937955095454a7690ccbf9a6bea inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#ad4850937955095454a7690ccbf9a6bea">beginRenderPass</a> (const RenderTarget *rt, const <a class="el" href="../../dd/d92/structax_1_1backend_1_1_render_pass_descriptor.html">RenderPassDescriptor</a> &amp;descriptor) override</td></tr>
+<tr class="memdesc:ad4850937955095454a7690ccbf9a6bea inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin a render pass, initial color, depth and stencil attachment.  <br /></td></tr>
+<tr class="separator:ad4850937955095454a7690ccbf9a6bea inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc089b077d7c6033db00faf3cec000d8 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#acc089b077d7c6033db00faf3cec000d8">updateDepthStencilState</a> (const <a class="el" href="../../d4/da6/structax_1_1backend_1_1_depth_stencil_descriptor.html">DepthStencilDescriptor</a> &amp;descriptor) override</td></tr>
+<tr class="memdesc:acc089b077d7c6033db00faf3cec000d8 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update depthStencil status, improvment: for metal backend cache it.  <br /></td></tr>
+<tr class="separator:acc089b077d7c6033db00faf3cec000d8 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8394fd7913c7f8076d5b55f22f6a03a4 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a8394fd7913c7f8076d5b55f22f6a03a4">updatePipelineState</a> (const RenderTarget *rt, const PipelineDescriptor &amp;descriptor) override</td></tr>
+<tr class="memdesc:a8394fd7913c7f8076d5b55f22f6a03a4 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update render pipeline status.  <br /></td></tr>
+<tr class="separator:a8394fd7913c7f8076d5b55f22f6a03a4 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a6e4746d0e36b4d6c8b8c934b96833 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a59a6e4746d0e36b4d6c8b8c934b96833">setViewport</a> (int x, int y, unsigned int w, unsigned int h) override</td></tr>
+<tr class="memdesc:a59a6e4746d0e36b4d6c8b8c934b96833 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-function state.  <br /></td></tr>
+<tr class="separator:a59a6e4746d0e36b4d6c8b8c934b96833 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f25c040ae20705011777fb276828ea inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a88f25c040ae20705011777fb276828ea">setCullMode</a> (CullMode mode) override</td></tr>
+<tr class="memdesc:a88f25c040ae20705011777fb276828ea inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-function state.  <br /></td></tr>
+<tr class="separator:a88f25c040ae20705011777fb276828ea inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9afcd4fcce2d311a872fa08c2c4557 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a3c9afcd4fcce2d311a872fa08c2c4557">setWinding</a> (<a class="el" href="../../d0/d12/namespaceax_1_1backend.html#addeebb717545a97626428c02680f6c53">Winding</a> winding) override</td></tr>
+<tr class="memdesc:a3c9afcd4fcce2d311a872fa08c2c4557 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-function state.  <br /></td></tr>
+<tr class="separator:a3c9afcd4fcce2d311a872fa08c2c4557 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ce8271f5ed91427d7575d3e8932896 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#ad3ce8271f5ed91427d7575d3e8932896">setVertexBuffer</a> (<a class="el" href="../../dc/d94/classax_1_1backend_1_1_buffer.html">Buffer</a> *buffer) override</td></tr>
+<tr class="memdesc:ad3ce8271f5ed91427d7575d3e8932896 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a global buffer for all vertex shaders at the given bind point index 0.  <br /></td></tr>
+<tr class="separator:ad3ce8271f5ed91427d7575d3e8932896 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff2c7ff69bdf6652f219fb0246569fe inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#aaff2c7ff69bdf6652f219fb0246569fe">setProgramState</a> (ProgramState *programState) override</td></tr>
+<tr class="memdesc:aaff2c7ff69bdf6652f219fb0246569fe inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set unifroms and textures.  <br /></td></tr>
+<tr class="separator:aaff2c7ff69bdf6652f219fb0246569fe inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947e7e89d911d2f721161ede9c101b4f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a947e7e89d911d2f721161ede9c101b4f">setIndexBuffer</a> (<a class="el" href="../../dc/d94/classax_1_1backend_1_1_buffer.html">Buffer</a> *buffer) override</td></tr>
+<tr class="memdesc:a947e7e89d911d2f721161ede9c101b4f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set indexes when drawing primitives with index list @ buffer A buffer object that the device will read indexes from.  <br /></td></tr>
+<tr class="separator:a947e7e89d911d2f721161ede9c101b4f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c1a93955cb39fef6d2fb06cd5c2009 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInstanceBuffer</b> (<a class="el" href="../../dc/d94/classax_1_1backend_1_1_buffer.html">Buffer</a> *buffer) override</td></tr>
+<tr class="memdesc:aa6c1a93955cb39fef6d2fb06cd5c2009 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set matrix tranform when drawing instances of the same model @ buffer A buffer object that the device will read matrices from. <br /></td></tr>
+<tr class="separator:aa6c1a93955cb39fef6d2fb06cd5c2009 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a3e2f0a06d92fa2ba3383da977c072 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#aa1a3e2f0a06d92fa2ba3383da977c072">drawArrays</a> (PrimitiveType primitiveType, std::size_t start, std::size_t count, bool wireframe=false) override</td></tr>
+<tr class="memdesc:aa1a3e2f0a06d92fa2ba3383da977c072 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw primitives without an index list.  <br /></td></tr>
+<tr class="separator:aa1a3e2f0a06d92fa2ba3383da977c072 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d421fee43bec88864d764a48a4e95dd inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a9d421fee43bec88864d764a48a4e95dd">drawElements</a> (PrimitiveType primitiveType, IndexFormat indexType, std::size_t count, std::size_t offset, bool wireframe=false) override</td></tr>
+<tr class="memdesc:a9d421fee43bec88864d764a48a4e95dd inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw primitives with an index list.  <br /></td></tr>
+<tr class="separator:a9d421fee43bec88864d764a48a4e95dd inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107ab85262d7ddd5e8e364e3e0c54a1f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endRenderPass</b> () override</td></tr>
+<tr class="memdesc:a107ab85262d7ddd5e8e364e3e0c54a1f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do some resources release. <br /></td></tr>
+<tr class="separator:a107ab85262d7ddd5e8e364e3e0c54a1f inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c766fe0410c602eb4e3656cd84a50d inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endFrame</b> () override</td></tr>
+<tr class="memdesc:ad7c766fe0410c602eb4e3656cd84a50d inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present a drawable and commit a command buffer so it can be executed as soon as possible. <br /></td></tr>
+<tr class="separator:ad7c766fe0410c602eb4e3656cd84a50d inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5b0e09c0e0ab36541dbee17ca3d6f0 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#abf5b0e09c0e0ab36541dbee17ca3d6f0">setScissorRect</a> (bool isEnabled, float x, float y, float width, float height) override</td></tr>
+<tr class="memdesc:abf5b0e09c0e0ab36541dbee17ca3d6f0 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-function state.  <br /></td></tr>
+<tr class="separator:abf5b0e09c0e0ab36541dbee17ca3d6f0 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01dcdf8d0d2f300588bf5f6c7515b97 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#af01dcdf8d0d2f300588bf5f6c7515b97">readPixels</a> (RenderTarget *rt, std::function&lt; void(const PixelBufferDescriptor &amp;)&gt; callback) override</td></tr>
+<tr class="memdesc:af01dcdf8d0d2f300588bf5f6c7515b97 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a screen snapshot.  <br /></td></tr>
+<tr class="separator:af01dcdf8d0d2f300588bf5f6c7515b97 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27855d7d4b4a141df060000b646f4786 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readPixels</b> (RenderTarget *rt, int x, int y, uint32_t width, uint32_t height, uint32_t bytesPerRow, bool eglCacheHint, PixelBufferDescriptor &amp;pbd)</td></tr>
+<tr class="memdesc:a27855d7d4b4a141df060000b646f4786 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. <br /></td></tr>
+<tr class="separator:a27855d7d4b4a141df060000b646f4786 inherit pub_methods_classax_1_1backend_1_1_command_buffer_g_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1backend_1_1_command_buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1backend_1_1_command_buffer')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d28/classax_1_1backend_1_1_command_buffer.html">CommandBuffer</a></td></tr>
+<tr class="memitem:a3ab24d8d42137ace3df30777e655922a inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d28/classax_1_1backend_1_1_command_buffer.html#a3ab24d8d42137ace3df30777e655922a">setDepthStencilState</a> (<a class="el" href="../../d7/ddf/classax_1_1backend_1_1_depth_stencil_state.html">DepthStencilState</a> *depthStencilState)=0</td></tr>
+<tr class="memdesc:a3ab24d8d42137ace3df30777e655922a inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set depthStencil status once.  <br /></td></tr>
+<tr class="separator:a3ab24d8d42137ace3df30777e655922a inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227ae7537c48bd8fb96cf06529211cea inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d28/classax_1_1backend_1_1_command_buffer.html#a227ae7537c48bd8fb96cf06529211cea">setRenderPipeline</a> (<a class="el" href="../../d7/dc1/classax_1_1backend_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline)=0</td></tr>
+<tr class="memdesc:a227ae7537c48bd8fb96cf06529211cea inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current render pipeline state object once.  <br /></td></tr>
+<tr class="separator:a227ae7537c48bd8fb96cf06529211cea inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79e041bc626010b964128c1363fca inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d28/classax_1_1backend_1_1_command_buffer.html#a15d79e041bc626010b964128c1363fca">setStencilReferenceValue</a> (unsigned int value)</td></tr>
+<tr class="memdesc:a15d79e041bc626010b964128c1363fca inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update both front and back stencil reference value.  <br /></td></tr>
+<tr class="separator:a15d79e041bc626010b964128c1363fca inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bf22d1127ea72151d884335973f8c7 inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d28/classax_1_1backend_1_1_command_buffer.html#a36bf22d1127ea72151d884335973f8c7">setStencilReferenceValue</a> (unsigned int frontRef, unsigned int backRef)</td></tr>
+<tr class="memdesc:a36bf22d1127ea72151d884335973f8c7 inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update stencil reference value.  <br /></td></tr>
+<tr class="separator:a36bf22d1127ea72151d884335973f8c7 inherit pub_methods_classax_1_1backend_1_1_command_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Store encoded commands for the GPU to execute. </p>
+<p>A command buffer stores encoded commands until the buffer is committed for execution by the GPU </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ac5f93b0e8905b62882ba296a64a252" name="a4ac5f93b0e8905b62882ba296a64a252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac5f93b0e8905b62882ba296a64a252">&#9670;&#160;</a></span>drawElementsInstanced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawElementsInstanced </td>
+          <td>(</td>
+          <td class="paramtype">PrimitiveType&#160;</td>
+          <td class="paramname"><em>primitiveType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexFormat&#160;</td>
+          <td class="paramname"><em>indexType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>instanceCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wireframe</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draw primitives with an index list instanced. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primitiveType</td><td>The type of primitives that elements are assembled into. </td></tr>
+    <tr><td class="paramname">indexType</td><td>The type if indexes, either 16 bit integer or 32 bit integer. </td></tr>
+    <tr><td class="paramname">count</td><td>The number of indexes to read from the index buffer for each instance. </td></tr>
+    <tr><td class="paramname">offset</td><td>Byte offset within indexBuffer to start reading indexes from. </td></tr>
+    <tr><td class="paramname">instance</td><td>Count of instances to draw at once. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a947e7e89d911d2f721161ede9c101b4f" title="Set indexes when drawing primitives with index list @ buffer A buffer object that the device will rea...">setIndexBuffer(Buffer* buffer)</a></code> </dd>
+<dd>
+<code>drawArrays(PrimitiveType primitiveType, unsigned int start,  unsigned int count)</code> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d3/d5d/classax_1_1backend_1_1_command_buffer_g_l.html#a4ac5f93b0e8905b62882ba296a64a252">CommandBufferGL</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>CommandBufferGLES2.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d0/d12/namespaceax_1_1backend.html">backend</a></li><li class="navelem"><a class="el" href="../../d4/dc6/classax_1_1backend_1_1_command_buffer_g_l_e_s2.html">CommandBufferGLES2</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:52 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

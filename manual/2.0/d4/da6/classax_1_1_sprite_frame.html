@@ -1,0 +1,1364 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: SpriteFrame Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d4/da6/classax_1_1_sprite_frame.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../df/dae/classax_1_1_sprite_frame-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">SpriteFrame Class Reference<div class="ingroups"><a class="el" href="../../d0/dc7/group____2d.html">2D Nodes</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> has:  
+ <a href="../../d4/da6/classax_1_1_sprite_frame.html#details">More...</a></p>
+
+<p><code>#include &lt;SpriteFrame.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a>, and <a class="el" href="../../d7/d55/classax_1_1_clonable.html">Clonable</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a44505495d73f3c43a88f326ba51206a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a44505495d73f3c43a88f326ba51206a7">getRectInPixels</a> () const</td></tr>
+<tr class="memdesc:a44505495d73f3c43a88f326ba51206a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rect of the sprite frame.  <br /></td></tr>
+<tr class="separator:a44505495d73f3c43a88f326ba51206a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4f598ed861ce4465b8a61ab082c16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#adf4f598ed861ce4465b8a61ab082c16a">setRectInPixels</a> (const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rectInPixels)</td></tr>
+<tr class="memdesc:adf4f598ed861ce4465b8a61ab082c16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rect of the sprite frame.  <br /></td></tr>
+<tr class="separator:adf4f598ed861ce4465b8a61ab082c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ea44497111a909c43ef45a185dcd3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a39ea44497111a909c43ef45a185dcd3a">isRotated</a> () const</td></tr>
+<tr class="memdesc:a39ea44497111a909c43ef45a185dcd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the sprite frame rotated or not.  <br /></td></tr>
+<tr class="separator:a39ea44497111a909c43ef45a185dcd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5602063671778d01e7234a31f42357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#ade5602063671778d01e7234a31f42357">setRotated</a> (bool rotated)</td></tr>
+<tr class="memdesc:ade5602063671778d01e7234a31f42357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotated of the sprite frame.  <br /></td></tr>
+<tr class="separator:ade5602063671778d01e7234a31f42357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5a67fdaafd0367d3a64ba5df4e6dd6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#afd5a67fdaafd0367d3a64ba5df4e6dd6">getRect</a> () const</td></tr>
+<tr class="memdesc:afd5a67fdaafd0367d3a64ba5df4e6dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rect of the frame.  <br /></td></tr>
+<tr class="separator:afd5a67fdaafd0367d3a64ba5df4e6dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af062da89d2035532c1aaa875cbc72001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#af062da89d2035532c1aaa875cbc72001">setRect</a> (const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:af062da89d2035532c1aaa875cbc72001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rect of the frame.  <br /></td></tr>
+<tr class="separator:af062da89d2035532c1aaa875cbc72001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017e26469e5e1555f1c30d07fcb0dd33"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a017e26469e5e1555f1c30d07fcb0dd33">getCenterRect</a> () const</td></tr>
+<tr class="memdesc:a017e26469e5e1555f1c30d07fcb0dd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get center rect of the frame.  <br /></td></tr>
+<tr class="separator:a017e26469e5e1555f1c30d07fcb0dd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3729ff0e2bb82fee532ae5d0d969b872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a3729ff0e2bb82fee532ae5d0d969b872">setCenterRectInPixels</a> (const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;centerRect)</td></tr>
+<tr class="memdesc:a3729ff0e2bb82fee532ae5d0d969b872"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCenterRect  <br /></td></tr>
+<tr class="separator:a3729ff0e2bb82fee532ae5d0d969b872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e06794b345fe235766ae4e84c5e251f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a8e06794b345fe235766ae4e84c5e251f">hasCenterRect</a> () const</td></tr>
+<tr class="memdesc:a8e06794b345fe235766ae4e84c5e251f"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasCenterRect  <br /></td></tr>
+<tr class="separator:a8e06794b345fe235766ae4e84c5e251f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58037ef1963f287862bdc21498ab4a39"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a58037ef1963f287862bdc21498ab4a39">getOffsetInPixels</a> () const</td></tr>
+<tr class="memdesc:a58037ef1963f287862bdc21498ab4a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get offset of the frame.  <br /></td></tr>
+<tr class="separator:a58037ef1963f287862bdc21498ab4a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5679d2cd4bccbb7b37b8cfc8d3c191b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#ab5679d2cd4bccbb7b37b8cfc8d3c191b">setOffsetInPixels</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offsetInPixels)</td></tr>
+<tr class="memdesc:ab5679d2cd4bccbb7b37b8cfc8d3c191b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set offset of the frame.  <br /></td></tr>
+<tr class="separator:ab5679d2cd4bccbb7b37b8cfc8d3c191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8eaf0de384f0c16c91c107eaf1a276"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#aca8eaf0de384f0c16c91c107eaf1a276">getOriginalSizeInPixels</a> () const</td></tr>
+<tr class="memdesc:aca8eaf0de384f0c16c91c107eaf1a276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get original size of the trimmed image.  <br /></td></tr>
+<tr class="separator:aca8eaf0de384f0c16c91c107eaf1a276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55910ece38f631ecc633ec7ad377e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#ae55910ece38f631ecc633ec7ad377e48">setOriginalSizeInPixels</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;sizeInPixels)</td></tr>
+<tr class="memdesc:ae55910ece38f631ecc633ec7ad377e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set original size of the trimmed image.  <br /></td></tr>
+<tr class="separator:ae55910ece38f631ecc633ec7ad377e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1e3bd20744f823dee399fccf7d64d6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a9a1e3bd20744f823dee399fccf7d64d6">getOriginalSize</a> () const</td></tr>
+<tr class="memdesc:a9a1e3bd20744f823dee399fccf7d64d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get original size of the trimmed image.  <br /></td></tr>
+<tr class="separator:a9a1e3bd20744f823dee399fccf7d64d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccd2a4990790861bf615a8da6606f00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a7ccd2a4990790861bf615a8da6606f00">setOriginalSize</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;sizeInPixels)</td></tr>
+<tr class="memdesc:a7ccd2a4990790861bf615a8da6606f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set original size of the trimmed image.  <br /></td></tr>
+<tr class="separator:a7ccd2a4990790861bf615a8da6606f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b48f435d85eedcee3a8ee6a539a3e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a93b48f435d85eedcee3a8ee6a539a3e4">getTexture</a> ()</td></tr>
+<tr class="memdesc:a93b48f435d85eedcee3a8ee6a539a3e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get texture of the frame.  <br /></td></tr>
+<tr class="separator:a93b48f435d85eedcee3a8ee6a539a3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2af5ae957e261dc365df2eeec7f6ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a1e2af5ae957e261dc365df2eeec7f6ef">setTexture</a> (<a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *pobTexture)</td></tr>
+<tr class="memdesc:a1e2af5ae957e261dc365df2eeec7f6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture of the frame, the texture is retained.  <br /></td></tr>
+<tr class="separator:a1e2af5ae957e261dc365df2eeec7f6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29b41d2122ce022b1f2d4915839b262"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#ac29b41d2122ce022b1f2d4915839b262">getOffset</a> () const</td></tr>
+<tr class="memdesc:ac29b41d2122ce022b1f2d4915839b262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get offset of the frame.  <br /></td></tr>
+<tr class="separator:ac29b41d2122ce022b1f2d4915839b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29281a4383cf4969e179415e3250ef02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a29281a4383cf4969e179415e3250ef02">setOffset</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offsets)</td></tr>
+<tr class="memdesc:a29281a4383cf4969e179415e3250ef02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set offset of the frame.  <br /></td></tr>
+<tr class="separator:a29281a4383cf4969e179415e3250ef02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d6d063569e06969b3b8c1b50165208"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#ac8d6d063569e06969b3b8c1b50165208">getAnchorPoint</a> () const</td></tr>
+<tr class="memdesc:ac8d6d063569e06969b3b8c1b50165208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get anchor point of the frame.  <br /></td></tr>
+<tr class="separator:ac8d6d063569e06969b3b8c1b50165208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de1844ddf201d14a96ee78c1dabf043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a3de1844ddf201d14a96ee78c1dabf043">setAnchorPoint</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;anchorPoint)</td></tr>
+<tr class="memdesc:a3de1844ddf201d14a96ee78c1dabf043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set anchor point of the frame.  <br /></td></tr>
+<tr class="separator:a3de1844ddf201d14a96ee78c1dabf043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9515f614babaf006417e34af5cd24fbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a9515f614babaf006417e34af5cd24fbd">hasAnchorPoint</a> () const</td></tr>
+<tr class="memdesc:a9515f614babaf006417e34af5cd24fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if anchor point is defined for the frame.  <br /></td></tr>
+<tr class="separator:a9515f614babaf006417e34af5cd24fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0a8fe500a5a4b8c460767ccb493f33"><td class="memItemLeft" align="right" valign="top"><a id="aec0a8fe500a5a4b8c460767ccb493f33" name="aec0a8fe500a5a4b8c460767ccb493f33"></a>
+virtual <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const override</td></tr>
+<tr class="memdesc:aec0a8fe500a5a4b8c460767ccb493f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of the <a class="el" href="../../d1/d8c/classax_1_1_ref.html" title="Ref is used for reference count management.">Ref</a>. <br /></td></tr>
+<tr class="separator:aec0a8fe500a5a4b8c460767ccb493f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2688fffffc76a423073e0937a1ae49e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a2688fffffc76a423073e0937a1ae49e8">setPolygonInfo</a> (const <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp;polygonInfo)</td></tr>
+<tr class="memdesc:a2688fffffc76a423073e0937a1ae49e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the polygon info for polygon mesh sprites.  <br /></td></tr>
+<tr class="separator:a2688fffffc76a423073e0937a1ae49e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdaaa9a13f44453effcd71d6708da41c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#afdaaa9a13f44453effcd71d6708da41c">getPolygonInfo</a> () const</td></tr>
+<tr class="memdesc:afdaaa9a13f44453effcd71d6708da41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the polygonInfo for this sprite.  <br /></td></tr>
+<tr class="separator:afdaaa9a13f44453effcd71d6708da41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef4f380a72a6107d6cac7288297a462"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#aaef4f380a72a6107d6cac7288297a462">hasPolygonInfo</a> () const</td></tr>
+<tr class="memdesc:aaef4f380a72a6107d6cac7288297a462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if sprite frame is a polygon sprite.  <br /></td></tr>
+<tr class="separator:aaef4f380a72a6107d6cac7288297a462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c03c26650017354888d9eb850b891b8"><td class="memItemLeft" align="right" valign="top"><a id="a1c03c26650017354888d9eb850b891b8" name="a1c03c26650017354888d9eb850b891b8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SpriteFrame</b> ()</td></tr>
+<tr class="memdesc:a1c03c26650017354888d9eb850b891b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">@lua NA <br /></td></tr>
+<tr class="separator:a1c03c26650017354888d9eb850b891b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64aacbb81f71f23925d89150d1218aff"><td class="memItemLeft" align="right" valign="top"><a id="a64aacbb81f71f23925d89150d1218aff" name="a64aacbb81f71f23925d89150d1218aff"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~SpriteFrame</b> ()</td></tr>
+<tr class="memdesc:a64aacbb81f71f23925d89150d1218aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">@lua NA <br /></td></tr>
+<tr class="separator:a64aacbb81f71f23925d89150d1218aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed7f46aeebf706ccba875cb0008c2a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a5ed7f46aeebf706ccba875cb0008c2a9">initWithTexture</a> (<a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a5ed7f46aeebf706ccba875cb0008c2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect in points.  <br /></td></tr>
+<tr class="separator:a5ed7f46aeebf706ccba875cb0008c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383b640a33738f03ee00b65306fc88eb"><td class="memItemLeft" align="right" valign="top"><a id="a383b640a33738f03ee00b65306fc88eb" name="a383b640a33738f03ee00b65306fc88eb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initWithTextureFilename</b> (std::string_view filename, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a383b640a33738f03ee00b65306fc88eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture filename, rect in points; It is assumed that the frame was not trimmed. <br /></td></tr>
+<tr class="separator:a383b640a33738f03ee00b65306fc88eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633243f56e9664150e08f55c468d4eea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a633243f56e9664150e08f55c468d4eea">initWithTexture</a> (<a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a633243f56e9664150e08f55c468d4eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels.  <br /></td></tr>
+<tr class="separator:a633243f56e9664150e08f55c468d4eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2034797969c19b922f92ff14e73776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a1f2034797969c19b922f92ff14e73776">initWithTextureFilename</a> (std::string_view filename, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a1f2034797969c19b922f92ff14e73776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels.  <br /></td></tr>
+<tr class="separator:a1f2034797969c19b922f92ff14e73776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a1a053fb82453d60e2bb3928f92878b37">autorelease</a> ()</td></tr>
+<tr class="memdesc:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="separator:a1a053fb82453d60e2bb3928f92878b37 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d1/d8c/classax_1_1_ref.html" title="Ref is used for reference count management.">Ref</a>'s current reference count.  <br /></td></tr>
+<tr class="separator:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8c/classax_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_clonable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classax_1_1_clonable')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d7/d55/classax_1_1_clonable.html">Clonable</a></td></tr>
+<tr class="memitem:ae8ec800d7bef048e18de32d857f78ad4 inherit pub_methods_classax_1_1_clonable"><td class="memItemLeft" align="right" valign="top">
+virtual <a class="el" href="../../d7/d55/classax_1_1_clonable.html">Clonable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const =0</td></tr>
+<tr class="memdesc:ae8ec800d7bef048e18de32d857f78ad4 inherit pub_methods_classax_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of the <a class="el" href="../../d1/d8c/classax_1_1_ref.html" title="Ref is used for reference count management.">Ref</a>. <br /></td></tr>
+<tr class="separator:ae8ec800d7bef048e18de32d857f78ad4 inherit pub_methods_classax_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classax_1_1_clonable"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Clonable</b> ()</td></tr>
+<tr class="memdesc:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classax_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">@js NA @lua NA <br /></td></tr>
+<tr class="separator:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classax_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae5c2c5ce9681ae61db1d34a81eb1fef1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#ae5c2c5ce9681ae61db1d34a81eb1fef1">create</a> (std::string_view filename, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:ae5c2c5ce9681ae61db1d34a81eb1fef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture filename, rect in points.  <br /></td></tr>
+<tr class="separator:ae5c2c5ce9681ae61db1d34a81eb1fef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fc7a8e8c7d12a699882368adadf28e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a10fc7a8e8c7d12a699882368adadf28e">create</a> (std::string_view filename, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a10fc7a8e8c7d12a699882368adadf28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture filename, rect, rotated, offset and originalSize in pixels.  <br /></td></tr>
+<tr class="separator:a10fc7a8e8c7d12a699882368adadf28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fcfff3f755aad9438ffd99a656cea7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#aa6fcfff3f755aad9438ffd99a656cea7">createWithTexture</a> (<a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:aa6fcfff3f755aad9438ffd99a656cea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect in points.  <br /></td></tr>
+<tr class="separator:aa6fcfff3f755aad9438ffd99a656cea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752cefcc3036becbbb8a408480d2b84a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html#a752cefcc3036becbbb8a408480d2b84a">createWithTexture</a> (<a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a752cefcc3036becbbb8a408480d2b84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels.  <br /></td></tr>
+<tr class="separator:a752cefcc3036becbbb8a408480d2b84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classax_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d1/d8c/classax_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="separator:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+<tr class="separator:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>_scriptObject</b></td></tr>
+<tr class="memdesc:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">scriptObject, support for swift <br /></td></tr>
+<tr class="separator:a4397f03c9723ba32b10cfb2d9f162cfe inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_rooted</b></td></tr>
+<tr class="memdesc:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, it means that the object was already rooted. <br /></td></tr>
+<tr class="separator:ab95879aeaa9d8b8255396bbc8cf9357b inherit pub_attribs_classax_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> has: </p>
+<ul>
+<li>texture: A <a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html" title="Texture2D class.">Texture2D</a> that will be used by the <a class="el" href="../../da/d34/classax_1_1_sprite.html" title="Sprite is a 2d image ( http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ).">Sprite</a></li>
+<li>rectangle: A rectangle of the texture</li>
+</ul>
+<p>You can modify the frame of a <a class="el" href="../../da/d34/classax_1_1_sprite.html" title="Sprite is a 2d image ( http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ).">Sprite</a> by doing:</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a>* frame = <a class="code hl_function" href="../../d4/da6/classax_1_1_sprite_frame.html#aa6fcfff3f755aad9438ffd99a656cea7">SpriteFrame::createWithTexture</a>(texture, rect);</div>
+<div class="line">sprite-&gt;setSpriteFrame(frame);</div>
+<div class="ttc" id="aclassax_1_1_sprite_frame_html"><div class="ttname"><a href="../../d4/da6/classax_1_1_sprite_frame.html">ax::SpriteFrame</a></div><div class="ttdoc">A SpriteFrame has:</div><div class="ttdef"><b>Definition</b> SpriteFrame.h:60</div></div>
+<div class="ttc" id="aclassax_1_1_sprite_frame_html_aa6fcfff3f755aad9438ffd99a656cea7"><div class="ttname"><a href="../../d4/da6/classax_1_1_sprite_frame.html#aa6fcfff3f755aad9438ffd99a656cea7">ax::SpriteFrame::createWithTexture</a></div><div class="ttdeci">static SpriteFrame * createWithTexture(Texture2D *pobTexture, const Rect &amp;rect)</div><div class="ttdoc">Create a SpriteFrame with a texture, rect in points.</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae5c2c5ce9681ae61db1d34a81eb1fef1" name="ae5c2c5ce9681ae61db1d34a81eb1fef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c2c5ce9681ae61db1d34a81eb1fef1">&#9670;&#160;</a></span>create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> * create </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture filename, rect in points. </p>
+<p>It is assumed that the frame was not trimmed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Texture file name. </td></tr>
+    <tr><td class="paramname">rect</td><td>A specified rect. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An autoreleased <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="a10fc7a8e8c7d12a699882368adadf28e" name="a10fc7a8e8c7d12a699882368adadf28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fc7a8e8c7d12a699882368adadf28e">&#9670;&#160;</a></span>create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> * create </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture filename, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in pixels of the frame before being trimmed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Texture filename </td></tr>
+    <tr><td class="paramname">rect</td><td>A specified rect. </td></tr>
+    <tr><td class="paramname">rotated</td><td>Is rotated if true. </td></tr>
+    <tr><td class="paramname">offset</td><td>A specified offset. </td></tr>
+    <tr><td class="paramname">originalSize</td><td>A specified original size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An autoreleased <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="aa6fcfff3f755aad9438ffd99a656cea7" name="aa6fcfff3f755aad9438ffd99a656cea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6fcfff3f755aad9438ffd99a656cea7">&#9670;&#160;</a></span>createWithTexture() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> * createWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect in points. </p>
+<p>It is assumed that the frame was not trimmed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pobTexture</td><td>The texture pointer. </td></tr>
+    <tr><td class="paramname">rect</td><td>A specified rect. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An autoreleased <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="a752cefcc3036becbbb8a408480d2b84a" name="a752cefcc3036becbbb8a408480d2b84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752cefcc3036becbbb8a408480d2b84a">&#9670;&#160;</a></span>createWithTexture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a> * createWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in points of the frame before being trimmed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pobTexture</td><td>The texture pointer. </td></tr>
+    <tr><td class="paramname">rect</td><td>A specified rect. </td></tr>
+    <tr><td class="paramname">rotated</td><td>Is rotated if true. </td></tr>
+    <tr><td class="paramname">offset</td><td>A specified offset. </td></tr>
+    <tr><td class="paramname">originalSize</td><td>A specified original size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An autoreleased <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="a44505495d73f3c43a88f326ba51206a7" name="a44505495d73f3c43a88f326ba51206a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44505495d73f3c43a88f326ba51206a7">&#9670;&#160;</a></span>getRectInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp; getRectInPixels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get rect of the sprite frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rect of the sprite frame, in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="adf4f598ed861ce4465b8a61ab082c16a" name="adf4f598ed861ce4465b8a61ab082c16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4f598ed861ce4465b8a61ab082c16a">&#9670;&#160;</a></span>setRectInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRectInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rectInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set rect of the sprite frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectInPixels</td><td>The rect of the sprite frame, in pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39ea44497111a909c43ef45a185dcd3a" name="a39ea44497111a909c43ef45a185dcd3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ea44497111a909c43ef45a185dcd3a">&#9670;&#160;</a></span>isRotated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isRotated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the sprite frame rotated or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>Is rotated if true. </dd></dl>
+
+</div>
+</div>
+<a id="ade5602063671778d01e7234a31f42357" name="ade5602063671778d01e7234a31f42357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5602063671778d01e7234a31f42357">&#9670;&#160;</a></span>setRotated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRotated </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set rotated of the sprite frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotated</td><td>Rotated the sprite frame if true. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd5a67fdaafd0367d3a64ba5df4e6dd6" name="afd5a67fdaafd0367d3a64ba5df4e6dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5a67fdaafd0367d3a64ba5df4e6dd6">&#9670;&#160;</a></span>getRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp; getRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get rect of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rect of the sprite frame. </dd></dl>
+
+</div>
+</div>
+<a id="af062da89d2035532c1aaa875cbc72001" name="af062da89d2035532c1aaa875cbc72001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af062da89d2035532c1aaa875cbc72001">&#9670;&#160;</a></span>setRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set rect of the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>The rect of the sprite. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a017e26469e5e1555f1c30d07fcb0dd33" name="a017e26469e5e1555f1c30d07fcb0dd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a017e26469e5e1555f1c30d07fcb0dd33">&#9670;&#160;</a></span>getCenterRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp; getCenterRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get center rect of the frame. </p>
+<p>Useful to create 9-slice sprites</p>
+<dl class="section return"><dt>Returns</dt><dd>The center rect of the sprite frame in points </dd></dl>
+
+</div>
+</div>
+<a id="a3729ff0e2bb82fee532ae5d0d969b872" name="a3729ff0e2bb82fee532ae5d0d969b872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3729ff0e2bb82fee532ae5d0d969b872">&#9670;&#160;</a></span>setCenterRectInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCenterRectInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>centerRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setCenterRect </p>
+<p>Useful to implement "9 sliced" sprites. The sprite will be sliced into a 3 x 3 grid. The four corners of this grid are applied without performing any scaling. The upper- and lower-middle parts are scaled horizontally, and the left- and right-middle parts are scaled vertically. The center is scaled in both directions. Important: The scaling is based the <a class="el" href="../../da/d34/classax_1_1_sprite.html" title="Sprite is a 2d image ( http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ).">Sprite</a>'s trimmed size.</p>
+<p>Limitations: Does not work when the sprite is part of <code><a class="el" href="../../d2/dc1/classax_1_1_sprite_batch_node.html" title="SpriteBatchNode is like a batch node: if it contains children, it will draw them in 1 single OpenGL c...">SpriteBatchNode</a></code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerRect</td><td>the <a class="el" href="../../df/dc5/classax_1_1_rect.html" title="Rectangle area.">Rect</a> in points </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e06794b345fe235766ae4e84c5e251f" name="a8e06794b345fe235766ae4e84c5e251f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e06794b345fe235766ae4e84c5e251f">&#9670;&#160;</a></span>hasCenterRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hasCenterRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>hasCenterRect </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not it has a centerRect </dd></dl>
+
+</div>
+</div>
+<a id="a58037ef1963f287862bdc21498ab4a39" name="a58037ef1963f287862bdc21498ab4a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58037ef1963f287862bdc21498ab4a39">&#9670;&#160;</a></span>getOffsetInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp; getOffsetInPixels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get offset of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The offset of the sprite frame, in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="ab5679d2cd4bccbb7b37b8cfc8d3c191b" name="ab5679d2cd4bccbb7b37b8cfc8d3c191b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5679d2cd4bccbb7b37b8cfc8d3c191b">&#9670;&#160;</a></span>setOffsetInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOffsetInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offsetInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set offset of the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offsetInPixels</td><td>The offset of the sprite frame, in pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca8eaf0de384f0c16c91c107eaf1a276" name="aca8eaf0de384f0c16c91c107eaf1a276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8eaf0de384f0c16c91c107eaf1a276">&#9670;&#160;</a></span>getOriginalSizeInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp; getOriginalSizeInPixels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get original size of the trimmed image. </p>
+<dl class="section return"><dt>Returns</dt><dd>The original size of the trimmed image, in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="ae55910ece38f631ecc633ec7ad377e48" name="ae55910ece38f631ecc633ec7ad377e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae55910ece38f631ecc633ec7ad377e48">&#9670;&#160;</a></span>setOriginalSizeInPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOriginalSizeInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>sizeInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set original size of the trimmed image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeInPixels</td><td>The original size of the trimmed image, in pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a1e3bd20744f823dee399fccf7d64d6" name="a9a1e3bd20744f823dee399fccf7d64d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1e3bd20744f823dee399fccf7d64d6">&#9670;&#160;</a></span>getOriginalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp; getOriginalSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get original size of the trimmed image. </p>
+<dl class="section return"><dt>Returns</dt><dd>The original size of the trimmed image. </dd></dl>
+
+</div>
+</div>
+<a id="a7ccd2a4990790861bf615a8da6606f00" name="a7ccd2a4990790861bf615a8da6606f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccd2a4990790861bf615a8da6606f00">&#9670;&#160;</a></span>setOriginalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOriginalSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>sizeInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set original size of the trimmed image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeInPixels</td><td>The original size of the trimmed image. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93b48f435d85eedcee3a8ee6a539a3e4" name="a93b48f435d85eedcee3a8ee6a539a3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b48f435d85eedcee3a8ee6a539a3e4">&#9670;&#160;</a></span>getTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> * getTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get texture of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The texture of the sprite frame. </dd></dl>
+
+</div>
+</div>
+<a id="a1e2af5ae957e261dc365df2eeec7f6ef" name="a1e2af5ae957e261dc365df2eeec7f6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2af5ae957e261dc365df2eeec7f6ef">&#9670;&#160;</a></span>setTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set texture of the frame, the texture is retained. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pobTexture</td><td>The texture of the sprite frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac29b41d2122ce022b1f2d4915839b262" name="ac29b41d2122ce022b1f2d4915839b262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29b41d2122ce022b1f2d4915839b262">&#9670;&#160;</a></span>getOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp; getOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get offset of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The offset of the sprite frame. </dd></dl>
+
+</div>
+</div>
+<a id="a29281a4383cf4969e179415e3250ef02" name="a29281a4383cf4969e179415e3250ef02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29281a4383cf4969e179415e3250ef02">&#9670;&#160;</a></span>setOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offsets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set offset of the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offsets</td><td>The offset of the sprite frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8d6d063569e06969b3b8c1b50165208" name="ac8d6d063569e06969b3b8c1b50165208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d6d063569e06969b3b8c1b50165208">&#9670;&#160;</a></span>getAnchorPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp; getAnchorPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get anchor point of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The anchor point of the sprite frame. </dd></dl>
+
+</div>
+</div>
+<a id="a3de1844ddf201d14a96ee78c1dabf043" name="a3de1844ddf201d14a96ee78c1dabf043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de1844ddf201d14a96ee78c1dabf043">&#9670;&#160;</a></span>setAnchorPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAnchorPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>anchorPoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set anchor point of the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">anchorPoint</td><td>The anchor point of the sprite frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9515f614babaf006417e34af5cd24fbd" name="a9515f614babaf006417e34af5cd24fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9515f614babaf006417e34af5cd24fbd">&#9670;&#160;</a></span>hasAnchorPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hasAnchorPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if anchor point is defined for the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if anchor point is available. </dd></dl>
+
+</div>
+</div>
+<a id="a2688fffffc76a423073e0937a1ae49e8" name="a2688fffffc76a423073e0937a1ae49e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2688fffffc76a423073e0937a1ae49e8">&#9670;&#160;</a></span>setPolygonInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPolygonInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>polygonInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the polygon info for polygon mesh sprites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygonInfo</td><td>triangle mesh of the sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afdaaa9a13f44453effcd71d6708da41c" name="afdaaa9a13f44453effcd71d6708da41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdaaa9a13f44453effcd71d6708da41c">&#9670;&#160;</a></span>getPolygonInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d6/d78/classax_1_1_polygon_info.html">PolygonInfo</a> &amp; getPolygonInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the polygonInfo for this sprite. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the polygonInfo structure </dd></dl>
+
+</div>
+</div>
+<a id="aaef4f380a72a6107d6cac7288297a462" name="aaef4f380a72a6107d6cac7288297a462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef4f380a72a6107d6cac7288297a462">&#9670;&#160;</a></span>hasPolygonInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hasPolygonInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if sprite frame is a polygon sprite. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if polygonInfo is available </dd></dl>
+
+</div>
+</div>
+<a id="a5ed7f46aeebf706ccba875cb0008c2a9" name="a5ed7f46aeebf706ccba875cb0008c2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed7f46aeebf706ccba875cb0008c2a9">&#9670;&#160;</a></span>initWithTexture() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect in points. </p>
+<p>It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a id="a633243f56e9664150e08f55c468d4eea" name="a633243f56e9664150e08f55c468d4eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633243f56e9664150e08f55c468d4eea">&#9670;&#160;</a></span>initWithTexture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dd4/classax_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in points of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a id="a1f2034797969c19b922f92ff14e73776" name="a1f2034797969c19b922f92ff14e73776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2034797969c19b922f92ff14e73776">&#9670;&#160;</a></span>initWithTextureFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTextureFilename </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html" title="A SpriteFrame has:">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in pixels of the frame before being trimmed.</p>
+<dl class="section since"><dt>Since</dt><dd>v1.1 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>SpriteFrame.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a class="el" href="../../d4/da6/classax_1_1_sprite_frame.html">SpriteFrame</a></li>
+    <li class="footer">Generated on Tue Oct 22 2024 14:17:39 for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>
