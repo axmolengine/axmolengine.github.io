@@ -311,11 +311,11 @@ function initEventHandlers() {
       // remember previous individual channel
       lastIndividualChannel = channelSelect.value;
     }
-    if (isCorporate && (channel === "paypal" || channel === "github")) {
+    if (isCorporate && channel === "github") {
       const channelWarning = new ModalManager("channelWarning");
       channelWarning.show({
         title: "Channel Warning",
-        body: `For corporate sponsorship, we recommend using <strong>Open Source Collective</strong> for transparency and compliance. PayPal/GitHub are intended for individual backers.`,
+        body: `For corporate sponsorship, we recommend using <strong>Open Source Collective</strong> for transparency and compliance. GitHub Sponsors is intended primarily for individual backers.`,
         triggerEl: e.currentTarget,
         buttons: [
           Object.assign(document.createElement("button"), { className: "btn btn-secondary", textContent: "Continue Anyway", onclick: () => { channelWarning.bsModal.hide(); } }),
