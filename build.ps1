@@ -20,7 +20,7 @@ mkdirs $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'index.html') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'favicon.ico') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'assets') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'donate') $site_dist -Recurse -Force
+Copy-Item (Join-Path $PSScriptRoot 'sponsor') $site_dist -Recurse -Force
 
 # step.2 build docs to main site manual
 if ($axmol_src) {
