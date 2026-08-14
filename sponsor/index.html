@@ -44,7 +44,7 @@
                 target="_blank">Wiki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-donate active" href="/sponsor/">Sponsor Axmol
+              <a class="nav-link nav-ive" href="/sponsor/">Sponsor Axmol
                 ❤️</a>
             </li>
           </ul>
@@ -131,12 +131,12 @@
               building and maintaining it with passion.
             </p>
             <p class="mt-3">
-              Axmol is free and open-source, powered entirely by volunteers.
-              Every bug fix and feature improvement takes time and effort.
+              Axmol is free and open-source, maintained by its core developers and community contributors.
+              Every bug fix, improvement, and new feature takes time and effort.
             </p>
             <p class="mt-3">
-              Your donation helps us accelerate fixes, prioritize features, and
-              keep Axmol thriving for everyone.
+              Your support helps us accelerate development, prioritize important features,
+              and keep Axmol thriving for everyone.
             </p>
           </div>
         </div>
@@ -161,36 +161,22 @@
       </form>
 
       <h4 class="mb-3">Become a Sponsor</h4>
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <!-- Sponsor Type Tabs -->
-        <div class="d-flex gap-2">
-          <button id="btn-individual-tiers" type="button"
-            class="btn btn-outline-primary active">
-            Individual Tiers
-          </button>
-          <button id="btn-corporate-tiers" type="button"
-            class="btn btn-outline-primary">
-            Corporate Tiers
-            <span
-              role="button"
-              tabindex="0"
-              data-bs-toggle="tooltip"
-              data-bs-html="true"
-              data-bs-placement="right"
-              title="For corporate sponsorship, we recommend using Open Source Collective as the primary channel.  
-It ensures transparency, compliance, and long‑term sustainability.  
-GitHub Sponsors is intended primarily for individual backers.
-">
-              <svg class="bi"
-                fill="currentColor"><use
-                  href="/assets/icons.svg#question-circle"></use></svg>
-            </span>
-          </button>
 
-        </div>
+      <!-- Sponsor Type Tabs -->
+      <div class="d-flex gap-2 mb-3">
+        <button id="btn-individual-tiers" type="button"
+          class="btn btn-outline-primary active">
+          Individual Tiers
+        </button>
+        <button id="btn-corporate-tiers" type="button"
+          class="btn btn-outline-primary">
+          Corporate Sponsorship
+        </button>
+      </div>
 
+      <div id="individual-sponsor-section">
         <!-- Sponsor Channel Dropdown -->
-        <div class="d-flex align-items-center gap-1">
+        <div class="d-flex align-items-center gap-1 mb-3">
           <label for="channel-options" class="form-label mb-0">Sponsor
             Channel:</label>
           <select id="channel-options"
@@ -199,7 +185,6 @@ GitHub Sponsors is intended primarily for individual backers.
             <option value="osc">Open Source Collective</option>
           </select>
         </div>
-      </div>
 
       <div class="sponsor-cards">
         <!-- Sponsors tiers -->
@@ -279,13 +264,35 @@ GitHub Sponsors is intended primarily for individual backers.
           💖 Confirm Sponsorship
         </button>
       </div>
+      </div>
+
+      <div id="corporate-sponsor-section" class="card shadow-sm d-none">
+        <div class="card-body">
+          <h5 class="card-title">Corporate Sponsorship</h5>
+          <p class="mb-2">
+            Corporate sponsorships and commercial support are handled directly by
+            <a href="https://simdsoft.com/?lang=en" target="_blank"
+              rel="noopener">Simdsoft</a>, the primary development and
+            operational entity behind Axmol Engine.
+          </p>
+          <p class="mb-2">
+            For corporate sponsorships or development partnerships, please
+            contact us at
+            <a href="mailto:biz@simdsoft.com">biz@simdsoft.com</a>.
+          </p>
+          <p class="mb-0">
+            Corporate support does not grant ownership or control over the Axmol
+            project or its technical direction.
+          </p>
+        </div>
+      </div>
 
       <hr />
 
       <!-- Scan WeChat/Alipay QR codes or visit the Axmol Open Collective page. -->
       <div class="container my-4">
         <h4 class="mb-3">Other Ways to Support Axmol</h4>
-        <p class="text-muted">WeChat Pay and Alipay are collected through Simdsoft corporate accounts and used to support Axmol development.</p>
+        <p class="text-muted">WeChat Pay and Alipay are available through Simdsoft corporate accounts and help support Axmol development.</p>
         <div class="row g-3">
           <div class="col-12 col-md-6">
             <!-- QR card for WeChat Pay -->
@@ -387,32 +394,27 @@ GitHub Sponsors is intended primarily for individual backers.
               <button class="accordion-button collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
                 aria-expanded="false" aria-controls="faqCollapse1">
-                How can I cancel my recurring donations?
+                How can I cancel my recurring sponsorship?
               </button>
             </h2>
             <div id="faqCollapse1" class="accordion-collapse collapse"
               aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                Axmol currently supports recurring sponsorships via OSC (Open
-                Source Collective) and GitHub Sponsors.<br><br>
-                To cancel a recurring GitHub sponsorship, visit
+                Axmol supports recurring community sponsorships through GitHub
+                Sponsors and Open Collective.<br><br>
+                To cancel a GitHub sponsorship, visit
                 <a href="https://github.com/sponsors" target="_blank"
-                  rel="noopener">github.com/sponsors</a>, click on <strong>Your
-                  Sponsorships</strong>, locate Axmol Engine, and choose
-                <strong>Cancel Sponsorship</strong> from the options
-                menu.<br><br>
-                To cancel a recurring Open Source Collective (OSC) contribution,
-                log in to your account at
-                <a href="https://opencollective.com" target="_blank"
-                  rel="noopener">opencollective.com</a>, go to <strong>Profile
-                  &gt;
-                  Subscriptions</strong>, find your monthly Axmol contribution,
-                and
-                click <strong>Cancel</strong>.<br><br>
+                  rel="noopener">github.com/sponsors</a>, open <strong>Your
+                  Sponsorships</strong>, find Axmol Engine, and choose
+                <strong>Cancel Sponsorship</strong>.<br><br>
+                To cancel an Open Collective sponsorship, log in to your Open
+                Collective account, go to <strong>Profile &gt;
+                  Subscriptions</strong>, find your Axmol sponsorship, and
+                cancel it there.<br><br>
                 If you encounter any issues, feel free to contact us at
                 <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
-                with your GitHub or OSC account email and your current membership
-                level.
+                with your GitHub or Open Collective account email and your
+                current sponsorship level.
               </div>
             </div>
           </div>
@@ -423,16 +425,14 @@ GitHub Sponsors is intended primarily for individual backers.
               <button class="accordion-button collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#faqCollapse2"
                 aria-expanded="false" aria-controls="faqCollapse2">
-                Can I choose whether my name appears in the sponsor list?
+                What is Open Collective?
               </button>
             </h2>
             <div id="faqCollapse2" class="accordion-collapse collapse"
               aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                Yes. All sponsor names are added manually. If you prefer to
-                remain anonymous, please email us at
-                <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
-                and we’ll update your listing accordingly.
+                Open Collective is one of the community sponsorship channels
+                available for Axmol, alongside GitHub Sponsors.
               </div>
             </div>
           </div>
@@ -443,41 +443,43 @@ GitHub Sponsors is intended primarily for individual backers.
               <button class="accordion-button collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#faqCollapse3"
                 aria-expanded="false" aria-controls="faqCollapse3">
-                Why should Corporate sponsors use Open Source Collective?
+                How can companies support Axmol?
               </button>
             </h2>
             <div id="faqCollapse3" class="accordion-collapse collapse"
               aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                At present, Axmol Engine does not operate its own nonprofit
-                entity.
-                Instead, we rely on the <strong><a
-                    href="https://oscollective.org/" target="_blank"
-                    rel="noopener noreferrer">Open Source Collective</a>
-                  (OSC)</strong>, a U.S.-registered 501(c)(6) nonprofit fiscal
-                host dedicated to supporting open source projects.<br><br>
-                By sponsoring Axmol through OSC, Corporate contributors benefit
-                from transparent financial reporting, proper invoicing, and
-                compliance with U.S. nonprofit standards.
-                <strong>U.S. Tax Clarification:</strong> Contributions made via
-                OSC are <a
-                  href="https://www.irs.gov/charities-non-profits/other-non-profits/tax-treatment-of-donations-501c6-organizations"
-                  target="_blank" rel="noopener noreferrer">not deductible as
-                  charitable donations under IRC § 170</a>.
-                However, sponsorship payments are typically <a
-                  href="https://www.law.cornell.edu/uscode/text/26/162"
-                  target="_blank" rel="noopener noreferrer">100% tax-deductible
-                  as ordinary and necessary business expenses under IRC §
-                  162(a)</a> for eligible businesses, categorized as R&D,
-                developer relations or community marketing costs.
-                The formal invoices issued by OSC guarantee full accountability
-                and are fully compliant documents for internal reimbursement,
-                financial auditing and tax filing purposes.
+                Corporate sponsorships and commercial support are handled
+                directly by
+                <a href="https://simdsoft.com/?lang=en" target="_blank"
+                  rel="noopener">Simdsoft</a>, the primary development and
+                operational entity behind Axmol Engine.<br><br>
+                For corporate sponsorships or development partnerships, please
+                contact us at
+                <a href="mailto:biz@simdsoft.com">biz@simdsoft.com</a>.
                 <br><br>
-                This arrangement ensures accountability and makes it easier for
-                companies to justify sponsorship expenses during audits. In
-                GitHub Sponsors is designed primarily for individual backers and
-                is not suitable for large Corporate payments.
+                Corporate support does not grant ownership or control over the
+                Axmol project or its technical direction.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading4">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faqCollapse4"
+                aria-expanded="false" aria-controls="faqCollapse4">
+                Can I choose whether my name appears in the sponsor list?
+              </button>
+            </h2>
+            <div id="faqCollapse4" class="accordion-collapse collapse"
+              aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. All sponsor names are added manually. If you prefer to
+                remain anonymous, please email us at
+                <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
+                and we’ll update your listing accordingly.
               </div>
             </div>
           </div>
@@ -531,32 +533,6 @@ GitHub Sponsors is intended primarily for individual backers.
         </div>
       </div>
     </footer>
-
-    <!-- Corporate Sponsor Channel Prompt Modal -->
-    <div class="modal fade" id="channelWarning" tabindex="-1"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Channel Warning</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"
-              aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            For corporate sponsorship, we recommend using <strong>Open Source
-              Collective</strong>
-            for transparency and compliance. GitHub Sponsors is intended
-            primarily for individual backers.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary"
-              data-bs-dismiss="modal">Continue Anyway</button>
-            <button type="button" class="btn btn-primary"
-              onclick="switchToOSC()">Switch to OSC</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Common modal -->
     <div class="modal fade" id="commonModal" tabindex="-1" aria-hidden="true">

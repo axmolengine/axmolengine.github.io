@@ -11,14 +11,6 @@ const individualTiers = {
   t05: { prod_id: "d105", title: "Platinum", amount: 250 }
 };
 
-const corporateTiers = {
-  t01: { prod_id: "d1001", title: "Bronze", amount: 128, osc_tier: 'sponsors-69888' },
-  t02: { prod_id: "d1002", title: "Silver", amount: 256, osc_tier: 'silver-96259' },
-  t03: { prod_id: "d1003", title: "Gold", amount: 1000, osc_tier: 'gold-96260' },
-  t04: { prod_id: "d1004", title: "Platinum", amount: 3000, osc_tier: 'platinum-96261' },
-  t05: { prod_id: "d1005", title: "Diamond", amount: 6000, osc_tier: 'diamond-96262' }
-};
-
 const VALID_CHANNELS = {
   paypal: "PayPal",
   github: "GitHub Sponsors",
@@ -139,13 +131,10 @@ function createToastContainer() {
 }
 
 // ---------------- Donation Logic ----------------
-function verifyDonateInputs(amount, sponsor_channel, is_corporate, triggerEl, on_verified) {
-  const channelSelect = document.getElementById("channel-options");
-  const channel = channelSelect ? channelSelect.value : "";
+function verifyDonateInputs(amount, sponsor_channel, triggerEl, on_verified) {
   const value = parseCurrency(amount);
 
   const commonModal = new ModalManager("commonModal");
-  const channelWarning = new ModalManager("channelWarning");
 
   if (!amount || amount.trim() === "") {
     commonModal.show({ title: "Missing Amount", body: "Please input amount.", triggerEl });
@@ -160,20 +149,8 @@ function verifyDonateInputs(amount, sponsor_channel, is_corporate, triggerEl, on
     return;
   }
 
-  if (!(is_corporate && channel === "osc") && value > INDIVIDUAL_MAX_AMOUNT) {
-    if (is_corporate) {
-      channelWarning.show({
-        title: "Large Corporate Sponsorship",
-        body: `For corporate sponsorships > USD$${INDIVIDUAL_MAX_AMOUNT}, please use Open Source Collective.`,
-        triggerEl,
-        buttons: [
-          Object.assign(document.createElement("button"), { className: "btn btn-secondary", textContent: "Continue Anyway", onclick: () => { channelWarning.bsModal.hide(); on_verified(sponsor_channel); } }),
-          Object.assign(document.createElement("button"), { className: "btn btn-primary", textContent: "Switch to OSC", onclick: () => { channelSelect.value = "osc"; showToast("Channel switched to OSC", "info"); channelWarning.bsModal.hide(); on_verified("osc"); } })
-        ]
-      });
-    } else {
-      commonModal.show({ title: "Limit Exceeded", body: `Individual sponsorship cannot exceed USD$${INDIVIDUAL_MAX_AMOUNT}.`, triggerEl });
-    }
+  if (value > INDIVIDUAL_MAX_AMOUNT) {
+    commonModal.show({ title: "Limit Exceeded", body: `Individual sponsorship cannot exceed USD$${INDIVIDUAL_MAX_AMOUNT}.`, triggerEl });
     return;
   }
 
@@ -216,10 +193,9 @@ function initEventHandlers() {
     const is_custom = selected.id === 'custom';
     const amount_str = is_custom ? document.querySelector('.amount-input').value : selected.value;
     const is_monthly = is_custom ? document.getElementById('custom-montly').checked : true;
-    const is_corporate = document.getElementById("btn-corporate-tiers").classList.contains("active");
     const channel = document.getElementById("channel-options").value;
 
-    verifyDonateInputs(amount_str, channel, is_corporate, e.currentTarget, (verified_channel) => {
+    verifyDonateInputs(amount_str, channel, e.currentTarget, (verified_channel) => {
       // Generate order id if amount or cycle changed
       if ((window.cv_sel_amount !== amount_str) || (window.cv_is_monthly !== is_monthly)) {
         window.cv_sel_amount = amount_str;
@@ -231,11 +207,8 @@ function initEventHandlers() {
 
       const amount = parseCurrency(amount_str);
       let prod_id = null;
-      let osc_tier = null;
       if (!is_custom) {
-        const tier_info = is_corporate ? corporateTiers[selected.id] : individualTiers[selected.id];
-        prod_id = tier_info.prod_id;
-        osc_tier = tier_info.osc_tier;
+        prod_id = individualTiers[selected.id].prod_id;
       }
       else {
         prod_id = 'custom';
@@ -258,14 +231,8 @@ function initEventHandlers() {
         window.open(actionUrl, '_blank');
       } else if (verified_channel === 'osc') {
         let actionUrl = '#';
-        if (is_corporate) {
-          if (osc_tier !== null) {
-            actionUrl = `https://opencollective.com/axmol/contribute/${osc_tier}/checkout?interval=month&amount=${amount}&contributeAs=me`;
-          }
-        } else {
-          if (is_monthly) {
-            actionUrl = `https://opencollective.com/axmol/contribute/backers-69887/checkout?interval=month&amount=${amount}&contributeAs=me`;
-          }
+        if (is_monthly) {
+          actionUrl = `https://opencollective.com/axmol/contribute/backers-69887/checkout?interval=month&amount=${amount}&contributeAs=me`;
         }
         if (actionUrl === '#') {
           const osc_interval = is_monthly ? 'month' : 'oneTime';
@@ -280,49 +247,33 @@ function initEventHandlers() {
   const btnIndividual = document.getElementById("btn-individual-tiers");
   const btnCorporate = document.getElementById("btn-corporate-tiers");
   const channelSelect = document.getElementById("channel-options");
+  const individualSection = document.getElementById("individual-sponsor-section");
+  const corporateSection = document.getElementById("corporate-sponsor-section");
 
   let lastIndividualChannel = "github";
   btnIndividual.addEventListener("click", () => {
     btnIndividual.classList.add("active");
     btnCorporate.classList.remove("active");
     updateTiers(individualTiers);
+    if (individualSection) individualSection.classList.remove("d-none");
+    if (corporateSection) corporateSection.classList.add("d-none");
     // restore last individual channel
     if (channelSelect) {
       channelSelect.value = lastIndividualChannel;
     }
   });
 
-  // Switch to Corporate tiers
+  // Switch to Corporate Sponsorship
   btnCorporate.addEventListener("click", () => {
     btnCorporate.classList.add("active");
     btnIndividual.classList.remove("active");
-    updateTiers(corporateTiers);
-    if (channelSelect && channelSelect.value !== 'osc') {
-      channelSelect.value = "osc";
-      showToast("Channel automatically switched to Open Source Collective.", "info");
-    }
+    if (individualSection) individualSection.classList.add("d-none");
+    if (corporateSection) corporateSection.classList.remove("d-none");
   });
 
-  // Channel change warning
-  channelSelect.addEventListener("change", (e) => {
-    const channel = e.target.value;
-    const isCorporate = btnCorporate.classList.contains("active");
-    if (!isCorporate) {
-      // remember previous individual channel
-      lastIndividualChannel = channelSelect.value;
-    }
-    if (isCorporate && channel === "github") {
-      const channelWarning = new ModalManager("channelWarning");
-      channelWarning.show({
-        title: "Channel Warning",
-        body: `For corporate sponsorship, we recommend using <strong>Open Source Collective</strong> for transparency and compliance. GitHub Sponsors is intended primarily for individual backers.`,
-        triggerEl: e.currentTarget,
-        buttons: [
-          Object.assign(document.createElement("button"), { className: "btn btn-secondary", textContent: "Continue Anyway", onclick: () => { channelWarning.bsModal.hide(); } }),
-          Object.assign(document.createElement("button"), { className: "btn btn-primary", textContent: "Switch to OSC", onclick: () => { channelSelect.value = "osc"; showToast("Channel switched to OSC", "info"); channelWarning.bsModal.hide(); } })
-        ]
-      });
-    }
+  // Remember last individual channel
+  channelSelect.addEventListener("change", () => {
+    lastIndividualChannel = channelSelect.value;
   });
 
   // Auto select Custom card when interacting with its inputs
