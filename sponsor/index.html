@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,19 @@
       content="Sponsor Axmol Engine through GitHub Sponsors, Open Source Collective, PayPal, WeChat Pay, or Alipay to support ongoing open-source game engine development.">
     <meta name="color-scheme" content="light dark">
     <link rel="canonical" href="https://axmol.dev/sponsor/">
+    <link rel="preconnect" href="https://img.shields.io" crossorigin>
+    <link rel="preconnect" href="https://github.com" crossorigin>
+    <script>
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem("axmol-theme"); } catch (e) {}
+        var sys = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute(
+          "data-bs-theme",
+          (saved === "light" || saved === "dark") ? saved : sys
+        );
+      })();
+    </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
     <link href="/assets/css/styles.css?v=2.1.1" rel="stylesheet">
   </head>
@@ -16,8 +29,8 @@
       class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top glass-nav">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center gap-1" href="/">
-          <img src="/assets/img/logo.png" alt="Axmol" height="32">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+          <img src="/assets/img/logo.png" alt="Axmol" height="28">
           <span class="fw-semibold">Axmol</span>
         </a>
 
@@ -44,7 +57,7 @@
                 target="_blank">Wiki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-ive" href="/sponsor/">Sponsor Axmol
+              <a class="nav-link nav-donate" href="/sponsor/">Sponsor Axmol
                 ❤️</a>
             </li>
           </ul>
@@ -77,7 +90,8 @@
               <a
                 class="nav-link dropdown-toggle d-flex align-items-center justify-content-left"
                 href="#" id="themeDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-label="Theme">
                 <svg class="theme-icon" width="24" height="24"
                   fill="currentColor">
                   <use href="/assets/icons.svg#circle-half"></use>
@@ -87,6 +101,7 @@
                 aria-labelledby="themeDropdown">
                 <li>
                   <button class="dropdown-item d-flex align-items-center"
+                    data-theme-option="light"
                     onclick="AxmolTheme.saveTheme('light')">
                     <svg width="16" height="16" fill="currentColor">
                       <use href="/assets/icons.svg#sun-fill"></use>
@@ -95,6 +110,7 @@
                 </li>
                 <li>
                   <button class="dropdown-item d-flex align-items-center"
+                    data-theme-option="dark"
                     onclick="AxmolTheme.saveTheme('dark')">
                     <svg width="16" height="16" fill="currentColor">
                       <use href="/assets/icons.svg#moon-stars-fill"></use>
@@ -103,6 +119,7 @@
                 </li>
                 <li>
                   <button class="dropdown-item d-flex align-items-center"
+                    data-theme-option="auto"
                     onclick="AxmolTheme.saveTheme('auto')">
                     <svg width="16" height="16" fill="currentColor">
                       <use href="/assets/icons.svg#circle-half"></use>

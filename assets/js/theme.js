@@ -29,18 +29,34 @@
     applyTheme(theme);
   }
 
-  // Update the theme icon in navbar
+  const ICONS = {
+    light: "sun-fill",
+    dark: "moon-stars-fill",
+    auto: "circle-half",
+  };
+
+  const LABELS = {
+    light: "Switch to light theme",
+    dark: "Switch to dark theme",
+    auto: "Switch to automatic theme",
+  };
+
+  // Update the theme icon + ARIA state in navbar
   function updateThemeIcon(theme) {
     const iconUse = document.querySelector(".theme-icon use");
-    if (!iconUse) return;
-
-    if (theme === "light") {
-      iconUse.setAttribute("href", "/assets/icons.svg#sun-fill");
-    } else if (theme === "dark") {
-      iconUse.setAttribute("href", "/assets/icons.svg#moon-stars-fill");
-    } else {
-      iconUse.setAttribute("href", "/assets/icons.svg#circle-half");
+    if (iconUse) {
+      iconUse.setAttribute("href", "/assets/icons.svg#" + ICONS[theme]);
     }
+
+    const toggle = document.getElementById("themeDropdown");
+    if (toggle) {
+      toggle.setAttribute("aria-label", LABELS[theme] || "Theme");
+    }
+
+    document.querySelectorAll("[data-theme-option]").forEach((btn) => {
+      const opt = btn.getAttribute("data-theme-option");
+      btn.setAttribute("aria-pressed", opt === theme ? "true" : "false");
+    });
   }
 
   // Initialize

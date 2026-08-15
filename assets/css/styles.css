@@ -1,57 +1,50 @@
 /* Axmol Engine — Dark-first theme with blue–purple gradient + neon accents */
 
-/* Light theme base (kept minimal but consistent) */
+/* ---------------------------------------------------------------------------
+ * 1. Theme variables (light + dark)
+ * ------------------------------------------------------------------------- */
 :root {
   --bs-body-bg: #f8f9fa;
   --bs-body-color: #212529;
   --bs-primary: #4A90E2;
+  --bs-primary-rgb: 74, 144, 226;
+  --bs-secondary: #6c757d;
+  --bs-secondary-rgb: 108, 117, 125;
   --bs-link-color: #4A90E2;
   --bs-link-hover-color: #357ABD;
   --bs-border-color: #dee2e6;
+
+  /* Axmol custom accents */
+  --ax-accent: #00C896;
+  --ax-accent-rgb: 0, 200, 150;
+  --ax-card-bg: #ffffff;
+  --ax-card-border: #e9ecef;
 }
 
-/* Dark theme: immersive with blue–purple gradient */
 [data-bs-theme="dark"] {
   --bs-body-bg: #0e0e12;
   --bs-body-color: #e9ecef;
-  --bs-border-color: rgba(255,255,255,0.08);
+  --bs-border-color: rgba(255, 255, 255, 0.08);
 
   --bs-primary: #7289DA;          /* Tech blue-purple */
+  --bs-primary-rgb: 114, 137, 218;
+  --bs-secondary: #a8b3cf;
+  --bs-secondary-rgb: 168, 179, 207;
   --bs-link-color: #00C896;       /* Neon green accent */
   --bs-link-hover-color: #00E0A8;
 
-  --bs-card-bg: #1a1a20;
-  --bs-card-border-color: rgba(255,255,255,0.08);
-
-  --bs-btn-primary-bg: #7289DA;
-  --bs-btn-primary-border-color: #7289DA;
-  --bs-btn-primary-hover-bg: #8ea1f2;
-  --bs-btn-primary-hover-border-color: #8ea1f2;
+  --ax-accent: #00C896;
+  --ax-accent-rgb: 0, 200, 150;
+  --ax-card-bg: #1a1a20;
+  --ax-card-border: rgba(255, 255, 255, 0.08);
 }
 
-/* Override Bootstrap's btn-secondary */
-.btn-secondary {
-  /* Base color: lighter than primary blue, still clickable */
-  background-color: var(--btn-secondary-bg);
-  color: var(--btn-secondary-color);
-  border-color: var(--btn-secondary-border);
-}
-
-/* Hover state: slightly darker to emphasize interactivity */
-.btn-secondary:hover {
-  background-color: var(--btn-secondary-bg-hover);
-  border-color: var(--btn-secondary-border-hover);
-  color: var(--btn-secondary-color-hover);
-}
-
-/* Focus state: add visible outline for accessibility */
-.btn-secondary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(100, 150, 255, 0.4);
-}
-
-/* Disabled state: reduce opacity */
-.btn-secondary:disabled {
-  opacity: 0.65;
+/* ---------------------------------------------------------------------------
+ * 2. Navbar
+ * ------------------------------------------------------------------------- */
+.glass-nav {
+  backdrop-filter: saturate(150%) blur(8px);
+  background-color: rgba(20, 20, 28, 0.65) !important;
 }
 
 /* Make dropdown full-width on mobile */
@@ -64,13 +57,47 @@
   }
 }
 
-/* Glass navbar effect (subtle transparency in dark) */
-.glass-nav {
-  backdrop-filter: saturate(150%) blur(8px);
-  background-color: rgba(20, 20, 28, 0.65) !important;
+/* Keep icon aligned and sized consistently */
+.github-icon {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
 }
 
-/* Hero gradient and energy accents */
+.nav-link:hover .github-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(114, 137, 218, 0.45));
+}
+
+.navbar .nav-link svg {
+  vertical-align: middle;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--bs-primary);
+  color: var(--bs-primary) !important;
+}
+
+/* nav donate button style */
+.nav-donate {
+  border: 1px solid var(--bs-primary);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  color: var(--bs-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-donate:hover,
+.nav-donate:focus {
+  background-color: var(--bs-primary);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * 3. Hero
+ * ------------------------------------------------------------------------- */
 .hero-gradient {
   position: relative;
   color: var(--bs-body-color);
@@ -85,7 +112,7 @@
     );
   background-size: 200% 200%;
   animation: heroPulse 10s ease-in-out infinite;
-  overflow: hidden; /* ensure pseudo-element stays inside */
+  overflow: hidden;
 }
 
 /* fade-out mask at the bottom */
@@ -97,27 +124,18 @@
   right: 0;
   height: 120px;
   background: linear-gradient(to bottom, transparent, var(--bs-body-bg));
-  pointer-events: none; /* ✅ allow clicks to pass through */
-  z-index: -1; /* push behind content */
+  pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes heroPulse {
-  0% {
-    background-position: 0% 50%;
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    background-position: 100% 50%;
-    filter: hue-rotate(30deg);
-  }
-  100% {
-    background-position: 0% 50%;
-    filter: hue-rotate(0deg);
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .text-glow {
-  text-shadow: 0 0 18px rgba(114,137,218,0.45), 0 0 4px rgba(255,255,255,0.12);
+  text-shadow: 0 0 18px rgba(114, 137, 218, 0.45), 0 0 4px rgba(255, 255, 255, 0.12);
 }
 
 .energy {
@@ -129,12 +147,12 @@
 }
 .energy-a {
   width: 320px; height: 320px;
-  background: radial-gradient(circle, rgba(114,137,218,0.35), transparent 60%);
+  background: radial-gradient(circle, rgba(114, 137, 218, 0.35), transparent 60%);
   top: -40px; left: -60px;
 }
 .energy-b {
   width: 240px; height: 240px;
-  background: radial-gradient(circle, rgba(0,200,150,0.3), transparent 60%);
+  background: radial-gradient(circle, rgba(0, 200, 150, 0.3), transparent 60%);
   bottom: -40px; right: -40px;
 }
 @keyframes drift {
@@ -143,143 +161,137 @@
   100% { transform: translate(0, 0) scale(1); }
 }
 
-/* Device frame in hero */
-.device-frame {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  border-radius: 16px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.15);
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-}
-.screen {
-  width: 100%; height: 100%;
-  background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #1a1a40 100%);
-}
-.shimmer {
-  position: relative;
-}
-.shimmer::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.06) 40%, transparent 60%);
-  animation: shine 2.4s linear infinite;
-}
-@keyframes shine {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(100%); }
-}
-
-/* Accent button */
+/* ---------------------------------------------------------------------------
+ * 4. Buttons
+ * ------------------------------------------------------------------------- */
 .btn-accent {
   color: #0a0a0f;
-  background-color: #00C896;
-  border-color: #00C896;
+  background-color: var(--ax-accent);
+  border-color: var(--ax-accent);
 }
-.btn-accent:hover {
+.btn-accent:hover,
+.btn-accent:focus {
   color: #0a0a0f;
   background-color: #00E0A8;
   border-color: #00E0A8;
 }
 
-/* Feature cards with subtle border and hover lift */
-.feature-card {
-  border: 1px solid var(--bs-border-color);
+/* ---------------------------------------------------------------------------
+ * 5. Cards & grids
+ * ------------------------------------------------------------------------- */
+.feature-card,
+.platform-card {
+  height: 100%;
+  background-color: var(--ax-card-bg);
+  border: 1px solid var(--ax-card-border);
+  border-radius: 0.75rem;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
-.feature-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(114,137,218,0.35);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+
+.feature-card:hover,
+.platform-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--bs-primary-rgb), 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* Colored dots for features */
-.feature-dot {
-  display: inline-block;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  box-shadow: 0 0 12px currentColor;
+.feature-icon {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  color: var(--bs-primary);
+  background:
+    linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.18), rgba(var(--ax-accent-rgb), 0.14));
 }
-.dot-blue   { color: #4A90E2; background-color: currentColor; }
-.dot-purple { color: #7289DA; background-color: currentColor; }
-.dot-green  { color: #00C896; background-color: currentColor; }
-.dot-cyan   { color: #00B8D9; background-color: currentColor; }
-.dot-yellow { color: #FFC400; background-color: currentColor; }
-.dot-pink   { color: #FF4D8C; background-color: currentColor; }
 
-/* Code card: dark editor vibe */
+.platform-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.12);
+}
+
+/* ---------------------------------------------------------------------------
+ * 6. Code card (terminal-style) + render preview (pure CSS)
+ * ------------------------------------------------------------------------- */
 .code-card {
   background: #1e1e2a;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
+
+.code-card .code-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.code-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.code-dot.red    { background: #ff5f57; }
+.code-dot.yellow { background: #febc2e; }
+.code-dot.green  { background: #28c840; }
+
+.code-card .code-title {
+  margin-left: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  color: #a8b3cf;
+}
+
 .code-block {
   display: block;
+  padding: 1.25rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  color: #f8f9fa;
-  white-space: pre;
-}
-
-/* Info card links */
-.link-accent {
-  color: var(--bs-link-color);
-  text-decoration: none;
-}
-.link-accent:hover {
-  color: var(--bs-link-hover-color);
-  text-decoration: underline;
-}
-
-/* Showcase cards */
-.showcase {
-  border: 1px solid var(--bs-border-color);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-}
-.showcase:hover {
-  transform: translateY(-3px);
-  border-color: rgba(114,137,218,0.35);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-/* Spacing utilities for hero section */
-.py-lg-6 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
-
-
-/* Keep icon aligned and sized consistently */
-.github-icon {
-  display: inline-block;
-  vertical-align: middle;
-  transition: transform 0.2s ease;
-}
-
-/* Ensure good contrast in both themes */
-:root .nav-link {
-  color: var(--bs-nav-link-color, inherit);
-}
-[data-bs-theme="dark"] .nav-link {
+  font-size: 0.85rem;
+  line-height: 1.6;
   color: #e9ecef;
-}
-[data-bs-theme="dark"] .nav-link:hover {
-  color: #ffffff;
-}
-
-.nav-link:hover .github-icon {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 6px rgba(114,137,218,0.45));
+  white-space: pre;
+  overflow-x: auto;
 }
 
-.navbar .nav-link svg {
-  vertical-align: middle;
+.code-block .c-key  { color: #c792ea; }
+.code-block .c-str  { color: #c3e88d; }
+.code-block .c-fn   { color: #82aaff; }
+.code-block .c-cmt  { color: #6b7280; }
+
+/* ---------------------------------------------------------------------------
+ * 7. Quick links (homepage "What is Axmol")
+ * ------------------------------------------------------------------------- */
+.quick-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ax-card-border);
+  border-radius: 0.5rem;
+  background-color: var(--ax-card-bg);
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+.quick-link:hover {
+  border-color: rgba(var(--bs-primary-rgb), 0.5);
+  transform: translateX(4px);
+  color: var(--bs-body-color);
 }
 
-.nav-link.active {
-  font-weight: 600;
-  border-bottom: 2px solid var(--bs-primary);
-  color: var(--bs-primary) !important;
-}
-
-/* donate card style */
-
+/* ---------------------------------------------------------------------------
+ * 8. Sponsor page styles
+ * ------------------------------------------------------------------------- */
 .sponsor-bio {
   color: var(--bs-body-color);
 }
@@ -433,7 +445,26 @@ input[type="checkbox"]:checked + .checkbox::after {
   color: var(--bs-body-color);
 }
 
-/* scroll behavior */
+/* wexin/alipay donate via qrcode */
+.qr-card {
+  height: 360px;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  background-color: var(--bs-body-bg);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.qr-card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  flex-grow: 1;
+}
+
+/* ---------------------------------------------------------------------------
+ * 9. Utilities / animations / misc
+ * ------------------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
 }
@@ -441,40 +472,8 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* nav donate button style */
-.nav-donate {
-  border: 1px solid var(--bs-primary);
-  border-radius: 0.375rem; /* same as .btn rounded */
-  padding: 0.375rem 0.75rem;
-  color: var(--bs-primary);
-  transition: all 0.2s ease-in-out;
-}
-
-.nav-donate:hover,
-.nav-donate:focus {
-  background-color: var(--bs-primary);
-  color: #fff !important;;
-  text-decoration: none;
-}
-
-/* wexin/alipay donate via qrcode */
-/* QR card container */
-.qr-card {
-  height: 360px; /* unified card height */
-  border: 1px solid var(--bs-border-color);
-  border-radius: 0.5rem;
-  background-color: var(--bs-body-bg);
-  padding: 0.5rem; /* small margin inside card */
-  text-align: center;
-}
-
-/* QR image scaling */
-.qr-card img {
-  max-height: 100%;   /* fill card height */
-  max-width: 100%;    /* fill card width */
-  object-fit: contain; /* keep aspect ratio */
-  flex-grow: 1;        /* expand inside flex container */
-}
+/* Spacing utilities for hero section */
+.py-lg-6 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
 
 /* base fade-in animation */
 .fade-in-list .list-group-item {
@@ -507,7 +506,7 @@ section {
 }
 
 .tooltip-inner {
-  white-space: pre-line; /* preserve lf */
+  white-space: pre-line;
   text-align: left;
 }
 
@@ -517,7 +516,6 @@ svg.bi {
   height: 1em;
   vertical-align: -.125em;
 }
-
 
 .dotted-underline {
   text-decoration: underline dotted;
