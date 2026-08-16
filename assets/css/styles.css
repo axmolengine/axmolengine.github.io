@@ -138,6 +138,13 @@
   text-shadow: 0 0 18px rgba(114, 137, 218, 0.45), 0 0 4px rgba(255, 255, 255, 0.12);
 }
 
+.hero-logo {
+  height: 1.2em;
+  width: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 10px rgba(114, 137, 218, 0.45));
+}
+
 .energy {
   position: absolute;
   border-radius: 50%;

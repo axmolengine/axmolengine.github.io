@@ -22,16 +22,15 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=2.1.1" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=2.1.3" rel="stylesheet">
   </head>
   <body>
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top glass-nav">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+        <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Axmol home">
           <img src="/assets/img/logo.png" alt="Axmol" height="28">
-          <span class="fw-semibold">Axmol</span>
         </a>
 
         <!-- Collapse button for mobile -->
@@ -140,7 +139,12 @@
       <div class="container py-5 py-lg-6 position-relative">
         <div class="row align-items-center gy-5">
           <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4 fw-bold mb-3 text-glow">Axmol</h1>
+            <h1
+              class="display-4 fw-bold mb-3 text-glow d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
+              <img src="/assets/img/logo.png" alt="Axmol logo" width="512"
+                height="512" class="hero-logo" loading="eager">
+              <span>Axmol</span>
+            </h1>
             <p class="lead mb-4">
               A multi-platform C++ engine for mobile, desktop, WebAssembly and
               Xbox — modern rendering, a lean core, and a code-first workflow.
@@ -207,8 +211,8 @@ scene-&gt;<span class="c-fn">addChild</span>(player);
         <h2 class="mb-3">What is Axmol?</h2>
         <p class="lead mb-4">
           Axmol Engine is an open-source, C++ multi-platform engine for mobile,
-          desktop, Xbox and WebAssembly — well-suited for 2D game development.
-          It launched in November 2019 as a fork of Cocos2d-x v4.0.
+          desktop, Xbox and WebAssembly — well-suited for 2D game development,
+          and also supports 3D.
         </p>
 
         <div class="row g-3 mb-4">
