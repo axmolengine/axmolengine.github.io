@@ -1,3 +1,4 @@
 .vscode
 dist
 tmp
+.DS_Store
