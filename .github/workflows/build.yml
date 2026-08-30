@@ -30,12 +30,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v7
       with:
         fetch-depth: 0
 
     - name: Download artifacts from workflow build
-      uses: dawidd6/action-download-artifact@v9
+      uses: dawidd6/action-download-artifact@v24
       with:
         # Optional, GitHub token
         github_token: ${{secrets.GITHUB_TOKEN}}
